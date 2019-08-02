@@ -1,90 +1,190 @@
+/* @media(min-width: 670px){
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 0 30px;
+  }
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  padding: 0 400px;
+}
+
 .box {
   border: 3px solid #00abf2;
-  text-align: center;
-  width: 100%;
-  margin: 6px;
+}
+
+.box p {
+  font-family: serif;
+  font-weight: bold;
+  color: #00abf2;
+  /* transition: all 0.4s ease-in-out; */
+  /* position: relative; */
+  font-size: 25px;
+  line-height: 0;
+  /* display: inline-block; */
+}
+
+.dislay-inline {
+  display: inline;
+}
+
+.mkt-img {
+  width: 290px;
   height: 120px;
 }
 
-.custom-box {
-  margin-top: 10px;
+.img-left {
+  padding-left: 30px;
+  float: left;
 }
-
-.custom-height {
-  height: 240px;
+.img-right {
+  padding-right: 30px;
+  float: right;
 }
-
 .marketing {
-  grid-area: 1 / 1 / span 3 / span 4;
+  grid-area: 2 / 1 / span 1 / span 9;
+  text-align: center;
+}
+.marketing p{
+  padding-top: 30px;
+  display: inline-block;
 }
 
 .biz-dev {
-  margin-top: 3px;
+  grid-area: 3 / 1 / span 1 / span 9;
+  text-align: center;
 }
-
-.sales {
-  width: 100%;
-}
-
-.customer {
-  width: 38%;
+.biz-dev p{
+  padding-top: 30px;
   display: inline-block;
-  margin-right: 4px;
 }
 
-.business {
-  width: 20%;
-  display: inline-block;
-  margin-right: 4px;
+.sales-img {
+  width: 240px;
+  height: 100px;
+  /* float: right; */
 }
-
 .c-sales {
+  grid-area: 4 / 1 / span 1 / span 3;
+  text-align: center;
+}
+.c-sales p {
+  /* padding-top: 10px; */
+  display: block;
 }
 
 .c-cs {
+  grid-area: 5 / 1 / span 1 / span 3;
+  text-align: center;
+}
+.c-cs p {
+  display: block;
 }
 
+
 .atone {
-  width: 20%;
-  display: inline-block;
-  margin-right: 4px;
+  grid-area: 4 / 4 / span 2 / span 2;
+  text-align: center;
+}
+.atone-img {
+  width: 160px;
+}
+.atone p {
+  display: block;
+  line-height: 60px;
 }
 
 .b-sales {
-
+  grid-area: 4 / 6 / span 1 / span 2;
+  text-align: center;
+}
+.bsales-img {
+  width: 146px;
+  height: 100px;
+}
+.b-sales p {
+  display: block;
 }
 
-.b-cs {
 
+.b-cs {
+  grid-area: 5 / 6 / span 1 / span 2;
+  text-align: center;
+}
+.b-cs p {
+  display: block;
+}
+.b-cs-img {
+  width: 146px;
+  height: 100px;
 }
 
 .taiwan {
-  width: 19%;
-  display: inline-block;
+  grid-area: 4 / 8 / span 3 / span 2;
+  text-align: center;
 }
+.taiwan p {
+  display: block;
+  line-height: 60px;
+}
+.taiwan-img {
+  width: 126px;
+  height: 233px;
+  padding-top: 15px;
+}
+.taiwan-img2 {
+  width: 120px;
+  height: 80px;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  padding-left: 30px;
+}
+
 
 .ba {
-
+  grid-area: 6 / 1 / span 1 / span 7;
+  text-align: center;
 }
-
-.back-office {
-  width: 100%;
+.ba p{
+  padding-top: 30px;
+  display: inline-block;
+}
+.ba-img {
+  width: 250px;
+  height: 130px;
 }
 
 .human-resourses {
-  width: 33%;
-  display: inline-block;
-  margin-right: 4px;
+  grid-area: 7 / 1 / span 1 / span 3;
+  text-align: center;
+}
+.human-resourses-img {
+  width: 160px;
+  height: 100px;
+}
+.human-resourses p {
+  display: block;
 }
 
+
 .finances {
-  width: 33%;
-  display: inline-block;
-  margin-right: 4px;
+  grid-area: 7 / 4 / span 1 / span 3;
+  text-align: center;
+}
+.finances p {
+  display: block;
 }
 
 .legal {
-  width: 32%;
-  display: inline-block;
-  margin-right: 4px;
+  grid-area: 7 / 7 / span 1 / span 3;
+  text-align: center;
+}
+.legal p {
+  display: block;
 }
