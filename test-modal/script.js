@@ -1,7 +1,11 @@
 $(function() {
 
   $('#login-show').click(function() {
-    $('#login-modal').fadeIn();
+    $('#login-modal').fadeIn('10000ms');
+    var $mail = $('this').find('#mail');
+    var $password = $('this').find('#password');
+    $mail.fadeOut('1000ms');
+    $password.fadeOut('1000ms');
   });
 
   $('.signup-show').click(function() {
