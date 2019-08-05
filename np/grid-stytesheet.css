@@ -1,0 +1,97 @@
+.container-5-work {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 5px;
+  /* padding: 0 400px; */
+}
+@keyframes item-display {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container-5-work .team {
+  grid-area: 5 / 5 / span 2 / span 2;
+  text-align: center;
+}
+.container-5-work .item1 {
+  grid-area: 4 / 2 / span 2 / span 2;
+  text-align: center;
+  animation-name: stretch;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.container-5-work .item2 {
+  grid-area: 1 / 5 / span 2 / span 2;
+  text-align: center;
+  animation-name: stretch;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.container-5-work .item3 {
+  grid-area: 4 / 8 / span 2 / span 2;
+  text-align: center;
+  animation-name: stretch;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.container-5-work .item4 {
+  grid-area: 9 / 7 / span 2 / span 2;
+  text-align: center;
+  animation-name: stretch;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.container-5-work .item5 {
+  grid-area: 9 / 3 / span 2 / span 2;
+  text-align: center;
+  animation-name: stretch;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.container-5-work .other-team {
+  grid-area: 11 / 2 / span 1 / span 2;
+  text-align: left;
+}
+.container-5-work .team-list {
+  grid-area: 12 / 2 / span 1 / span 10;
+  text-align: left;
+}
+.container-5-work .other-dpt {
+  grid-area: 13 / 2 / span 1 / span 2;
+  text-align: left;
+}
+.container-5-work .dpt-list {
+  grid-area: 14 / 2 / span 1 / span 10;
+  text-align: left;
+}
+.container-5-work .line {
+  grid-area: 1 / 1 / span 10 / span 10;
+  text-align: center;
+}
