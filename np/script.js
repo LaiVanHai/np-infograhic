@@ -56,6 +56,16 @@ $(function() {
   $('#mkt-sd').click(function() {
     $('#sd-team').fadeIn();
   });
+  $('#mkt-dm').click(function() {
+    $('#dm-team').fadeIn();
+  });
+  $('#mkt-design').click(function() {
+    $('#design-team').fadeIn();
+  });
+  $('#mkt-pr').click(function() {
+    $('#pr-team').fadeIn();
+  });
+
   $('.close-modal').click(function() {
     deleteDisplayWork();
   });
@@ -66,11 +76,41 @@ $(function() {
     deleteDisplayTeam();
     $('.department-ba').fadeIn('3s');
   });
+  $('.link-to-b-sales').click(function() {
+    deleteDisplayWork();
+    $('#team-name').find('p').text('B-Salesのチーム');
+    deleteDisplayTeam();
+    $('.department-b-sales').fadeIn('3s');
+  });
+  $('.link-to-c-sales').click(function() {
+    deleteDisplayWork();
+    $('#team-name').find('p').text('C-Salesのチーム');
+    deleteDisplayTeam();
+    $('.department-c-sales').fadeIn('3s');
+  });
+
   $('.link-to-dm').click(function() {
     deleteDisplayWork();
     $('#dm-team').fadeIn();
   });
-
+  $('.link-to-sd').click(function() {
+    deleteDisplayWork();
+    $('#sd-team').fadeIn();
+  });
+  $('.link-to-design').click(function() {
+    deleteDisplayWork();
+    $('#design-team').fadeIn();
+  });
+  $('.link-to-pr').click(function() {
+    deleteDisplayWork();
+    $('#pr-team').fadeIn();
+  });
+  $('#mkt-button').click(function() {
+    $('#mkt-link-team').fadeIn();
+  });
+  $('#c-sales-button').click(function() {
+    $('#c-sales-link-team').fadeIn();
+  });
 
   deleteDisplayTeam = function(){
     $('.department-c-sales').css('display','none');
@@ -87,5 +127,9 @@ $(function() {
   deleteDisplayWork = function(){
     $('#sd-team').fadeOut();
     $('#dm-team').fadeOut();
+    $('#pr-team').fadeOut();
+    $('#design-team').fadeOut();
+    $('#mkt-link-team').fadeOut();
+    $('#c-sales-link-team').fadeOut();
   };
 });

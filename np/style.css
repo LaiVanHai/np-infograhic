@@ -28,6 +28,93 @@
   padding: 0 400px;
 }
 
+.container .line {
+  grid-area: 1 / 1 / span 9 / span 9;
+  text-align: center;
+}
+
+.service-image {
+  grid-area: 1 / 1 / span 1 / span 9;
+}
+@keyframes service-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.atobarai {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  animation-name: service-image;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.atobarai-air {
+  display: inline-block;
+  width: 166px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: white;
+  animation-name: service-image;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.srv-atone {
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  margin-right: 30px;
+  background-color: white;
+  animation-name: service-image;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.kakebarai {
+  display: inline-block;
+  width: 160px;
+  height: 30px;
+  margin-right: 30px;
+  background-color: white;
+  animation-name: service-image;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.aftee {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  animation-name: service-image;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+
+
 a {
   text-decoration: none;
 }
@@ -35,19 +122,20 @@ a {
 .box {
   border: 3px solid #00abf2;
   cursor: pointer;
+  line-height: 5px;
+  position: relative;
 }
 .box p {
   font-family: serif;
   font-weight: bold;
   color: #00abf2;
-  /* transition: all 0.4s ease-in-out; */
-  /* position: relative; */
   font-size: 25px;
-  line-height: 0;
-  /* display: inline-block; */
 }
-.box p :hover {
-  box-shadow: 0px 0px 10px 1px #f702a9;
+.box:hover .tooltiptext {
+  visibility: visible;
+}
+.box p:hover {
+  color: #f702a9;
 }
 
 .dislay-inline {
@@ -68,8 +156,9 @@ a {
   float: right;
 }
 .marketing {
-  grid-area: 2 / 1 / span 1 / span 9;
+  grid-area: 3 / 1 / span 1 / span 9;
   text-align: center;
+  background-color: white;
 }
 .marketing p{
   padding-top: 30px;
@@ -77,8 +166,9 @@ a {
 }
 
 .biz-dev {
-  grid-area: 3 / 1 / span 1 / span 9;
+  grid-area: 4 / 1 / span 1 / span 9;
   text-align: center;
+  background-color: white;
 }
 .biz-dev p{
   padding-top: 30px;
@@ -88,28 +178,31 @@ a {
 .sales-img {
   width: 240px;
   height: 100px;
-  /* float: right; */
+  margin-top: -15px;
+  background-color: white;
 }
 .c-sales {
-  grid-area: 4 / 1 / span 1 / span 3;
+  grid-area: 5 / 1 / span 1 / span 3;
   text-align: center;
+  background-color: white;
 }
 .c-sales p {
-  /* padding-top: 10px; */
   display: block;
 }
 
 .c-cs {
-  grid-area: 5 / 1 / span 1 / span 3;
+  grid-area: 6 / 1 / span 1 / span 3;
   text-align: center;
+  background-color: white;
 }
 .c-cs p {
   display: block;
 }
 
 .atone {
-  grid-area: 4 / 4 / span 2 / span 2;
+  grid-area: 5 / 4 / span 2 / span 2;
   text-align: center;
+  background-color: white;
 }
 .atone-img {
   width: 160px;
@@ -120,20 +213,23 @@ a {
 }
 
 .b-sales {
-  grid-area: 4 / 6 / span 1 / span 2;
+  grid-area: 5 / 6 / span 1 / span 2;
   text-align: center;
+  background-color: white;
 }
 .bsales-img {
   width: 146px;
   height: 100px;
+  margin-top: -15px;
 }
 .b-sales p {
   display: block;
 }
 
 .b-cs {
-  grid-area: 5 / 6 / span 1 / span 2;
+  grid-area: 6 / 6 / span 1 / span 2;
   text-align: center;
+  background-color: white;
 }
 .b-cs p {
   display: block;
@@ -141,11 +237,13 @@ a {
 .b-cs-img {
   width: 146px;
   height: 100px;
+  margin-top: -15px;
 }
 
 .taiwan {
-  grid-area: 4 / 8 / span 3 / span 2;
+  grid-area: 5 / 8 / span 3 / span 2;
   text-align: center;
+  background-color: white;
 }
 .taiwan p {
   display: block;
@@ -166,8 +264,9 @@ a {
 }
 
 .ba {
-  grid-area: 6 / 1 / span 1 / span 7;
+  grid-area: 7 / 1 / span 1 / span 7;
   text-align: center;
+  background-color: white;
 }
 .ba p{
   padding-top: 40px;
@@ -179,28 +278,32 @@ a {
 }
 
 .human-resourses {
-  grid-area: 7 / 1 / span 1 / span 3;
+  grid-area: 8 / 1 / span 1 / span 3;
   text-align: center;
+  background-color: white;
 }
 .human-resourses-img {
   width: 140px;
   height: 80px;
+  margin-top: -10px;
 }
 .human-resourses p {
   display: block;
 }
 
 .finances {
-  grid-area: 7 / 4 / span 1 / span 3;
+  grid-area: 8 / 4 / span 1 / span 3;
   text-align: center;
+  background-color: white;
 }
 .finances p {
   display: block;
 }
 
 .legal {
-  grid-area: 7 / 7 / span 1 / span 3;
+  grid-area: 8 / 7 / span 1 / span 3;
   text-align: center;
+  background-color: white;
 }
 .legal p {
   display: block;
@@ -241,7 +344,7 @@ a {
 }
 .tooltiptext {
   visibility: hidden;
-  width: 100%;
+  width: 150px;
   background-color: #6c6c6c;
   color: #fff;
   text-align: center;
@@ -315,7 +418,6 @@ button {
   box-shadow: 0px 0px 10px 1px #00abf2;
 }
 
-
 .work-item-level1 {
   width: 120px;
   height: 120px;
@@ -330,6 +432,9 @@ button {
   visibility: visible;
 }
 .work-item-level1:hover {
+  box-shadow: 0px 0px 10px 1px #f2a000;
+}
+.work-item-level2:hover {
   box-shadow: 0px 0px 10px 1px #f2a000;
 }
 
@@ -362,12 +467,12 @@ button {
 }
 .lv2-image {
   position: absolute;
-  width: 80px;
-  height: 55px;
+  width: 70px;
+  height: 50px;
   display: block;
   text-align: center;
-  margin-left: 5px;
-  margin-top: 5px;
+  margin-left: 10px;
+  margin-top: 9px;
   transition: transform .2s;
 }
 .lv2-info p {
@@ -404,7 +509,6 @@ line {
   animation-play-state: running;
 }
 
-
 .work-modal-wrapper {
   display: none;
   position: fixed;
@@ -434,13 +538,20 @@ line {
   color: rgba(128, 128, 128, 0.46);
   cursor: pointer;
 }
-.work-title {
+.work-title,
+  .department-title {
   background-color: #ffecc9;
   color: #82530f;
   padding: 3px 0;
   margin-top: -7px;
   font-weight: 600;
   border: 1px solid #f3a001;
+}
+
+.department-title {
+  background-color: #cee2f3;
+  color: #2c528f;
+  border: 1px solid #4a86e8;
 }
 .other-team-title {
   color: #82530f;
@@ -512,4 +623,8 @@ line {
   font-size: 12px;
   text-align: center;
   font-weight: bold;
+}
+
+button {
+  display: block;
 }
