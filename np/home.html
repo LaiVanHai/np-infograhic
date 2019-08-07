@@ -15,24 +15,59 @@
       <p>NPの部署</p>
     </div>
     <div class="container">
+      <div class="service-image">
+        <a href="https://www.netprotections.com/" target="_blank">
+          <img src="img/service/atobarai.png" class="atobarai">
+        </a>
+        <a href="https://www.netprotections.com/air/" target="_blank">
+          <img src="img/service/atobarai-air.png" class="atobarai-air">
+        </a>
+        <a href="https://atone.be/" target="_blank">
+          <img src="img/service/atone.png" class="srv-atone">
+        </a>
+        <a href="https://np-kakebarai.com/" target="_blank">
+          <img src="img/service/kakebarai.png" class="kakebarai">
+        </a>
+        <a href="https://aftee.tw/" target="_blank">
+          <img src="img/service/aftee.png" class="aftee">
+        </a>
+      </div>
+      <div class="line">
+        <svg height="750" width="750">
+          <line x1="20" y1="30" x2="20" y2="700"></line>
+          <!-- item2 of line -->
+          <line x1="150" y1="30" x2="150" y2="700"></line>
+          <!-- item3 of line -->
+          <line x1="330" y1="30" x2="330" y2="700"></line>
+          <!-- item4 of line -->
+          <line x1="520" y1="30" x2="520" y2="700"></line>
+          <!-- item5 of line -->
+          <line x1="700" y1="30" x2="700" y2="700"></line>
+          Sorry, your browser does not support inline SVG.
+        </svg>
+      </div>
       <a href="#mkt" class="box marketing">
         <img src="img/mkt/department1.png" class="mkt-img img-left">
         <p>Marketing</p>
+        <span class="tooltiptext">サービスを紹介する</span>
         <img src="img/mkt/department2.png" class="mkt-img img-right">
       </a>
 
       <div class="box biz-dev">
         <img src="img/biz-dev/department1.png" class="mkt-img img-left">
         <p>Biz Dev</p>
+        <span class="tooltiptext">アライアンスを開拓する</span>
         <img src="img/biz-dev/department2.png" class="mkt-img img-right">
       </div>
 
       <a href="#c-sales" class="box c-sales">
         <p>C-Sales</p>
+        <span class="tooltiptext">サービスを売る</span>
         <img src="img/c-sales/department.png" class="sales-img">
       </a>
       <a href="#c-cs" class="box c-cs">
         <p>C-CS</p>
+        <span class="tooltiptext">サービスを回す</span>
         <img src="img/c-cs/department.png" class="sales-img">
       </a>
 
@@ -43,10 +78,12 @@
 
       <a href="#b-sales" class="box b-sales">
         <p>B-Sales</p>
+        <span class="tooltiptext">サービスを売る</span>
         <img src="img/b-sales/department.png" class="bsales-img">
       </a>
       <a href="#b-cs" class="box b-cs">
         <p>B-CS</p>
+        <span class="tooltiptext">サービスを回す</span>
         <img src="img/b-cs/department.png" class="b-cs-img">
       </a>
 
@@ -59,19 +96,23 @@
       <a href="#ba" class="box ba">
         <img src="img/ba/department3.png" class="ba-img img-left">
         <p>BA</p>
+        <span class="tooltiptext">サービスを開発する</span>
         <img src="img/ba/department1.png" class="ba-img img-right">
       </a>
 
       <a href="#hr" class="box human-resourses">
         <p>人事総務</p>
+        <span class="tooltiptext">バックオフィース</span>
         <img src="img/human-resourses/department.png" class="human-resourses-img">
       </a>
       <a href="#finances" class="box finances">
         <p>財経</p>
+        <span class="tooltiptext">バックオフィース</span>
         <img src="img/finances/department.png" class="human-resourses-img">
       </a>
       <div class="box legal">
         <p>法務</p>
+        <span class="tooltiptext">バックオフィース</span>
         <img src="img/legal/department.png" class="human-resourses-img">
       </div>
     </div>
@@ -80,7 +121,17 @@
       <p>部署のチーム</p>
     </div>
     <!--　マーケのチーム -->
+    <div class="work-modal-wrapper" id="mkt-link-team">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <p class="department-title">マーケのチーム関係</p>
+        <img src="img/mkt/all-team.png">
+      </div>
+    </div>
     <div class="department-mkt" id="mkt">
+      <button type="button" id="mkt-button"><i class="fa fa-search"></i></button>
       <div class="dpt-item" id="mkt-sd">
         <img src="img/mkt/sd/team.png" class="dpt-image">
         <div class="dpt-info">
@@ -88,20 +139,20 @@
           <span class="tooltiptext">Strategy Design</span>
         </div>
       </div>
-      <div class="dpt-item">
+      <div class="dpt-item" id="mkt-design">
         <img src="img/mkt/design/team.png" class="dpt-image">
         <div class="dpt-info">
           <p>デザイン</p>
         </div>
       </div>
-      <div class="dpt-item">
+      <div class="dpt-item" id="mkt-pr">
         <img src="img/mkt/pr/team.png" class="dpt-image">
         <div class="dpt-info">
           <p>PR</p>
           <span class="tooltiptext">Public Relations</span>
         </div>
       </div>
-      <div class="dpt-item">
+      <div class="dpt-item" id="mkt-dm">
         <img src="img/mkt/dm/team.png" class="dpt-image">
         <div class="dpt-info">
           <p>デジマ</p>
@@ -111,7 +162,17 @@
     </div>
 
     <!--　Cセールスのチーム -->
+    <div class="work-modal-wrapper" id="c-sales-link-team">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <p class="department-title">C-Salesのチーム関係</p>
+        <img src="img/c-sales/all-team.png">
+      </div>
+    </div>
     <div class="department-c-sales" id="c-sales">
+      <button type="button" id="c-sales-button"><i class="fa fa-search"></i></button>
       <div class="dpt-item">
         <img src="img/c-sales/inside/team.png" class="dpt-image">
         <div class="dpt-info">
@@ -363,6 +424,7 @@
       </div>
     </div>
 
+    <!-- Start Modal マーケのSDチーム -->
     <div class="work-modal-wrapper" id="sd-team">
       <div class="modal">
         <div class="close-modal">
@@ -372,11 +434,11 @@
         <div class="container-5-work">
           <div class="line">
             <svg height="450" width="650">
-              <line x1="250" y1="290" x2="165" y2="240"></line>
+              <line x1="255" y1="290" x2="155" y2="240"></line>
               <!-- item2 of line -->
-              <line x1="325" y1="230" x2="325" y2="125"></line>
+              <line x1="330" y1="230" x2="330" y2="125"></line>
               <!-- item3 of line -->
-              <line x1="400" y1="290" x2="485" y2="240"></line>
+              <line x1="400" y1="290" x2="490" y2="240"></line>
               <!-- item4 of line -->
               <line x1="360" y1="350" x2="420" y2="420"></line>
               <!-- item5 of line -->
@@ -479,24 +541,34 @@
         </div>
       </div>
     </div>
+    <!-- End Modal マーケのSDチーム -->
+    <!-- Start Modal マーケのデジマチーム -->
     <div class="work-modal-wrapper" id="dm-team">
       <div class="modal">
         <div class="close-modal">
           <i class="fa fa-2x fa-times"></i>
         </div>
         <p class="work-title">デジマチームの業務</p>
-        <div class="container-5-work">
+        <div class="container-4-work-2sub">
           <div class="line">
-            <svg height="450" width="650">
-              <line x1="250" y1="290" x2="165" y2="240"></line>
+            <svg height="700" width="650">
+              <line x1="190" y1="320" x2="150" y2="235"></line>
               <!-- item2 of line -->
-              <line x1="325" y1="230" x2="325" y2="125"></line>
+              <line x1="340" y1="320" x2="390" y2="235"></line>
               <!-- item3 of line -->
-              <line x1="400" y1="290" x2="485" y2="240"></line>
+              <line x1="190" y1="320" x2="78" y2="320"></line>
               <!-- item4 of line -->
-              <line x1="360" y1="350" x2="420" y2="420"></line>
-              <!-- item5 of line -->
-              <line x1="290" y1="345" x2="233" y2="440"></line>
+              <line x1="340" y1="320" x2="455" y2="320"></line>
+              <!-- item1-sub1 of line -->
+              <line x1="90" y1="155" x2="25" y2="95"></line>
+              <!-- item1-sub2 of line -->
+              <line x1="150" y1="115" x2="150" y2="95"></line>
+              <!-- item1-sub3 of line -->
+              <line x1="205" y1="155" x2="260" y2="95"></line>
+              <!-- item2-sub1 of line -->
+              <line x1="515" y1="375" x2="390" y2="418"></line>
+              <!-- item2-sub2 of line -->
+              <line x1="515" y1="375" x2="625" y2="418"></line>
               Sorry, your browser does not support inline SVG.
             </svg>
           </div>
@@ -504,53 +576,88 @@
             <div class="work-item">
               <img src="img/mkt/sd/team.png" class="dpt-image">
               <div class="dpt-info">
-                <p>SD</p>
-                <span class="tooltiptext">Strategy Design</span>
+                <p>デジマ</p>
+                <span class="tooltiptext">Degital Marketing</span>
               </div>
             </div>
           </div>
           <div class="item1">
             <div class="work-item-level1">
-              <img src="img/mkt/sd/work1.png" class="lv1-image">
+              <img src="img/mkt/dm/work1.png" class="lv1-image">
               <div class="lv1-info">
-                <p>戦略作成</p>
-                <span class="tooltiptext">業務部方針・戦略作成</span>
+                <p>集客施策</p>
+              </div>
+            </div>
+          </div>
+          <div class="item1-sub1">
+            <div class="work-item-level2">
+              <img src="img/mkt/dm/work1-1.png" class="lv2-image">
+              <div class="lv2-info">
+                <p>広告</p>
+                <span class="tooltiptext">オンライン広告</span>
+              </div>
+            </div>
+          </div>
+          <div class="item1-sub2">
+            <div class="work-item-level2">
+              <img src="img/mkt/dm/work1-2.png" class="lv2-image">
+              <div class="lv2-info">
+                <p>自然検索</p>
+                <span class="tooltiptext">自然検索での順位向上</span>
+              </div>
+            </div>
+          </div>
+          <div class="item1-sub3">
+            <div class="work-item-level2">
+              <img src="img/mkt/dm/work1-3.png" class="lv2-image">
+              <div class="lv2-info">
+                <p>媒体改善</p>
+                <span class="tooltiptext">各媒体毎での効率化・改善</span>
               </div>
             </div>
           </div>
           <div class="item2">
             <div class="work-item-level1">
-              <img src="img/mkt/sd/work2.png" class="lv1-image">
+              <img src="img/mkt/dm/work2.png" class="lv1-image">
               <div class="lv1-info">
-                <p>体制・お金<br>物調整</p>
-                <span class="tooltiptext">ターゲットを達成するために</span>
+                <p>効果測定</p>
+                <span class="tooltiptext">各施策の効果測定</span>
               </div>
             </div>
           </div>
           <div class="item3">
             <div class="work-item-level1">
-              <img src="img/mkt/sd/work3.png" class="lv1-image">
+              <img src="img/mkt/dm/work3.png" class="lv1-image">
               <div class="lv1-info">
-                <p>資料作成</p>
+                <p>再来訪施策</p>
                 <span class="tooltiptext">競合との比較資料作成</span>
+              </div>
+            </div>
+          </div>
+          <div class="item3-sub1">
+            <div class="work-item-level2">
+              <img src="img/mkt/dm/work3-1.png" class="lv2-image">
+              <div class="lv2-info">
+                <p>Mail送信</p>
+                <span class="tooltiptext">メールマガジンの送信</span>
+              </div>
+            </div>
+          </div>
+          <div class="item3-sub2">
+            <div class="work-item-level2">
+              <img src="img/mkt/dm/work3-2.png" class="lv2-image">
+              <div class="lv2-info">
+                <p>広告配信</p>
+                <span class="tooltiptext">来訪ユーザーへの広告配信</span>
               </div>
             </div>
           </div>
           <div class="item4">
             <div class="work-item-level1">
-              <img src="img/mkt/sd/work4.png" class="lv1-image">
+              <img src="img/mkt/dm/work4.png" class="lv1-image">
               <div class="lv1-info">
-                <p>広告コンテン<br>ツ作成</p>
-                <span class="tooltiptext">広告オフライン</span>
-              </div>
-            </div>
-          </div>
-          <div class="item5">
-            <div class="work-item-level1">
-              <img src="img/mkt/sd/work5.png" class="lv1-image">
-              <div class="lv1-info">
-                <p>情報刷新</p>
-                <span class="tooltiptext">サービスサイトの情報刷新</span>
+                <p>接客施策</p>
+                <span class="tooltiptext">NPのサイトリニュアル・コンテンツリッチ</span>
               </div>
             </div>
           </div>
@@ -558,31 +665,23 @@
             <p class="other-team-title">連携があるチーム:</p>
           </div>
           <div class="team-list">
-            <a href="#c-sales" class="team-link-item">
-              <p>デジマ</p>
-              <img src="img/mkt/dm/team.png">
-            </a>
-            <a href="#c-sales" class="team-link-item">
+            <div class="team-link-item link-to-sd">
+              <p>SD</p>
+              <img src="img/mkt/sd/team.png">
+            </div>
+            <div class="team-link-item link-to-pr">
               <p>PR</p>
               <img src="img/mkt/pr/team.png">
-            </a>
-            <a href="#c-sales" class="team-link-item">
+            </div>
+            <div class="team-link-item link-to-design">
               <p>デザイン</p>
               <img src="img/mkt/design/team.png">
-            </a>
+            </div>
           </div>
           <div class="other-dpt">
             <p class="other-team-title">連携がある部署:</p>
           </div>
           <div class="dpt-list">
-            <a href="#ba" class="dpt-link-item link-to-ba">
-              <p>BA</p>
-              <img src="img/ba/department3.png">
-            </a>
-            <a href="#biz-dev" class="dpt-link-item link-to-biz-dev">
-              <p>Biz Dev</p>
-              <img src="img/biz-dev/department3.png">
-            </a>
             <a href="#b-sales" class="dpt-link-item link-to-b-sales">
               <p>B-Sales</p>
               <img src="img/b-sales/department.png">
@@ -595,6 +694,29 @@
         </div>
       </div>
     </div>
+    <!-- End Modal マーケのデジマチーム -->
+    <!-- Start Modal マーケのデザインチーム -->
+    <div class="work-modal-wrapper" id="design-team">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <p class="work-title">デザインチームの業務</p>
+        <p>ddasdasdasdads</p>
+      </div>
+    </div>
+    <!-- End Modal マーケのデザインチーム -->
+    <!-- Start Modal マーケのPRチーム -->
+    <div class="work-modal-wrapper" id="pr-team">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <p class="work-title">PRチームの業務</p>
+        <p>ddasdasdasdads</p>
+      </div>
+    </div>
+    <!-- End Modal マーケのPRチーム -->
 
     <script src="script.js"></script>
   </body>
