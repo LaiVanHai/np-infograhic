@@ -25,16 +25,37 @@
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto;
   grid-gap: 10px;
-  padding: 0 400px;
+  padding: 10px 400px;
 }
 
-.container .line {
+@keyframes diamondStroke {
+  0%   { stroke-dashoffset: 1000; }
+  50%   { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 1000; }
+}
+
+.line {
   grid-area: 1 / 1 / span 9 / span 9;
   text-align: center;
+  fill: #E5E4E3;
+  stroke-width: 4px;
+  /* stroke-linejoin: round; */
+  /* stroke-linecap: round; */
+  /* stroke-dashoffset: 1000; */
+}
+
+.line-customer {
+  stroke: #03abf2;
+  stroke-width: 10px;
+  animation-name: diamondStroke;
+  stroke-dasharray: 1000;
+  animation-duration: 2s;
+  animation-iteration-count: 4;
 }
 
 .service-image {
   grid-area: 1 / 1 / span 1 / span 9;
+  text-align: center;
 }
 @keyframes service-image {
   0% {
@@ -49,14 +70,16 @@
   width: 150px;
   height: 30px;
   background-color: white;
+  opacity: 0.5;
   animation-name: service-image;
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-direction: alternate;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 7;
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
+
 .atobarai-air {
   display: inline-block;
   width: 166px;
@@ -67,7 +90,7 @@
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-direction: alternate;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 7;
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
@@ -81,7 +104,7 @@
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-direction: alternate;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 7;
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
@@ -95,7 +118,7 @@
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-direction: alternate;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 7;
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
@@ -108,12 +131,10 @@
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-direction: alternate;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 7;
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-
-
 
 a {
   text-decoration: none;
@@ -133,6 +154,9 @@ a {
 }
 .box:hover .tooltiptext {
   visibility: visible;
+}
+.box:hover {
+  box-shadow: 0px 0px 5px 1px #f702a9;
 }
 .box p:hover {
   color: #f702a9;
@@ -321,10 +345,7 @@ a {
   border: 5px solid #00abf2;
   display: inline-block;
   margin: 10px 20px;
-}
-
-.dpt-item :hover {
-  box-shadow: 0px 0px 10px 1px #f702a9;
+  /* z-index: 3; */
 }
 
 .dpt-info,
@@ -341,13 +362,15 @@ a {
   margin-top: 115px;
   font-weight: bold;
   color: #1a61b3;
+  z-index: 0;
+  width: auto;
 }
 .tooltiptext {
   visibility: hidden;
   width: 150px;
   background-color: #6c6c6c;
   color: #fff;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 4px;
   font-size: 13px;
@@ -355,15 +378,29 @@ a {
   /* Position the tooltip */
   position: absolute;
   z-index: 5;
-  bottom: 100%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -78px;
   line-height: 13px;
   text-align: left;
+  bottom: 105%;
+}
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #6c6c6c transparent transparent transparent;
+  margin-bottom: 20px;
 }
 
-.dpt-info:hover .tooltiptext {
+.dpt-item:hover .tooltiptext {
   visibility: visible;
+}
+.dpt-item:hover {
+  box-shadow: 0px 0px 10px 1px #f702a9;
 }
 
 .dpt-image {
@@ -482,7 +519,7 @@ button {
   font-size: 12px;
 }
 
-@keyframes stretch {
+/* @keyframes stretch {
   0% {
     opacity: 0;
     stroke-width: 1;
@@ -498,14 +535,14 @@ button {
     stroke-width: 4;
   }
 }
-line {
+*/
+.work-line {
   stroke: #a5a5a5;
-  animation-name: stretch;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  stroke-width: 4;
+  animation-name: diamondStroke;
+  stroke-dasharray: 1000;
+  animation-duration: 2s;
+  animation-iteration-count: 4;
   animation-play-state: running;
 }
 
@@ -517,7 +554,7 @@ line {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 2;
+  z-index: 10;
 }
 .modal {
   position: absolute;
@@ -530,7 +567,15 @@ line {
   height: auto;
   text-align: center;
   border: 3px solid #728699;
+  z-index: 10;
 }
+.modal .tooltiptext {
+  background-color: #f39f06;
+}
+.modal .tooltiptext::after {
+  border-color: #f39f06 transparent transparent transparent;
+}
+
 .fa-times {
   position: absolute;
   top: 12px;
@@ -624,6 +669,17 @@ line {
   text-align: center;
   font-weight: bold;
 }
+ .tag {
+  display: block;
+  text-align: right;
+ }
+
+ .tag a {
+   color: #00abf2;
+ }
+ .tag i {
+   color: #f702a9;
+ }
 
 button {
   display: block;
