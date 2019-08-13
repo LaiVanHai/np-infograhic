@@ -19,8 +19,8 @@
   color: #f702a9;
 }
 
-@media all and (min-width: 1025px) {
-  /* For desktop: */
+@media all and (min-width: 1500px) {
+  /* For desktop full-hd: */
   .container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
@@ -49,17 +49,148 @@
   .modal {
     left: 30%;
   }
+  .mkt-img {
+    width: 290px;
+    height: 120px;
+  }
+  .ba-img {
+    width: 250px;
+    height: 130px;
+  }
+  .sales-img {
+    width: 240px;
+    height: 100px;
+  }
+  .atobarai {
+    width: 150px;
+    height: 30px;
+  }
+  .atobarai-air {
+    width: 166px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .srv-atone {
+    width: 100px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  .kakebarai {
+    width: 160px;
+    height: 30px;
+    margin-right: 30px;
+  }
+  .aftee {
+    width: 150px;
+    height: 30px;
+  }
 }
-@media all and (max-width: 900px) {
+
+@media all and (min-width: 1200px) and (max-width: 1499px){
+  /* For desktop */
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px 280px;
+  }
+  .title {
+    width: auto;
+    margin: 20px 280px;
+  }
+  .department-mkt,
+    .department-c-sales,
+    .department-c-cs,
+    .department-atone,
+    .department-b-sales,
+    .department-ba,
+    .department-hr,
+    .department-finances,
+    .department-b-cs {
+    padding: 0 280px;
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+    width: auto;
+  }
+  .modal {
+    left: 25%;
+    overflow-y: auto;
+    height: 700px !important;
+  }
+  .mkt-img {
+    width: 250px;
+    height: 120px;
+  }
+  .ba-img {
+    width: 230px;
+    height: 120px;
+  }
+  .sales-img {
+    width: 240px;
+    height: 100px;
+  }
+  .atobarai {
+    width: 150px;
+    height: 30px;
+  }
+  .atobarai-air {
+    width: 166px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .srv-atone {
+    width: 100px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  .kakebarai {
+    width: 160px;
+    height: 30px;
+    margin-right: 30px;
+  }
+  .aftee {
+    width: 150px;
+    height: 30px;
+  }
+  /* サビースのイメージ */
+  .atobarai {
+    width: 120px;
+    height: 25px;
+  }
+  .atobarai-air {
+    width: 130px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  .srv-atone {
+    width: 80px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+  .kakebarai {
+    width: 120px;
+    height: 25px;
+    margin-right: 40px;
+  }
+  .aftee {
+    width: 110px;
+    height: 25px;
+  }
+}
+
+@media all and (min-width: 801px) and (max-width: 1199px) {
   /* For tablets: */
   .container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
     grid-gap: 10px;
-    padding: 10px 0px;
+    padding: 10px 60px;
   }
   .title {
-    width: 100%;
+    width: auto;
+    margin: 20px 60px;
   }
   .department-mkt,
     .department-c-sales,
@@ -76,10 +207,47 @@
     width: auto;
   }
   .modal {
-    left: 5%;
+    left: 17%;
+  }
+  .mkt-img {
+    width: 290px;
+    height: 120px;
+  }
+  .ba-img {
+    width: 250px;
+    height: 130px;
+  }
+  .sales-img {
+    width: 240px;
+    height: 100px;
+  }
+  /* サビースのイメージ */
+  .atobarai {
+    width: 120px;
+    height: 25px;
+  }
+  .atobarai-air {
+    width: 130px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  .srv-atone {
+    width: 80px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+  .kakebarai {
+    width: 120px;
+    height: 25px;
+    margin-right: 40px;
+  }
+  .aftee {
+    width: 110px;
+    height: 25px;
   }
 }
-@media all and (max-width: 1024px) and (min-width: 901px) {
+@media all and (min-width: 501px) and (max-width: 800px) {
   .container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
@@ -87,7 +255,8 @@
     padding: 10px 0px;
   }
   .title {
-    width: 100%;
+    width: auto;
+    margin: 20px 0px;
   }
   .department-mkt,
     .department-c-sales,
@@ -104,11 +273,51 @@
     width: auto;
   }
   .modal {
-    left: 15%;
+    left: 8%;
+  }
+  .mkt-img {
+    width: 250px;
+    height: 120px;
+  }
+  .ba-img {
+    width: 230px;
+    height: 120px;
+  }
+  .sales-img {
+    width: 240px;
+    height: 100px;
+  }
+  /* サビースのイメージ */
+  .atobarai {
+    width: 120px;
+    height: 25px;
+  }
+  .atobarai-air {
+    width: 130px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  .srv-atone {
+    width: 80px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+  .kakebarai {
+    width: 120px;
+    height: 25px;
+    margin-right: 40px;
+  }
+  .aftee {
+    width: 110px;
+    height: 25px;
   }
 }
 @media all and (max-width: 500px) {
   /* For mobile phones: */
+  body {
+    width: 750px;
+  }
   .container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
@@ -116,7 +325,7 @@
     padding: 10px 0px;
   }
   .title {
-    width: 100%;
+    width: auto;
   }
   .department-mkt,
     .department-c-sales,
@@ -134,6 +343,48 @@
   }
   .modal {
     left: 5%;
+  }
+  .ba-img {
+    width: 200px;
+    height: 120px;
+  }
+  /* 部署のイメージ */
+  .mkt-img {
+    width: 200px;
+    height: 110px;
+  }
+  .ba-img {
+    width: 200px;
+    height: 120px;
+  }
+  .sales-img {
+    width: 200px;
+    height: 90px;
+  }
+  /* サビースのイメージ */
+  .atobarai {
+    width: 120px;
+    height: 25px;
+  }
+  .atobarai-air {
+    width: 130px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  .srv-atone {
+    width: 80px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+  .kakebarai {
+    width: 120px;
+    height: 25px;
+    margin-right: 40px;
+  }
+  .aftee {
+    width: 110px;
+    height: 25px;
   }
 }
 
@@ -174,68 +425,15 @@
     opacity: 1;
   }
 }
-.atobarai {
+
+.atobarai,
+  .atobarai-air,
+  .srv-atone,
+  .kakebarai,
+  .aftee {
   display: inline-block;
-  width: 150px;
-  height: 30px;
   background-color: white;
   opacity: 0.5;
-  animation-name: service-image;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-direction: alternate;
-  animation-iteration-count: 7;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-
-.atobarai-air {
-  display: inline-block;
-  width: 166px;
-  height: 30px;
-  margin-right: 10px;
-  background-color: white;
-  animation-name: service-image;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-direction: alternate;
-  animation-iteration-count: 7;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.srv-atone {
-  display: inline-block;
-  width: 100px;
-  height: 25px;
-  margin-right: 30px;
-  background-color: white;
-  animation-name: service-image;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-direction: alternate;
-  animation-iteration-count: 7;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.kakebarai {
-  display: inline-block;
-  width: 160px;
-  height: 30px;
-  margin-right: 30px;
-  background-color: white;
-  animation-name: service-image;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-direction: alternate;
-  animation-iteration-count: 7;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.aftee {
-  display: inline-block;
-  width: 150px;
-  height: 30px;
-  background-color: white;
   animation-name: service-image;
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -275,11 +473,6 @@ a {
   display: inline;
 }
 
-.mkt-img {
-  width: 290px;
-  height: 120px;
-}
-
 .img-left {
   padding-left: 30px;
   float: left;
@@ -309,8 +502,6 @@ a {
 }
 
 .sales-img {
-  width: 240px;
-  height: 100px;
   margin-top: -15px;
   background-color: white;
 }
@@ -405,11 +596,6 @@ a {
   padding-top: 40px;
   display: inline-block;
 }
-.ba-img {
-  width: 250px;
-  height: 130px;
-}
-
 .human-resourses {
   grid-area: 8 / 1 / span 1 / span 3;
   text-align: center;
