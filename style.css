@@ -9,9 +9,7 @@
 .title {
   height: 50px;
   background-color: #caf1ff;
-  width: auto;
   text-align: center;
-  margin: 20px 400px;
   border: 6px solid #00abf2;
   box-shadow: 0px 20px 10px -10px #caf1ff;
   font-family: "MS PGothic";
@@ -21,11 +19,122 @@
   color: #f702a9;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto;
-  grid-gap: 10px;
-  padding: 10px 400px;
+@media all and (min-width: 1025px) {
+  /* For desktop: */
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px 400px;
+  }
+  .title {
+    width: auto;
+    margin: 20px 400px;
+  }
+  .department-mkt,
+    .department-c-sales,
+    .department-c-cs,
+    .department-atone,
+    .department-b-sales,
+    .department-ba,
+    .department-hr,
+    .department-finances,
+    .department-b-cs {
+    padding: 0 400px;
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+    width: auto;
+  }
+  .modal {
+    left: 30%;
+  }
+}
+@media all and (max-width: 900px) {
+  /* For tablets: */
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px 0px;
+  }
+  .title {
+    width: 100%;
+  }
+  .department-mkt,
+    .department-c-sales,
+    .department-c-cs,
+    .department-atone,
+    .department-b-sales,
+    .department-ba,
+    .department-hr,
+    .department-finances,
+    .department-b-cs {
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+    width: auto;
+  }
+  .modal {
+    left: 5%;
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 901px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px 0px;
+  }
+  .title {
+    width: 100%;
+  }
+  .department-mkt,
+    .department-c-sales,
+    .department-c-cs,
+    .department-atone,
+    .department-b-sales,
+    .department-ba,
+    .department-hr,
+    .department-finances,
+    .department-b-cs {
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+    width: auto;
+  }
+  .modal {
+    left: 15%;
+  }
+}
+@media all and (max-width: 500px) {
+  /* For mobile phones: */
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px 0px;
+  }
+  .title {
+    width: 100%;
+  }
+  .department-mkt,
+    .department-c-sales,
+    .department-c-cs,
+    .department-atone,
+    .department-b-sales,
+    .department-ba,
+    .department-hr,
+    .department-finances,
+    .department-b-cs {
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+    width: auto;
+  }
+  .modal {
+    left: 5%;
+  }
 }
 
 @keyframes diamondStroke {
@@ -422,21 +531,6 @@ button {
   border: 2px solid #00abf2;
 }
 
-.department-mkt,
-  .department-c-sales,
-  .department-c-cs,
-  .department-atone,
-  .department-b-sales,
-  .department-ba,
-  .department-hr,
-  .department-finances,
-  .department-b-cs {
-  padding: 0 400px;
-  margin-top: 30px;
-  text-align: center;
-  display: none;
-}
-
 /* 業務のコンテンツ */
 .work-item {
   width: 150px;
@@ -559,7 +653,6 @@ button {
 .modal {
   position: absolute;
   top: 5%;
-  left: 30%;
   background-color: #ffffffed;
   padding: 20px 0 40px;
   border-radius: 10px;
@@ -617,6 +710,20 @@ button {
 .dpt-link-item:hover {
   box-shadow: 0px 0px 10px 1px #0D9118;
 }
+.dpt-link-item:hover .tooltiptext {
+  visibility: visible;
+}
+.dpt-link-item .tooltiptext {
+  width: auto;
+  margin-left: -35px;
+}
+.dpt-link-item .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  border-color: #f39f06 transparent transparent transparent;
+  margin-bottom: 20px;
+}
 .dpt-link-item p {
   position: absolute;
   margin-top: auto;
@@ -653,6 +760,9 @@ button {
 .team-link-item:hover {
   box-shadow: 0px 0px 10px 1px #03abf2;
 }
+.team-link-item:hover .tooltiptext {
+  visibility: visible;
+}
 .team-link-item img {
   position: absolute;
   width: 65px;
@@ -668,6 +778,26 @@ button {
   font-size: 12px;
   text-align: center;
   font-weight: bold;
+}
+.medium {
+  background-color: #f39f06 !important;
+}
+.hight {
+  background-color: #03abf2 !important;
+}
+.low {
+  background-color: #86D160 !important;
+}
+.team-link-item .tooltiptext {
+  width: auto;
+  margin-left: -35px;
+}
+.team-link-item .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  border-color: #f39f06 transparent transparent transparent;
+  margin-bottom: 20px;
 }
  .tag {
   display: block;
