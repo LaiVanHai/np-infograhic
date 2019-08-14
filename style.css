@@ -6,19 +6,6 @@
     padding: 0 30px;
   }
 } */
-.title {
-  height: 50px;
-  background-color: #caf1ff;
-  text-align: center;
-  border: 6px solid #00abf2;
-  box-shadow: 0px 20px 10px -10px #caf1ff;
-  font-family: "MS PGothic";
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 10px;
-  color: #f702a9;
-}
-
 @media all and (min-width: 1500px) {
   /* For desktop full-hd: */
   .container {
@@ -28,8 +15,7 @@
     padding: 10px 400px;
   }
   .title {
-    width: auto;
-    margin: 20px 400px;
+    margin: 0px 400px;
   }
   .department-mkt,
     .department-c-sales,
@@ -40,7 +26,7 @@
     .department-hr,
     .department-finances,
     .department-b-cs {
-    padding: 0 400px;
+    margin: 0 400px;
     margin-top: 30px;
     text-align: center;
     display: none;
@@ -92,11 +78,10 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
     grid-gap: 10px;
-    padding: 10px 280px;
+    margin: 10px 250px;
   }
   .title {
-    width: auto;
-    margin: 20px 280px;
+    margin: 0 250px;
   }
   .department-mkt,
     .department-c-sales,
@@ -157,22 +142,21 @@
   .atobarai {
     width: 120px;
     height: 25px;
+    margin-right: 20px;
   }
   .atobarai-air {
     width: 130px;
     height: 25px;
-    margin-right: 30px;
+    margin-right: 40px;
   }
   .srv-atone {
     width: 80px;
     height: 20px;
-    margin-left: 10px;
-    margin-right: 80px;
+    margin-right: 90px;
   }
   .kakebarai {
     width: 120px;
     height: 25px;
-    margin-right: 40px;
   }
   .aftee {
     width: 110px;
@@ -186,11 +170,10 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
     grid-gap: 10px;
-    padding: 10px 60px;
+    margin: 10px 60px;
   }
   .title {
-    width: auto;
-    margin: 20px 60px;
+    margin: 0 60px;
   }
   .department-mkt,
     .department-c-sales,
@@ -254,10 +237,6 @@
     grid-gap: 10px;
     padding: 10px 0px;
   }
-  .title {
-    width: auto;
-    margin: 20px 0px;
-  }
   .department-mkt,
     .department-c-sales,
     .department-c-cs,
@@ -291,17 +270,17 @@
   .atobarai {
     width: 120px;
     height: 25px;
+    margin-right: 15px;
   }
   .atobarai-air {
     width: 130px;
     height: 25px;
-    margin-right: 30px;
+    margin-right: 40px;
   }
   .srv-atone {
     width: 80px;
     height: 20px;
-    margin-left: 10px;
-    margin-right: 80px;
+    margin-right: 70px;
   }
   .kakebarai {
     width: 120px;
@@ -316,16 +295,13 @@
 @media all and (max-width: 500px) {
   /* For mobile phones: */
   body {
-    width: 750px;
+    width: 710px;
   }
   .container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
     grid-gap: 10px;
     padding: 10px 0px;
-  }
-  .title {
-    width: auto;
   }
   .department-mkt,
     .department-c-sales,
@@ -343,7 +319,10 @@
   }
   .modal {
     left: 5%;
+    overflow-x: auto;
+    width: 650px !important;
   }
+
   .ba-img {
     width: 200px;
     height: 120px;
@@ -374,13 +353,12 @@
   .srv-atone {
     width: 80px;
     height: 20px;
-    margin-left: 10px;
-    margin-right: 80px;
+    margin-right: 60px;
   }
   .kakebarai {
     width: 120px;
     height: 25px;
-    margin-right: 40px;
+    margin-right: 30px;
   }
   .aftee {
     width: 110px;
@@ -627,6 +605,19 @@ a {
 .legal p {
   display: block;
 }
+.title {
+  grid-area: 9 / 1 / span 1 / span 9;
+  height: 50px;
+  background-color: #caf1ff;
+  text-align: center;
+  border: 6px solid #00abf2;
+  box-shadow: 0px 20px 10px -10px #caf1ff;
+  font-family: "MS PGothic";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 10px;
+  color: #f702a9;
+}
 
 /* チームの表示 */
 
@@ -853,6 +844,11 @@ button {
 }
 .modal .tooltiptext::after {
   border-color: #f39f06 transparent transparent transparent;
+}
+
+.close-modal {
+  width: 100%;
+  overflow-x: auto;
 }
 
 .fa-times {
