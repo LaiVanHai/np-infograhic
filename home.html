@@ -67,7 +67,7 @@
       </a>
       <a href="#c-cs" class="box c-cs">
         <p>C-CS</p>
-        <span class="tooltiptext">サービスを回す</span>
+        <span class="tooltiptext">サービスを運用する</span>
         <img src="img/c-cs/department.png" class="sales-img">
       </a>
 
@@ -122,7 +122,7 @@
       <p>部署のチーム</p>
     </div>
     <!--　マーケのチーム -->
-    <div class="work-modal-wrapper" id="mkt-link-team">
+    <!-- <div class="work-modal-wrapper" id="mkt-link-team">
       <div class="modal">
         <div class="close-modal">
           <i class="fa fa-2x fa-times"></i>
@@ -130,14 +130,14 @@
         <p class="department-title">マーケのチーム関係</p>
         <img src="img/mkt/all-team.png">
       </div>
-    </div>
+    </div> -->
     <div class="department-mkt" id="mkt">
       <!-- <button type="button" id="mkt-button"><i class="fa fa-search"></i></button> -->
       <div class="tag">
         <i class="fa fa-tags">: </i>
-        <a href="#">広告,</a>
-        <a href="#">デザイン,</a>
-        <a href="#">サービス紹介</a>
+        <span>広告,</span>
+        <span>デザイン,</span>
+        <span>サービス紹介</span>
       </div>
       <div class="dpt-item" id="mkt-sd">
         <img src="img/mkt/sd/team.png" class="dpt-image">
@@ -169,7 +169,7 @@
     </div>
 
     <!--　Cセールスのチーム -->
-    <div class="work-modal-wrapper" id="c-sales-link-team">
+    <!-- <div class="work-modal-wrapper" id="c-sales-link-team">
       <div class="modal">
         <div class="close-modal">
           <i class="fa fa-2x fa-times"></i>
@@ -177,7 +177,7 @@
         <p class="department-title">C-Salesのチーム関係</p>
         <img src="img/c-sales/all-team.png">
       </div>
-    </div>
+    </div> -->
     <div class="department-c-sales" id="c-sales">
       <!-- <button type="button" id="c-sales-button"><i class="fa fa-search"></i></button> -->
       <div class="dpt-item">
@@ -202,25 +202,31 @@
 
     <!--　CCSのチーム -->
     <div class="department-c-cs" id="c-cs">
-      <div class="dpt-item">
+      <div class="tag">
+        <i class="fa fa-tags">: </i>
+        <span>サービスを作る・<span>
+        <span>運用する・<span>
+        <span>改善する<span>
+      </div>
+      <div class="dpt-item" id="ccs-store-support">
         <img src="img/c-cs/store-support/team.png" class="dpt-image">
         <div class="dpt-info">
           <p>加盟店<br>対応</p>
         </div>
       </div>
-      <div class="dpt-item">
+      <div class="dpt-item" id="ccs-risk-management">
         <img src="img/c-cs/risk-management/team.png" class="dpt-image">
         <div class="dpt-info">
           <p>リスク管理</p>
         </div>
       </div>
-      <div class="dpt-item">
+      <div class="dpt-item" id="ccs-payment-management">
         <img src="img/c-cs/payment-management/team.png" class="dpt-image">
         <div class="dpt-info">
           <p>入金管理</p>
         </div>
       </div>
-      <div class="dpt-item">
+      <div class="dpt-item" id="ccs-customer-support">
         <img src="img/c-cs/customer-support/team.png" class="dpt-image">
         <div class="dpt-info">
           <p>サポート<br>デスク</p>
@@ -431,6 +437,7 @@
       </div>
     </div>
 
+    <!-- #########################[MKT]############################### -->
     <!-- Start Modal マーケのSDチーム -->
     <div class="work-modal-wrapper" id="sd-team">
       <div class="modal">
@@ -512,19 +519,19 @@
           </div>
           <div class="team-list">
             <div class="team-link-item link-to-dm">
+              <img src="img/mkt/dm/team.png">
               <p>デジマ</p>
               <span class="tooltiptext medium">関連度:中</span>
-              <img src="img/mkt/dm/team.png">
             </div>
             <div class="team-link-item link-to-pr">
+              <img src="img/mkt/pr/team.png">
               <p>PR</p>
               <span class="tooltiptext hight">関連度:高</span>
-              <img src="img/mkt/pr/team.png">
             </div>
             <div class="team-link-item link-to-design">
+              <img src="img/mkt/design/team.png">
               <p>デザイン</p>
               <span class="tooltiptext low">関連度:低</span>
-              <img src="img/mkt/design/team.png">
             </div>
           </div>
           <div class="other-dpt">
@@ -608,7 +615,7 @@
               <img src="img/mkt/dm/work1-1.png" class="lv2-image">
               <div class="lv2-info">
                 <p>広告</p>
-                <span class="tooltiptext">オンライン広告</span>
+                <span class="tooltiptext">新規ユーザーへのウェブ広告配信</span>
               </div>
             </div>
           </div>
@@ -617,7 +624,7 @@
               <img src="img/mkt/dm/work1-2.png" class="lv2-image">
               <div class="lv2-info">
                 <p>自然検索</p>
-                <span class="tooltiptext">自然検索での順位向上</span>
+                <span class="tooltiptext">検索からの流入数の増加</span>
               </div>
             </div>
           </div>
@@ -625,8 +632,8 @@
             <div class="work-item-level2">
               <img src="img/mkt/dm/work1-3.png" class="lv2-image">
               <div class="lv2-info">
-                <p>媒体改善</p>
-                <span class="tooltiptext">各媒体毎での効率化・改善</span>
+                <p>その他媒体</p>
+                <span class="tooltiptext">その他媒体毎での効率化・改善</span>
               </div>
             </div>
           </div>
@@ -634,8 +641,10 @@
             <div class="work-item-level1">
               <img src="img/mkt/dm/work2.png" class="lv1-image">
               <div class="lv1-info">
-                <p>効果測定</p>
-                <span class="tooltiptext">各施策の効果測定</span>
+                <p>接客施策</p>
+                <span class="tooltiptext">
+                  サイトのコンテンツ追加、サイト改善・定期的なサイト刷新
+                </span>
               </div>
             </div>
           </div>
@@ -644,7 +653,6 @@
               <img src="img/mkt/dm/work3.png" class="lv1-image">
               <div class="lv1-info">
                 <p>再来訪施策</p>
-                <span class="tooltiptext">競合との比較資料作成</span>
               </div>
             </div>
           </div>
@@ -661,8 +669,8 @@
             <div class="work-item-level2">
               <img src="img/mkt/dm/work3-2.png" class="lv2-image">
               <div class="lv2-info">
-                <p>広告配信</p>
-                <span class="tooltiptext">来訪ユーザーへの広告配信</span>
+                <p>広告</p>
+                <span class="tooltiptext">過去接触ユーザーへの広告配信</span>
               </div>
             </div>
           </div>
@@ -670,8 +678,8 @@
             <div class="work-item-level1">
               <img src="img/mkt/dm/work4.png" class="lv1-image">
               <div class="lv1-info">
-                <p>接客施策</p>
-                <span class="tooltiptext">NPのサイトリニュアル・コンテンツリッチ</span>
+                <p>効果測定</p>
+                <span class="tooltiptext">各施策の設計・効果測定</span>
               </div>
             </div>
           </div>
@@ -680,19 +688,19 @@
           </div>
           <div class="team-list">
             <div class="team-link-item link-to-sd">
-              <p>SD</p>
-              <span class="tooltiptext hight">関連度:高</span>
               <img src="img/mkt/sd/team.png">
+              <p>SD</p>
+              <span class="tooltiptext medium">関連度:中</span>
             </div>
             <div class="team-link-item link-to-pr">
-              <p>PR</p>
-              <span class="tooltiptext medium">関連度:中</span>
               <img src="img/mkt/pr/team.png">
+              <p>PR</p>
+              <span class="tooltiptext low">関連度:低</span>
             </div>
             <div class="team-link-item link-to-design">
-              <p>デザイン</p>
-              <span class="tooltiptext low">関連度:低</span>
               <img src="img/mkt/design/team.png">
+              <p>デザイン</p>
+              <span class="tooltiptext hight">関連度:高</span>
             </div>
           </div>
           <div class="other-dpt">
@@ -701,12 +709,12 @@
           <div class="dpt-list">
             <a href="#b-sales" class="dpt-link-item link-to-b-sales">
               <p>B-Sales</p>
-              <span class="tooltiptext hight">関連度:高</span>
+              <span class="tooltiptext medium">関連度:中</span>
               <img src="img/b-sales/department.png">
             </a>
             <a href="#c-sales" class="dpt-link-item link-to-c-sales">
               <p>C-Sales</p>
-              <span class="tooltiptext hight">関連度:高</span>
+              <span class="tooltiptext medium">関連度:中</span>
               <img src="img/c-sales/department.png">
             </a>
           </div>
@@ -794,19 +802,19 @@
           </div>
           <div class="team-list">
             <div class="team-link-item link-to-dm">
+              <img src="img/mkt/dm/team.png">
               <p>デジマ</p>
               <span class="tooltiptext hight">関連度:高</span>
-              <img src="img/mkt/dm/team.png">
             </div>
             <div class="team-link-item link-to-pr">
+              <img src="img/mkt/pr/team.png">
               <p>PR</p>
               <span class="tooltiptext hight">関連度:高</span>
-              <img src="img/mkt/pr/team.png">
             </div>
             <div class="team-link-item link-to-sd">
+              <img src="img/mkt/sd/team.png">
               <p>SD</p>
               <span class="tooltiptext hight">関連度:高</span>
-              <img src="img/mkt/sd/team.png">
             </div>
           </div>
           <div class="other-dpt">
@@ -859,6 +867,250 @@
       </div>
     </div>
     <!-- End Modal マーケのPRチーム -->
+    <!-- #########################[MKT]############################### -->
+
+    <!-- #########################[CCS]############################### -->
+    <!-- Start Modal CCSのサポートデスクチーム -->
+    <div class="work-modal-wrapper" id="customer-support-team">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <p class="work-title">サポートデスクチームの業務</p>
+        <div class="container-3-work">
+          <div class="line">
+            <svg height="450" width="400">
+              <line class="work-line" x1="200" y1="180" x2="200" y2="125"></line>
+              <!-- item2 of line -->
+              <line class="work-line" x1="260" y1="300" x2="360" y2="355"></line>
+              <!-- item3 of line -->
+              <line class="work-line" x1="140" y1="300" x2="20" y2="355"></line>
+              Sorry, your browser does not support inline SVG.
+            </svg>
+          </div>
+          <div class="team">
+            <div class="work-item">
+              <img src="img/c-cs/customer-support/team.png" class="dpt-image">
+              <div class="dpt-info">
+                <p>サポートデスク</p>
+                <span class="tooltiptext">Support Desk</span>
+              </div>
+            </div>
+          </div>
+          <div class="item1">
+            <div class="work-item-level1">
+              <img src="img/c-cs/customer-support/work1.png" class="lv1-image">
+              <div class="lv1-info">
+                <p>問合せ対応</p>
+                <span class="tooltiptext">購入者の問い合わせ対応</span>
+              </div>
+            </div>
+          </div>
+          <div class="item2">
+            <div class="work-item-level1">
+              <img src="img/c-cs/customer-support/work2.png" class="lv1-image">
+              <div class="lv1-info">
+                <p>サービス<br>改善企画</p>
+              </div>
+            </div>
+          </div>
+          <div class="item3">
+            <div class="work-item-level1">
+              <img src="img/c-cs/customer-support/work3.png" class="lv1-image">
+              <div class="lv1-info">
+                <p>加盟店<br>サポート</p>
+              </div>
+            </div>
+          </div>
+          <div class="other-team">
+            <p class="other-team-title">連携があるチーム:</p>
+          </div>
+          <div class="team-list">
+            <div class="team-link-item link-to-payment-management">
+              <img src="img/c-cs/payment-management/team.png">
+              <p>入金管理</p>
+              <span class="tooltiptext medium">関連度:中</span>
+            </div>
+            <div class="team-link-item link-to-store-support">
+              <img src="img/c-cs/store-support/team.png">
+              <p>加盟店対応</p>
+              <span class="tooltiptext medium">関連度:中</span>
+            </div>
+            <div class="team-link-item link-to-risk-management">
+              <img src="img/c-cs/risk-management/team.png">
+              <p>リスク管理</p>
+              <span class="tooltiptext medium">関連度:中</span>
+            </div>
+          </div>
+          <div class="other-dpt">
+            <p class="other-team-title">連携がある部署:</p>
+          </div>
+          <div class="dpt-list">
+            <a href="#ba" class="dpt-link-item link-to-ba">
+              <p>BA</p>
+              <span class="tooltiptext medium">関連度:中</span>
+              <img src="img/ba/department3.png">
+            </a>
+            <a href="#c-sales" class="dpt-link-item link-to-c-sales">
+              <p>C-Sales</p>
+              <span class="tooltiptext medium">関連度:中</span>
+              <img src="img/c-sales/department.png">
+            </a>
+            <a href="#mkt" class="dpt-link-item link-to-mkt">
+              <p>Marketing</p>
+              <span class="tooltiptext low">関連度:低</span>
+              <img src="img/mkt/department1.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal CCSのサポートデスクチーム -->
+    <!-- Start Modal CCSの入金管理チーム -->
+    <div class="work-modal-wrapper" id="payment-management-team">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <p class="work-title">入金管理チームの業務</p>
+        <div class="container-2-work">
+          <div class="line">
+            <svg height="450" width="300">
+              <line class="work-line" x1="150" y1="170" x2="150" y2="125"></line>
+              <!-- item2 of line -->
+              <line class="work-line" x1="150" y1="320" x2="150" y2="365"></line>
+              Sorry, your browser does not support inline SVG.
+            </svg>
+          </div>
+          <div class="team">
+            <div class="work-item">
+              <img src="img/c-cs/payment-management/team.png" class="dpt-image">
+              <div class="dpt-info">
+                <p>入金管理</p>
+              </div>
+            </div>
+          </div>
+          <div class="item1">
+            <div class="work-item-level1">
+              <img src="img/c-cs/payment-management/work1.png" class="lv1-image">
+              <div class="lv1-info">
+                <p>支払い管理</p>
+                <span class="tooltiptext">お客様の支払いを管理する</span>
+              </div>
+            </div>
+          </div>
+          <div class="item2">
+            <div class="work-item-level1">
+              <img src="img/c-cs/payment-management/work2.png" class="lv1-image">
+              <div class="lv1-info">
+                <p>サービス<br>改善企画</p>
+              </div>
+            </div>
+          </div>
+          <div class="other-team">
+            <p class="other-team-title">連携があるチーム:</p>
+          </div>
+          <div class="team-list">
+            <div class="team-link-item link-to-customer-support">
+              <img src="img/c-cs/customer-support/team.png">
+              <p>サポート<br>デスク</p>
+              <span class="tooltiptext medium">関連度:中</span>
+            </div>
+          </div>
+          <div class="other-dpt">
+            <p class="other-team-title">連携がある部署:</p>
+          </div>
+          <div class="dpt-list">
+            <a href="#ba" class="dpt-link-item link-to-ba">
+              <p>BA</p>
+              <span class="tooltiptext medium">関連度:中</span>
+              <img src="img/ba/department3.png">
+            </a>
+            <a href="#finances" class="dpt-link-item link-to-finances">
+              <p>財経</p>
+              <span class="tooltiptext medium">関連度:中</span>
+              <img src="img/finances/department.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal CCSの入金管理チーム -->
+    <!-- Start Modal CCSの加盟店対応チーム -->
+    <div class="work-modal-wrapper" id="store-support-team">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <p class="work-title">加盟店対応チームの業務</p>
+        <div class="container-2-work">
+          <div class="line">
+            <svg height="450" width="300">
+              <line class="work-line" x1="150" y1="170" x2="150" y2="125"></line>
+              <!-- item2 of line -->
+              <line class="work-line" x1="150" y1="320" x2="150" y2="365"></line>
+              Sorry, your browser does not support inline SVG.
+            </svg>
+          </div>
+          <div class="team">
+            <div class="work-item">
+              <img src="img/c-cs/store-support/team.png" class="dpt-image">
+              <div class="dpt-info">
+                <p>加盟店対応</p>
+              </div>
+            </div>
+          </div>
+          <div class="item1">
+            <div class="work-item-level1">
+              <img src="img/c-cs/store-support/work1.png" class="lv1-image">
+              <div class="lv1-info">
+                <p>加盟店<br>調査</p>
+              </div>
+            </div>
+          </div>
+          <div class="item2">
+            <div class="work-item-level1">
+              <img src="img/c-cs/store-support/work2.png" class="lv1-image">
+              <div class="lv1-info">
+                <p>サービス<br>改善企画</p>
+              </div>
+            </div>
+          </div>
+          <div class="other-team">
+            <p class="other-team-title">連携があるチーム:</p>
+          </div>
+          <div class="team-list">
+            <div class="team-link-item link-to-customer-support">
+              <img src="img/c-cs/customer-support/team.png">
+              <p>サポート<br>デスク</p>
+              <span class="tooltiptext medium">関連度:中</span>
+            </div>
+            <div class="team-link-item link-to-risk-management">
+              <img src="img/c-cs/risk-management/team.png">
+              <p>リスク<br>管理</p>
+              <span class="tooltiptext medium">関連度:中</span>
+            </div>
+          </div>
+          <div class="other-dpt">
+            <p class="other-team-title">連携がある部署:</p>
+          </div>
+          <div class="dpt-list">
+            <a href="#ba" class="dpt-link-item link-to-ba">
+              <p>BA</p>
+              <span class="tooltiptext medium">関連度:中</span>
+              <img src="img/ba/department3.png">
+            </a>
+            <a href="#c-sales" class="dpt-link-item link-to-c-sales">
+              <p>C-Sales</p>
+              <span class="tooltiptext medium">関連度:中</span>
+              <img src="img/c-sales/department.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal CCSの加盟店対応チーム -->
+    <!-- #########################[CCS]############################### -->
 
     <script src="script.js"></script>
   </body>
