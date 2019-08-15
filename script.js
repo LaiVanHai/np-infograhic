@@ -70,6 +70,7 @@ $(function() {
     deleteDisplayWork();
   });
 
+  // 他の部署に繋がることを作成する
   $('.link-to-ba').click(function() {
     deleteDisplayWork();
     $('#team-name').find('p').text('BAのチーム');
@@ -88,7 +89,20 @@ $(function() {
     deleteDisplayTeam();
     $('.department-c-sales').fadeIn('3s');
   });
+  $('.link-to-c-cs').click(function() {
+    deleteDisplayWork();
+    $('#team-name').find('p').text('C-CSのチーム');
+    deleteDisplayTeam();
+    $('.department-c-cs').fadeIn('3s');
+  });
+  $('.link-to-b-cs').click(function() {
+    deleteDisplayWork();
+    $('#team-name').find('p').text('B-CSのチーム');
+    deleteDisplayTeam();
+    $('.department-b-cs').fadeIn('3s');
+  });
 
+  // 他のチームに繋がることを作成する
   $('.link-to-dm').click(function() {
     deleteDisplayWork();
     $('#dm-team').fadeIn();
@@ -105,12 +119,14 @@ $(function() {
     deleteDisplayWork();
     $('#pr-team').fadeIn();
   });
-  $('#mkt-button').click(function() {
-    $('#mkt-link-team').fadeIn();
-  });
-  $('#c-sales-button').click(function() {
-    $('#c-sales-link-team').fadeIn();
-  });
+
+  // 部署の各チームの連携することは表す
+  // $('#mkt-button').click(function() {
+  //   $('#mkt-link-team').fadeIn();
+  // });
+  // $('#c-sales-button').click(function() {
+  //   $('#c-sales-link-team').fadeIn();
+  // });
 
   deleteDisplayTeam = function(){
     $('.department-c-sales').css('display','none');
@@ -129,8 +145,8 @@ $(function() {
     $('#dm-team').fadeOut();
     $('#pr-team').fadeOut();
     $('#design-team').fadeOut();
-    $('#mkt-link-team').fadeOut();
-    $('#c-sales-link-team').fadeOut();
+    // $('#mkt-link-team').fadeOut();
+    // $('#c-sales-link-team').fadeOut();
   };
 
   var modal_sd = document.getElementById('sd-team');
