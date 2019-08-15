@@ -1,21 +1,13 @@
-/* @media(min-width: 670px){
-  .container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto;
-    grid-gap: 10px;
-    padding: 0 30px;
-  }
-} */
 @media all and (min-width: 1500px) {
   /* For desktop full-hd: */
   .container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
     grid-gap: 10px;
-    padding: 10px 400px;
+    margin: 10px 350px;
   }
   .title {
-    margin: 0px 400px;
+    margin: 0px 350px;
   }
   .department-mkt,
     .department-c-sales,
@@ -33,7 +25,10 @@
     width: auto;
   }
   .modal {
-    left: 30%;
+    left: 28%;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 800px !important;
   }
   .mkt-img {
     width: 290px;
@@ -101,7 +96,7 @@
   .modal {
     left: 25%;
     overflow-y: auto;
-    height: 700px !important;
+    height: 800px !important;
   }
   .mkt-img {
     width: 250px;
@@ -253,6 +248,10 @@
   }
   .modal {
     left: 8%;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 850px !important;
+    width: 650px !important;
   }
   .mkt-img {
     width: 250px;
@@ -320,6 +319,8 @@
   .modal {
     left: 5%;
     overflow-x: auto;
+    overflow-y: auto;
+    height: 850px !important;
     width: 650px !important;
   }
 
@@ -829,7 +830,7 @@ button {
 }
 .modal {
   position: absolute;
-  top: 5%;
+  margin: 10px 0;
   background-color: #ffffffed;
   padding: 20px 0 40px;
   border-radius: 10px;
@@ -844,11 +845,6 @@ button {
 }
 .modal .tooltiptext::after {
   border-color: #f39f06 transparent transparent transparent;
-}
-
-.close-modal {
-  width: 100%;
-  overflow-x: auto;
 }
 
 .fa-times {
