@@ -132,4 +132,24 @@ $(function() {
     $('#mkt-link-team').fadeOut();
     $('#c-sales-link-team').fadeOut();
   };
+
+  var modal_sd = document.getElementById('sd-team');
+  var modal_dm = document.getElementById('dm-team');
+  var modal_pr = document.getElementById('pr-team');
+  var modal_design = document.getElementById('design-team');
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal_sd) {
+      modal_sd.style.display = "none";
+    }
+    if (event.target == modal_dm) {
+      modal_dm.style.display = "none";
+    }
+    if (event.target == modal_pr) {
+      modal_pr.style.display = "none";
+    }
+    if (event.target == modal_design) {
+      modal_design.style.display = "none";
+    }
+  }
 });
