@@ -1,4 +1,5 @@
 $(function() {
+  // 各部署のチームを表示する
   $('.marketing').click(function() {
     deleteDisplayTeam();
     $('.department-mkt').fadeIn('2s');
@@ -52,7 +53,9 @@ $(function() {
     deleteDisplayTeam();
     $('.department-finances').fadeIn('3s');
   });
+  // 各部署のチームを表示する
 
+  //マーケ部署のModal
   $('#mkt-sd').click(function() {
     $('#sd-team').fadeIn();
   });
@@ -65,7 +68,24 @@ $(function() {
   $('#mkt-pr').click(function() {
     $('#pr-team').fadeIn();
   });
+  // マーケ部署のModal
 
+  // CCS部署のModal
+  $('#ccs-store-support').click(function() {
+    $('#store-support-team').fadeIn();
+  });
+  $('#ccs-risk-management').click(function() {
+    $('#risk-management-team').fadeIn();
+  });
+  $('#ccs-payment-management').click(function() {
+    $('#payment-management-team').fadeIn();
+  });
+  $('#ccs-customer-support').click(function() {
+    $('#customer-support-team').fadeIn();
+  });
+  // CCS部署のModal
+
+  // modalを閉じる
   $('.close-modal').click(function() {
     deleteDisplayWork();
   });
@@ -101,8 +121,21 @@ $(function() {
     deleteDisplayTeam();
     $('.department-b-cs').fadeIn('3s');
   });
+  $('.link-to-finances').click(function() {
+    deleteDisplayWork();
+    $('#team-name').find('p').text('財経');
+    deleteDisplayTeam();
+    $('.department-finances').fadeIn('3s');
+  });
+  $('.link-to-mkt').click(function() {
+    deleteDisplayWork();
+    $('#team-name').find('p').text('Marketing');
+    deleteDisplayTeam();
+    $('.department-mkt').fadeIn('3s');
+  });
+  // 他の部署に繋がることを作成する
 
-  // 他のチームに繋がることを作成する
+  // マーケのチームは繋がることを作成する
   $('.link-to-dm').click(function() {
     deleteDisplayWork();
     $('#dm-team').fadeIn();
@@ -119,6 +152,22 @@ $(function() {
     deleteDisplayWork();
     $('#pr-team').fadeIn();
   });
+  // マーケのチームは繋がることを作成する
+
+  // C-CSのチームは繋がることを作成する
+  $('.link-to-customer-support').click(function() {
+    deleteDisplayWork();
+    $('#customer-support-team').fadeIn();
+  });
+  $('.link-to-payment-management').click(function() {
+    deleteDisplayWork();
+    $('#payment-management-team').fadeIn();
+  });
+  $('.link-to-store-support').click(function() {
+    deleteDisplayWork();
+    $('#store-support-team').fadeIn();
+  });
+  // C-CSのチームは繋がることを作成する
 
   // 部署の各チームの連携することは表す
   // $('#mkt-button').click(function() {
@@ -141,18 +190,31 @@ $(function() {
   };
 
   deleteDisplayWork = function(){
+    //マーケ部署のModal
     $('#sd-team').fadeOut();
     $('#dm-team').fadeOut();
     $('#pr-team').fadeOut();
     $('#design-team').fadeOut();
+
+    // CCS部署のModal
+    $('#store-support-team').fadeOut();
+    $('#risk-management-team').fadeOut();
+    $('#payment-management-team').fadeOut();
+    $('#customer-support-team').fadeOut();
+
     // $('#mkt-link-team').fadeOut();
     // $('#c-sales-link-team').fadeOut();
   };
 
+  // Modalは外にClickするとModalを閉じる
   var modal_sd = document.getElementById('sd-team');
   var modal_dm = document.getElementById('dm-team');
   var modal_pr = document.getElementById('pr-team');
   var modal_design = document.getElementById('design-team');
+  var modal_store_support = document.getElementById('customer-store-team');
+  var modal_risk_management = document.getElementById('risk-management-team');
+  var modal_payment_management = document.getElementById('payment-management-team');
+  var modal_customer_support = document.getElementById('customer-support-team');
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal_sd) {
@@ -166,6 +228,18 @@ $(function() {
     }
     if (event.target == modal_design) {
       modal_design.style.display = "none";
+    }
+    if (event.target == modal_store_support) {
+      modal_store_support.style.display = "none";
+    }
+    if (event.target == modal_risk_management) {
+      modal_risk_management.style.display = "none";
+    }
+    if (event.target == modal_payment_management) {
+      modal_payment_management.style.display = "none";
+    }
+    if (event.target == modal_customer_support) {
+      modal_customer_support.style.display = "none";
     }
   }
 });
