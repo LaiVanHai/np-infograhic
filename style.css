@@ -4,10 +4,10 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
     grid-gap: 10px;
-    margin: 10px 350px;
+    margin: 10px 400px;
   }
   .title {
-    margin: 0px 350px;
+    margin: 0px 400px;
   }
   .department-mkt,
     .department-c-sales,
@@ -18,7 +18,7 @@
     .department-hr,
     .department-finances,
     .department-b-cs {
-    margin: 0 350px;
+    margin: 0 400px;
     margin-top: 30px;
     text-align: center;
     display: none;
