@@ -100,6 +100,7 @@
   .modal {
     left: 25%;
     overflow-y: auto;
+    overflow-x: auto;
     width: 650px !important;
     height: 700px !important;
   }
@@ -194,6 +195,10 @@
   }
   .modal {
     left: 17%;
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 650px !important;
+    height: 700px !important;
   }
   .mkt-img {
     width: 290px;

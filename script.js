@@ -167,6 +167,10 @@ $(function() {
     deleteDisplayWork();
     $('#store-support-team').fadeIn();
   });
+  $('.link-to-risk-management').click(function() {
+    deleteDisplayWork();
+    $('#risk-management-team').fadeIn();
+  });
   // C-CSのチームは繋がることを作成する
 
   // 部署の各チームの連携することは表す
@@ -211,7 +215,7 @@ $(function() {
   var modal_dm = document.getElementById('dm-team');
   var modal_pr = document.getElementById('pr-team');
   var modal_design = document.getElementById('design-team');
-  var modal_store_support = document.getElementById('customer-store-team');
+  var modal_store_support = document.getElementById('store-support-team');
   var modal_risk_management = document.getElementById('risk-management-team');
   var modal_payment_management = document.getElementById('payment-management-team');
   var modal_customer_support = document.getElementById('customer-support-team');
