@@ -377,7 +377,7 @@
 /* ========================================================= */
 .container-4-work {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 5px;
   margin: 0 10px;
 }
