@@ -85,6 +85,21 @@ $(function() {
   });
   // CCS部署のModal
 
+  // 人事総務部署のModal
+  $('#hr-recruitment').click(function() {
+    $('#recruitment-team').fadeIn();
+  });
+  $('#hr-labor').click(function() {
+    $('#labor-team').fadeIn();
+  });
+  $('#hr-director').click(function() {
+    $('#director-team').fadeIn();
+  });
+  $('#hr-other').click(function() {
+    $('#other-team').fadeIn();
+  });
+  // 人事総務部署のModal
+
   // modalを閉じる
   $('.close-modal').click(function() {
     deleteDisplayWork();
@@ -173,6 +188,25 @@ $(function() {
   });
   // C-CSのチームは繋がることを作成する
 
+  // 人事総務のチームは繋がることを作成する
+  $('.link-to-director').click(function() {
+    deleteDisplayWork();
+    $('#director-team').fadeIn();
+  });
+  $('.link-to-labor').click(function() {
+    deleteDisplayWork();
+    $('#labor-team').fadeIn();
+  });
+  $('.link-to-other').click(function() {
+    deleteDisplayWork();
+    $('#other-team').fadeIn();
+  });
+  $('.link-to-recruitment').click(function() {
+    deleteDisplayWork();
+    $('#recruitment-team').fadeIn();
+  });
+  // 人事総務のチームは繋がることを作成する
+
   // 部署の各チームの連携することは表す
   // $('#mkt-button').click(function() {
   //   $('#mkt-link-team').fadeIn();
@@ -206,6 +240,11 @@ $(function() {
     $('#payment-management-team').fadeOut();
     $('#customer-support-team').fadeOut();
 
+    $('#director-team').fadeOut();
+    $('#labor-team').fadeOut();
+    $('#other-team').fadeOut();
+    $('#recruitment-team').fadeOut();
+
     // $('#mkt-link-team').fadeOut();
     // $('#c-sales-link-team').fadeOut();
   };
@@ -219,6 +258,10 @@ $(function() {
   var modal_risk_management = document.getElementById('risk-management-team');
   var modal_payment_management = document.getElementById('payment-management-team');
   var modal_customer_support = document.getElementById('customer-support-team');
+  var modal_director = document.getElementById('director-team');
+  var modal_labor = document.getElementById('labor-team');
+  var modal_other = document.getElementById('other-team');
+  var modal_recruitment = document.getElementById('recruitment-team');
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal_sd) {
@@ -244,6 +287,18 @@ $(function() {
     }
     if (event.target == modal_customer_support) {
       modal_customer_support.style.display = "none";
+    }
+    if (event.target == modal_director) {
+      modal_director.style.display = "none";
+    }
+    if (event.target == modal_labor) {
+      modal_labor.style.display = "none";
+    }
+    if (event.target == modal_other) {
+      modal_other.style.display = "none";
+    }
+    if (event.target == modal_recruitment) {
+      modal_recruitment.style.display = "none";
     }
   }
 });
