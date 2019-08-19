@@ -1002,17 +1002,22 @@ button {
   border-color: #f39f06 transparent transparent transparent;
   margin-bottom: 20px;
 }
- .tag {
-  display: block;
-  text-align: right;
- }
 
- .tag span {
+.tag {
+display: block;
+text-align: right;
+}
+  .tag span {
    color: #00abf2;
- }
- .tag i {
+   cursor: pointer;
+  }
+  .tag i {
    color: #f702a9;
- }
+}
+
+.clicked-color {
+  color: red !important;
+}
 
 button {
   display: block;

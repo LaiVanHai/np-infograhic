@@ -7,6 +7,8 @@
     <link href="grid-stytesheet.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="tags-script.js"></script>
     <title>NPの業務インフォグラフィック</title>
   </head>
   <body>
@@ -135,9 +137,10 @@
       <!-- <button type="button" id="mkt-button"><i class="fa fa-search"></i></button> -->
       <div class="tag">
         <i class="fa fa-tags">: </i>
-        <span>広告,</span>
-        <span>デザイン,</span>
-        <span>サービス紹介</span>
+        <span id="tag-mkt-ads">広告,</span>
+        <span id="tag-mkt-design">デザイン,</span>
+        <span id="tag-mkt-service-show">サービス紹介,</span>
+        <span id="tag-mkt">タグ削除</span>
       </div>
       <div class="dpt-item" id="mkt-sd">
         <img src="img/mkt/sd/team.png" class="dpt-image">
@@ -304,19 +307,26 @@
 
     <!--　BCSのチーム -->
     <div class="department-b-cs" id="b-cs">
-      <div class="dpt-item">
+      <div class="tag">
+        <i class="fa fa-tags">: </i>
+        <span id="tag-b-cs-dev">機能開発,</span>
+        <span id="tag-b-cs-efficient">効率化,</span>
+        <span id="tag-b-cs-policy">ポリシー策定,</span>
+        <span id="tag-b-cs">タグ削除</span>
+      </div>
+      <div class="dpt-item" id="b-cs-infra-management">
         <img src="img/b-cs/infra-management/team.png" class="dpt-image">
         <div class="dpt-info">
           <p>インフラマネ<br>ジメント</p>
         </div>
       </div>
-      <div class="dpt-item">
+      <div class="dpt-item" id="b-cs-service-growth">
         <img src="img/b-cs/service-growth/team.png" class="dpt-image">
         <div class="dpt-info">
           <p>サービス<br>グロース</p>
         </div>
       </div>
-      <div class="dpt-item">
+      <div class="dpt-item" id="b-cs-func-design">
         <img src="img/b-cs/func-design/team.png" class="dpt-image">
         <div class="dpt-info">
           <p>ファンクション<br>デザイン</p>
@@ -1707,7 +1717,5 @@
     </div>
     <!-- End Modal 人事総務の他のチーム -->
     <!-- #########################[人事総務]############################### -->
-
-    <script src="script.js"></script>
   </body>
 </html>
