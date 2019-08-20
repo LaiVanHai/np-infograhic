@@ -6,9 +6,9 @@ $(function() {
     $('#mkt-pr').fadeOut();
     $('#mkt-design').fadeOut();
 
-    $('#tag-ads').addClass('clicked-color');
-    $('#tag-design').removeClass('clicked-color');
-    $('#tag-service-show').removeClass('clicked-color');
+    $('#tag-mkt-ads').addClass('clicked-color');
+    $('#tag-mkt-design').removeClass('clicked-color');
+    $('#tag-mkt-service-show').removeClass('clicked-color');
   });
   $('#tag-mkt-design').click(function(){
     $('#mkt-sd').fadeOut();
@@ -16,9 +16,9 @@ $(function() {
     $('#mkt-pr').fadeOut();
     $('#mkt-design').fadeIn();
 
-    $('#tag-ads').removeClass('clicked-color');
-    $('#tag-design').addClass('clicked-color');
-    $('#tag-service-show').removeClass('clicked-color');
+    $('#tag-mkt-ads').removeClass('clicked-color');
+    $('#tag-mkt-design').addClass('clicked-color');
+    $('#tag-mkt-service-show').removeClass('clicked-color');
   });
   $('#tag-mkt-service-show').click(function(){
     $('#mkt-sd').fadeIn();
@@ -26,9 +26,9 @@ $(function() {
     $('#mkt-pr').fadeIn();
     $('#mkt-design').fadeOut();
 
-    $('#tag-ads').removeClass('clicked-color');
-    $('#tag-design').removeClass('clicked-color');
-    $('#tag-service-show').addClass('clicked-color');
+    $('#tag-mkt-ads').removeClass('clicked-color');
+    $('#tag-mkt-design').removeClass('clicked-color');
+    $('#tag-mkt-service-show').addClass('clicked-color');
   });
   $('#tag-mkt').click(function(){
     $('#mkt-sd').fadeIn();
@@ -36,9 +36,9 @@ $(function() {
     $('#mkt-pr').fadeIn();
     $('#mkt-design').fadeIn();
 
-    $('#tag-ads').removeClass('clicked-color');
-    $('#tag-design').removeClass('clicked-color');
-    $('#tag-service-show').removeClass('clicked-color');
+    $('#tag-mkt-ads').removeClass('clicked-color');
+    $('#tag-mkt-design').removeClass('clicked-color');
+    $('#tag-mkt-service-show').removeClass('clicked-color');
   });
   // マーケのTags
 
@@ -80,7 +80,7 @@ $(function() {
     $('#tag-b-cs-policy').removeClass('clicked-color');
   });
   // BCSのTags
-  
+
   // B-SalesのTags
   $('#tag-b-sales-strategy-design').click(function(){
     $('#b-salses-inside').fadeIn();

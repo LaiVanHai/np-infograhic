@@ -668,6 +668,10 @@
 .container-4-work-1sub .other-team {
   grid-area: 5 / 1 / span 1 / span 2;
   text-align: left;
+<<<<<<< HEAD
+=======
+  margin-top: -40px;
+>>>>>>> Add b-sales department
 }
 .container-4-work-1sub .team-list {
   grid-area: 6 / 1 / span 1 / span 5;
