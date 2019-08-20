@@ -80,4 +80,34 @@ $(function() {
     $('#tag-b-cs-policy').removeClass('clicked-color');
   });
   // BCSのTags
+  
+  // B-SalesのTags
+  $('#tag-b-sales-strategy-design').click(function(){
+    $('#b-salses-inside').fadeIn();
+    $('#b-salses-field').fadeIn();
+    $('#b-salses-customer-success').fadeOut();
+
+    $('#tag-b-sales-strategy-design').addClass('clicked-color');
+    $('#tag-b-sales-stable-operation').removeClass('clicked-color');
+    $('#tag-b-sales').removeClass('clicked-color');
+  });
+  $('#tag-b-sales-stable-operation').click(function(){
+    $('#b-salses-inside').fadeOut();
+    $('#b-salses-field').fadeIn();
+    $('#b-salses-customer-success').fadeIn();
+
+    $('#tag-b-sales-strategy-design').removeClass('clicked-color');
+    $('#tag-b-sales-stable-operation').addClass('clicked-color');
+    $('#tag-b-sales').removeClass('clicked-color');
+  });
+  $('#tag-b-sales').click(function(){
+    $('#b-salses-inside').fadeIn();
+    $('#b-salses-field').fadeIn();
+    $('#b-salses-customer-success').fadeIn();
+
+    $('#tag-b-sales-strategy-design').removeClass('clicked-color');
+    $('#tag-b-sales-stable-operation').removeClass('clicked-color');
+    $('#tag-b-sales').removeClass('clicked-color');
+  });
+  // B-SalesのTags
 });
