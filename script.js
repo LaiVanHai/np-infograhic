@@ -100,6 +100,18 @@ $(function() {
   });
   // 人事総務部署のModal
 
+  //B-Sales部署のModal
+  $('#b-salses-inside').click(function() {
+    $('#b-inside-team').fadeIn();
+  });
+  $('#b-salses-field').click(function() {
+    $('#b-field-team').fadeIn();
+  });
+  $('#b-salses-customer-success').click(function() {
+    $('#customer-success-team').fadeIn();
+  });
+  // B-Sales部署のModal
+
   // modalを閉じる
   $('.close-modal').click(function() {
     deleteDisplayWork();
@@ -207,6 +219,21 @@ $(function() {
   });
   // 人事総務のチームは繋がることを作成する
 
+  // B-Salesのチームは繋がることを作成する
+  $('.link-to-b-inside').click(function() {
+    deleteDisplayWork();
+    $('#b-inside-team').fadeIn();
+  });
+  $('.link-to-b-field').click(function() {
+    deleteDisplayWork();
+    $('#b-field-team').fadeIn();
+  });
+  $('.link-to-customer-success').click(function() {
+    deleteDisplayWork();
+    $('#customer-success-team').fadeIn();
+  });
+  // B-Salesのチームは繋がることを作成する
+
   // 部署の各チームの連携することは表す
   // $('#mkt-button').click(function() {
   //   $('#mkt-link-team').fadeIn();
@@ -240,10 +267,16 @@ $(function() {
     $('#payment-management-team').fadeOut();
     $('#customer-support-team').fadeOut();
 
+    // 人事総務部署のModal
     $('#director-team').fadeOut();
     $('#labor-team').fadeOut();
     $('#other-team').fadeOut();
     $('#recruitment-team').fadeOut();
+
+    //B-Sales部署のModal
+    $('#b-inside-team').fadeOut();
+    $('#b-field-team').fadeOut();
+    $('#customer-success-team').fadeOut();
 
     // $('#mkt-link-team').fadeOut();
     // $('#c-sales-link-team').fadeOut();
@@ -262,6 +295,9 @@ $(function() {
   var modal_labor = document.getElementById('labor-team');
   var modal_other = document.getElementById('other-team');
   var modal_recruitment = document.getElementById('recruitment-team');
+  var modal_b_inside = document.getElementById('b-inside-team');
+  var modal_b_field = document.getElementById('b-field-team');
+  var modal_customer_success = document.getElementById('customer-success-team');
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal_sd) {
@@ -299,6 +335,15 @@ $(function() {
     }
     if (event.target == modal_recruitment) {
       modal_recruitment.style.display = "none";
+    }
+    if (event.target == modal_b_inside) {
+      modal_b_inside.style.display = "none";
+    }
+    if (event.target == modal_b_field) {
+      modal_b_field.style.display = "none";
+    }
+    if (event.target == modal_customer_success) {
+      modal_customer_success.style.display = "none";
     }
   }
 });
