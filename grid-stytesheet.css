@@ -638,7 +638,6 @@
 .container-3-work-3sub .other-team {
   grid-area: 7 / 1 / span 1 / span 2;
   text-align: left;
-  margin-top: -20px;
 }
 .container-3-work-3sub .team-list {
   grid-area: 8 / 1 / span 1 / span 5;
