@@ -371,9 +371,18 @@
 }
 
 @keyframes diamondStroke {
-  0%   { stroke-dashoffset: 1000; }
-  50%   { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: 1000; }
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    opacity: 0.5;
+    stroke-dashoffset: 500;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 1000;
+  }
 }
 
 .line {
@@ -808,14 +817,21 @@ button {
   }
 }
 
-.work-line {
+.work-line, .work-line-lv2 {
   stroke: #a5a5a5;
   stroke-width: 4;
   animation-name: diamondStroke;
   stroke-dasharray: 1000;
-  animation-duration: 2s;
   animation-iteration-count: 4;
-  animation-play-state: running;
+  /* animation-play-state: running; */
+}
+
+.work-line-lv2 {
+  animation-duration: 4s;
+}
+
+.work-line {
+  animation-duration: 2s;
 }
 
 .arrow-animation {
