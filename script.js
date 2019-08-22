@@ -112,6 +112,18 @@ $(function() {
   });
   // B-Sales部署のModal
 
+  //B-CS部署のModal
+  $('#b-cs-func-design').click(function() {
+    $('#b-cs-func-design-team').fadeIn();
+  });
+  $('#b-cs-infra-management').click(function() {
+    $('#b-cs-infra-management-team').fadeIn();
+  });
+  $('#b-cs-service-growth').click(function() {
+    $('#b-cs-service-growth-team').fadeIn();
+  });
+  // B-CS部署のModal
+
   // modalを閉じる
   $('.close-modal').click(function() {
     deleteDisplayWork();
@@ -234,6 +246,21 @@ $(function() {
   });
   // B-Salesのチームは繋がることを作成する
 
+  // B-CSのチームは繋がることを作成する
+  $('.link-to-b-cs-func-design').click(function() {
+    deleteDisplayWork();
+    $('#b-cs-func-design-team').fadeIn();
+  });
+  $('.link-to-b-cs-infra-management').click(function() {
+    deleteDisplayWork();
+    $('#b-cs-infra-management-team').fadeIn();
+  });
+  $('.link-to-b-cs-service-growth').click(function() {
+    deleteDisplayWork();
+    $('#b-cs-service-growth-team').fadeIn();
+  });
+  // B-CSのチームは繋がることを作成する
+
   // 部署の各チームの連携することは表す
   // $('#mkt-button').click(function() {
   //   $('#mkt-link-team').fadeIn();
@@ -278,6 +305,11 @@ $(function() {
     $('#b-field-team').fadeOut();
     $('#customer-success-team').fadeOut();
 
+    //B-CS部署のModal
+    $('#b-cs-func-design-team').fadeOut();
+    $('#b-cs-infra-management-team').fadeOut();
+    $('#b-cs-service-growth-team').fadeOut();
+
     // $('#mkt-link-team').fadeOut();
     // $('#c-sales-link-team').fadeOut();
   };
@@ -298,6 +330,9 @@ $(function() {
   var modal_b_inside = document.getElementById('b-inside-team');
   var modal_b_field = document.getElementById('b-field-team');
   var modal_customer_success = document.getElementById('customer-success-team');
+  var modal_b_cs_func_design = document.getElementById('b-cs-func-design-team');
+  var modal_b_cs_infra_management = document.getElementById('b-cs-infra-management-team');
+  var modal_b_cs_service_growth = document.getElementById('b-cs-service-growth-team');
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal_sd) {
@@ -344,6 +379,15 @@ $(function() {
     }
     if (event.target == modal_customer_success) {
       modal_customer_success.style.display = "none";
+    }
+    if (event.target == modal_b_cs_func_design) {
+      modal_b_cs_func_design.style.display = "none";
+    }
+    if (event.target == modal_b_cs_infra_management) {
+      modal_b_cs_infra_management.style.display = "none";
+    }
+    if (event.target == modal_b_cs_service_growth) {
+      modal_b_cs_service_growth.style.display = "none";
     }
   }
 });
