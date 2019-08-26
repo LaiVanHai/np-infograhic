@@ -1023,3 +1023,14 @@ text-align: right;
 button {
   display: block;
 }
+
+.hr-margin {
+  margin-left: 20px;
+}
+
+.hr-training-item {
+  margin-left: 110px !important;
+}
+.hr-training-team {
+  margin-left: 170px !important;
+}

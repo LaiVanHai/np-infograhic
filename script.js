@@ -95,8 +95,11 @@ $(function() {
   $('#hr-director').click(function() {
     $('#director-team').fadeIn();
   });
-  $('#hr-other').click(function() {
-    $('#other-team').fadeIn();
+  $('#hr-training').click(function() {
+    $('#training-team').fadeIn();
+  });
+  $('#hr-personnel-system').click(function() {
+    $('#personnel-system-team').fadeIn();
   });
   // 人事総務部署のModal
 
@@ -221,9 +224,13 @@ $(function() {
     deleteDisplayWork();
     $('#labor-team').fadeIn();
   });
-  $('.link-to-other').click(function() {
+  $('.link-to-training').click(function() {
     deleteDisplayWork();
-    $('#other-team').fadeIn();
+    $('#training-team').fadeIn();
+  });
+  $('.link-to-personnel-system').click(function() {
+    deleteDisplayWork();
+    $('#personnel-system-team').fadeIn();
   });
   $('.link-to-recruitment').click(function() {
     deleteDisplayWork();
@@ -297,7 +304,8 @@ $(function() {
     // 人事総務部署のModal
     $('#director-team').fadeOut();
     $('#labor-team').fadeOut();
-    $('#other-team').fadeOut();
+    $('#personnel-system-team').fadeOut();
+    $('#training-team').fadeOut();
     $('#recruitment-team').fadeOut();
 
     //B-Sales部署のModal
@@ -325,7 +333,8 @@ $(function() {
   var modal_customer_support = document.getElementById('customer-support-team');
   var modal_director = document.getElementById('director-team');
   var modal_labor = document.getElementById('labor-team');
-  var modal_other = document.getElementById('other-team');
+  var modal_personnel_system = document.getElementById('personnel-system-team');
+  var modal_training = document.getElementById('training-team');
   var modal_recruitment = document.getElementById('recruitment-team');
   var modal_b_inside = document.getElementById('b-inside-team');
   var modal_b_field = document.getElementById('b-field-team');
@@ -365,8 +374,11 @@ $(function() {
     if (event.target == modal_labor) {
       modal_labor.style.display = "none";
     }
-    if (event.target == modal_other) {
-      modal_other.style.display = "none";
+    if (event.target == modal_personnel_system) {
+      modal_personnel_system.style.display = "none";
+    }
+    if (event.target == modal_training) {
+      modal_training.style.display = "none";
     }
     if (event.target == modal_recruitment) {
       modal_recruitment.style.display = "none";
