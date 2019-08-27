@@ -21,7 +21,7 @@
     margin: 0 360px;
     margin-top: 30px;
     text-align: center;
-    /* display: none; */
+    display: block;
     width: auto;
   }
   .modal {
@@ -94,7 +94,7 @@
     margin: 0 250px;
     margin-top: 30px;
     text-align: center;
-    /* display: none; */
+    display: block;
     width: auto;
   }
   .modal {
@@ -168,7 +168,7 @@
     margin: 0px 100px;
     margin-top: 30px;
     text-align: center;
-    /* display: none; */
+    display: block;
     width: auto;
   }
   .modal {
@@ -240,7 +240,7 @@
     .department-b-cs {
     margin-top: 30px;
     text-align: center;
-    /* display: none; */
+    display: block;
     width: auto;
   }
   .modal {
@@ -313,7 +313,7 @@
     .department-b-cs {
     margin-top: 30px;
     text-align: center;
-    /* display: none; */
+    display: block;
     width: auto;
   }
   .modal {
