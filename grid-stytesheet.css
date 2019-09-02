@@ -721,17 +721,17 @@
 }.container-4-work-4sub .item2-sub1 {
   grid-area: 1 / 2 / span 1 / span 1;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 .container-4-work-4sub .item2-sub2 {
   grid-area: 1 / 3 / span 1 / span 2;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 .container-4-work-4sub .item2-sub3 {
   grid-area: 1 / 5 / span 1 / span 1;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 
 .container-4-work-4sub .item3 {
@@ -743,19 +743,19 @@
 .container-4-work-4sub .item3-sub1 {
   grid-area: 2 / 6 / span 1 / span 1;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 4s;
   margin-top: 50px;
 }
 .container-4-work-4sub .item3-sub2 {
   grid-area: 3 / 6 / span 2 / span 1;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 4s;
   margin-top: 55px;
 }
 .container-4-work-4sub .item3-sub3 {
   grid-area: 5 / 6 / span 1 / span 1;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 4s;
 }
 
 .container-4-work-4sub .item4 {
@@ -767,37 +767,37 @@
 .container-4-work-4sub .item4-sub1 {
   grid-area: 6 / 2 / span 1 / span 1;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 5s;
 }
 .container-4-work-4sub .item4-sub2 {
   grid-area: 6 / 3 / span 1 / span 2;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 5s;
 }
 .container-4-work-4sub .item4-sub3 {
   grid-area: 6 / 5 / span 1 / span 1;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 5s;
 }
 
 .container-4-work-4sub .item5 {
   grid-area: 2 / 2 / span 1 / span 1;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 5s;
   text-align: right;
   margin-top: 50px;
 }
 .container-4-work-4sub .item6 {
   grid-area: 2 / 5 / span 1 / span 1;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 6s;
   text-align: left;
   margin-top: 50px;
 }
 .container-4-work-4sub .item7 {
   grid-area: 5 / 2 / span 1 / span 1;
   animation-name: item-display-level2;
-  animation-duration: 2s;
+  animation-duration: 7s;
   text-align: right;
 }
 
@@ -805,6 +805,7 @@
   grid-area: 7 / 1 / span 1 / span 6;
   animation-name: item-display-level2;
   animation-duration: 2s;
+  margin-top: 15px;
 }
 .container-4-work-4sub .other-dpt {
   grid-area: 8 / 1 / span 1 / span 2;

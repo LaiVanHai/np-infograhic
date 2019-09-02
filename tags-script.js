@@ -110,4 +110,330 @@ $(function() {
     $('#tag-b-sales').removeClass('clicked-color');
   });
   // B-SalesのTags
+
+  // 法務のTags
+  $('#tag-legal-hr').click(function(){
+    legal_display_all();
+
+    $('#item1').css({"display": "none"})
+    $('#item1-1').css({"display": "none"})
+    $('#item1-2').css({"display": "none"})
+    $('#item1-3').css({"display": "none"})
+    $('#item1-4').css({"display": "none"})
+    $('.item1').find('.work-item-level1').css({"opacity": 0})
+    $('.item1-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub4').find('.work-item-level2').css({"opacity": 0})
+    $('#item3').css({"display": "none"})
+    $('#item3-1').css({"display": "none"})
+    $('#item3-2').css({"display": "none"})
+    $('#item3-3').css({"display": "none"})
+    $('.item3').find('.work-item-level1').css({"opacity": 0})
+    $('.item3-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item3-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item3-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('#item4').css({"display": "none"})
+    $('#item4-1').css({"display": "none"})
+    $('#item4-2').css({"display": "none"})
+    $('#item4-3').css({"display": "none"})
+    $('.item4').find('.work-item-level1').css({"opacity": 0})
+    $('.item4-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('.item5').find('.work-item-level2').css({"opacity": 0})
+    $('.item6').find('.work-item-level2').css({"opacity": 0})
+    $('#item5').css({"display": "none"})
+    $('#item6').css({"display": "none"})
+
+    $('#tag-legal-hr').addClass('clicked-color');
+    $('#tag-legal-finances').removeClass('clicked-color');
+    $('#tag-legal-all-team').removeClass('clicked-color');
+    $('#tag-legal-biz-dev').removeClass('clicked-color');
+    $('#tag-legal-c-cs').removeClass('clicked-color');
+    $('#tag-legal-b-cs').removeClass('clicked-color');
+    $('#tag-legal').removeClass('clicked-color');
+  });
+  $('#tag-legal-finances').click(function(){
+    legal_display_all();
+
+    $('#item3').css({"display": "none"})
+    $('#item3-1').css({"display": "none"})
+    $('#item3-2').css({"display": "none"})
+    $('#item3-3').css({"display": "none"})
+    $('.item3').find('.work-item-level1').css({"opacity": 0})
+    $('.item3-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item3-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item3-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('#item4').css({"display": "none"})
+    $('#item4-1').css({"display": "none"})
+    $('#item4-2').css({"display": "none"})
+    $('#item4-3').css({"display": "none"})
+    $('.item4').find('.work-item-level1').css({"opacity": 0})
+    $('.item4-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('.item5').find('.work-item-level2').css({"opacity": 0})
+    $('.item6').find('.work-item-level2').css({"opacity": 0})
+    $('.item7').find('.work-item-level2').css({"opacity": 0})
+    $('#item5').css({"display": "none"})
+    $('#item6').css({"display": "none"})
+    $('#item7').css({"display": "none"})
+
+
+    $('#tag-legal-finances').addClass('clicked-color');
+    $('#tag-legal-hr').removeClass('clicked-color');
+    $('#tag-legal-all-team').removeClass('clicked-color');
+    $('#tag-legal-biz-dev').removeClass('clicked-color');
+    $('#tag-legal-c-cs').removeClass('clicked-color');
+    $('#tag-legal-b-cs').removeClass('clicked-color');
+    $('#tag-legal').removeClass('clicked-color');
+  });
+  $('#tag-legal-all-team').click(function(){
+    legal_display_all();
+    $('#item1').css({"display": "none"})
+    $('#item1-1').css({"display": "none"})
+    $('#item1-2').css({"display": "none"})
+    $('#item1-3').css({"display": "none"})
+    $('#item1-4').css({"display": "none"})
+    $('.item1').find('.work-item-level1').css({"opacity": 0})
+    $('.item1-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub4').find('.work-item-level2').css({"opacity": 0})
+    $('#item2').css({"display": "none"})
+    $('#item2-1').css({"display": "none"})
+    $('#item2-2').css({"display": "none"})
+    $('#item2-3').css({"display": "none"})
+    $('.item2').find('.work-item-level1').css({"opacity": 0})
+    $('.item2-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item2-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item2-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('#item4').css({"display": "none"})
+    $('#item4-1').css({"display": "none"})
+    $('#item4-2').css({"display": "none"})
+    $('#item4-3').css({"display": "none"})
+    $('.item4').find('.work-item-level1').css({"opacity": 0})
+    $('.item4-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('.item5').find('.work-item-level2').css({"opacity": 0})
+    $('.item6').find('.work-item-level2').css({"opacity": 0})
+    $('#item5').css({"display": "none"})
+    $('#item6').css({"display": "none"})
+    $('#item7').css({"display": "none"})
+    $('.item7').find('.work-item-level2').css({"opacity": 0})
+
+    $('#tag-legal-all-team').addClass('clicked-color');
+    $('#tag-legal-hr').removeClass('clicked-color');
+    $('#tag-legal-finances').removeClass('clicked-color');
+    $('#tag-legal-biz-dev').removeClass('clicked-color');
+    $('#tag-legal-c-cs').removeClass('clicked-color');
+    $('#tag-legal-b-cs').removeClass('clicked-color');
+    $('#tag-legal').removeClass('clicked-color');
+  });
+
+  $('#tag-legal-biz-dev').click(function(){
+    legal_display_all();
+
+    $('#item1').css({"display": "none"})
+    $('#item1-1').css({"display": "none"})
+    $('#item1-2').css({"display": "none"})
+    $('#item1-3').css({"display": "none"})
+    $('#item1-4').css({"display": "none"})
+    $('.item1').find('.work-item-level1').css({"opacity": 0})
+    $('.item1-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub4').find('.work-item-level2').css({"opacity": 0})
+    $('#item2').css({"display": "none"})
+    $('#item2-1').css({"display": "none"})
+    $('#item2-2').css({"display": "none"})
+    $('#item2-3').css({"display": "none"})
+    $('.item2').find('.work-item-level1').css({"opacity": 0})
+    $('.item2-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item2-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item2-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('#item3').css({"display": "none"})
+    $('#item3-1').css({"display": "none"})
+    $('#item3-2').css({"display": "none"})
+    $('#item3-3').css({"display": "none"})
+    $('.item3').find('.work-item-level1').css({"opacity": 0})
+    $('.item3-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item3-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item3-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('#item4').css({"display": "none"})
+    $('#item4-1').css({"display": "none"})
+    $('#item4-2').css({"display": "none"})
+    $('#item4-3').css({"display": "none"})
+    $('.item4').find('.work-item-level1').css({"opacity": 0})
+    $('.item4-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('.item5').find('.work-item-level2').css({"opacity": 0})
+    $('.item7').find('.work-item-level2').css({"opacity": 0})
+    $('#item5').css({"display": "none"})
+    $('#item7').css({"display": "none"})
+
+    $('#tag-legal-biz-dev').addClass('clicked-color');
+    $('#tag-legal-hr').removeClass('clicked-color');
+    $('#tag-legal-finances').removeClass('clicked-color');
+    $('#tag-legal-all-team').removeClass('clicked-color');
+    $('#tag-legal-c-cs').removeClass('clicked-color');
+    $('#tag-legal-b-cs').removeClass('clicked-color');
+    $('#tag-legal').removeClass('clicked-color');
+  });
+
+  $('#tag-legal-c-cs').click(function(){
+    legal_display_all();
+
+    $('#item1').css({"display": "none"})
+    $('#item1-1').css({"display": "none"})
+    $('#item1-2').css({"display": "none"})
+    $('#item1-3').css({"display": "none"})
+    $('#item1-4').css({"display": "none"})
+    $('.item1').find('.work-item-level1').css({"opacity": 0})
+    $('.item1-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub4').find('.work-item-level2').css({"opacity": 0})
+    $('#item2').css({"display": "none"})
+    $('#item2-1').css({"display": "none"})
+    $('#item2-2').css({"display": "none"})
+    $('#item2-3').css({"display": "none"})
+    $('.item2').find('.work-item-level1').css({"opacity": 0})
+    $('.item2-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item2-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item2-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('#item3').css({"display": "none"})
+    $('#item3-1').css({"display": "none"})
+    $('#item3-2').css({"display": "none"})
+    $('#item3-3').css({"display": "none"})
+    $('.item3').find('.work-item-level1').css({"opacity": 0})
+    $('.item3-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item3-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item3-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('#item4').css({"display": "none"})
+    $('#item4-1').css({"display": "none"})
+    $('#item4-2').css({"display": "none"})
+    $('#item4-3').css({"display": "none"})
+    $('.item4').find('.work-item-level1').css({"opacity": 0})
+    $('.item4-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('.item7').find('.work-item-level2').css({"opacity": 0})
+    $('#item7').css({"display": "none"})
+
+    $('#tag-legal-c-cs').addClass('clicked-color');
+    $('#tag-legal-hr').removeClass('clicked-color');
+    $('#tag-legal-finances').removeClass('clicked-color');
+    $('#tag-legal-all-team').removeClass('clicked-color');
+    $('#tag-legal-biz-dev').removeClass('clicked-color');
+    $('#tag-legal-b-cs').removeClass('clicked-color');
+    $('#tag-legal').removeClass('clicked-color');
+  });
+
+  $('#tag-legal-b-cs').click(function(){
+    legal_display_all();
+
+    $('#item1').css({"display": "none"})
+    $('#item1-1').css({"display": "none"})
+    $('#item1-2').css({"display": "none"})
+    $('#item1-3').css({"display": "none"})
+    $('#item1-4').css({"display": "none"})
+    $('.item1').find('.work-item-level1').css({"opacity": 0})
+    $('.item1-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('.item1-sub4').find('.work-item-level2').css({"opacity": 0})
+    $('#item2').css({"display": "none"})
+    $('#item2-1').css({"display": "none"})
+    $('#item2-2').css({"display": "none"})
+    $('#item2-3').css({"display": "none"})
+    $('.item2').find('.work-item-level1').css({"opacity": 0})
+    $('.item2-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item2-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item2-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('#item3').css({"display": "none"})
+    $('#item3-1').css({"display": "none"})
+    $('#item3-2').css({"display": "none"})
+    $('#item3-3').css({"display": "none"})
+    $('.item3').find('.work-item-level1').css({"opacity": 0})
+    $('.item3-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item3-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item3-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('#item4').css({"display": "none"})
+    $('#item4-1').css({"display": "none"})
+    $('#item4-2').css({"display": "none"})
+    $('#item4-3').css({"display": "none"})
+    $('.item4').find('.work-item-level1').css({"opacity": 0})
+    $('.item4-sub1').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub2').find('.work-item-level2').css({"opacity": 0})
+    $('.item4-sub3').find('.work-item-level2').css({"opacity": 0})
+    $('.item7').find('.work-item-level2').css({"opacity": 0})
+    $('#item7').css({"display": "none"})
+
+    $('#tag-legal-b-cs').addClass('clicked-color');
+    $('#tag-legal-hr').removeClass('clicked-color');
+    $('#tag-legal-finances').removeClass('clicked-color');
+    $('#tag-legal-all-team').removeClass('clicked-color');
+    $('#tag-legal-biz-dev').removeClass('clicked-color');
+    $('#tag-legal-c-cs').removeClass('clicked-color');
+    $('#tag-legal').removeClass('clicked-color');
+  });
+
+  $('#tag-legal').click(function(){
+    legal_display_all();
+
+    $('#tag-legal-hr').removeClass('clicked-color');
+    $('#tag-legal-finances').removeClass('clicked-color');
+    $('#tag-legal-all-team').removeClass('clicked-color');
+    $('#tag-legal-biz-dev').removeClass('clicked-color');
+    $('#tag-legal-c-cs').removeClass('clicked-color');
+    $('#tag-legal-b-cs').removeClass('clicked-color');
+  });
+
+  legal_display_all = function() {
+    $('#item1').css({"display": "block"})
+    $('#item1-1').css({"display": "block"})
+    $('#item1-2').css({"display": "block"})
+    $('#item1-3').css({"display": "block"})
+    $('#item1-4').css({"display": "block"})
+    $('.item1').find('.work-item-level1').css({"opacity": 1})
+    $('.item1-sub1').find('.work-item-level2').css({"opacity": 1})
+    $('.item1-sub2').find('.work-item-level2').css({"opacity": 1})
+    $('.item1-sub3').find('.work-item-level2').css({"opacity": 1})
+    $('.item1-sub4').find('.work-item-level2').css({"opacity": 1})
+    $('#item2').css({"display": "block"})
+    $('#item2-1').css({"display": "block"})
+    $('#item2-2').css({"display": "block"})
+    $('#item2-3').css({"display": "block"})
+    $('.item2').find('.work-item-level1').css({"opacity": 1})
+    $('.item2-sub1').find('.work-item-level2').css({"opacity": 1})
+    $('.item2-sub2').find('.work-item-level2').css({"opacity": 1})
+    $('.item2-sub3').find('.work-item-level2').css({"opacity": 1})
+    $('#item3').css({"display": "block"})
+    $('#item3-1').css({"display": "block"})
+    $('#item3-2').css({"display": "block"})
+    $('#item3-3').css({"display": "block"})
+    $('.item3').find('.work-item-level1').css({"opacity": 1})
+    $('.item3-sub1').find('.work-item-level2').css({"opacity": 1})
+    $('.item3-sub2').find('.work-item-level2').css({"opacity": 1})
+    $('.item3-sub3').find('.work-item-level2').css({"opacity": 1})
+    $('#item4').css({"display": "block"})
+    $('#item4-1').css({"display": "block"})
+    $('#item4-2').css({"display": "block"})
+    $('#item4-3').css({"display": "block"})
+    $('.item4').find('.work-item-level1').css({"opacity": 1})
+    $('.item4-sub1').find('.work-item-level2').css({"opacity": 1})
+    $('.item4-sub2').find('.work-item-level2').css({"opacity": 1})
+    $('.item4-sub3').find('.work-item-level2').css({"opacity": 1})
+    $('.item5').find('.work-item-level2').css({"opacity": 1})
+    $('.item6').find('.work-item-level2').css({"opacity": 1})
+    $('.item7').find('.work-item-level2').css({"opacity": 1})
+    $('#item5').css({"display": "block"})
+    $('#item6').css({"display": "block"})
+    $('#item7').css({"display": "block"})
+  };
+  // 法務のTags
 });
