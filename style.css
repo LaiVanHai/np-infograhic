@@ -25,10 +25,11 @@
     width: auto;
   }
   .modal {
-    left: 28%;
+    left: 25%;
     overflow-x: auto;
     overflow-y: auto;
-    width: 650px !important;
+    /* width: 650px !important; */
+    resize: horizontal;
     height: 600px !important;
   }
   .mkt-img {
@@ -101,7 +102,8 @@
     left: 25%;
     overflow-y: auto;
     overflow-x: auto;
-    width: 650px !important;
+    /* width: 650px !important; */
+    resize: horizontal;
     height: 600px !important;
   }
   .mkt-img {
@@ -175,7 +177,8 @@
     left: 17%;
     overflow-y: auto;
     overflow-x: auto;
-    width: 650px !important;
+    /* width: 650px !important; */
+    resize: horizontal;
     height: 600px !important;
   }
   .mkt-img {
@@ -248,7 +251,8 @@
     overflow-x: auto;
     overflow-y: auto;
     height: 850px !important;
-    height: 600px !important;
+    resize: horizontal;
+    /* width: 600px !important; */
   }
   .mkt-img {
     width: 250px;
@@ -321,7 +325,8 @@
     overflow-x: auto;
     overflow-y: auto;
     height: 700px !important;
-    width: 650px !important;
+    resize: horizontal;
+    /* width: 650px !important; */
   }
 
   .ba-img {

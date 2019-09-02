@@ -657,3 +657,165 @@
 }
 
 /* ========================================================= */
+
+/* ========================================================= */
+.container-4-work-4sub {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-4-work-4sub .team {
+  grid-area: 3 / 3 / span 2 / span 2;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.item1, .item2, .item3, .item4, .item1-sub1, .item1-sub2, .item1-sub3,
+  .item1-sub4, .item2-sub1, .item2-sub2, .item2-sub3,
+  .item3-sub1, .item3-sub2, .item3-sub3,
+  .item4-sub1, .item4-sub2, .item4-sub3,
+  .item5, .item6, .item7
+  {
+    text-align: center;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+.container-4-work-4sub .item1 {
+  grid-area: 3 / 2 / span 2 / span 1;
+  animation-name: item-display;
+  animation-duration: 1s;
+  margin-top: 40px;
+}
+.container-4-work-4sub .item1-sub1 {
+  grid-area: 2 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+  margin-top: 50px;
+}
+.container-4-work-4sub .item1-sub2 {
+  grid-area: 3 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-4sub .item1-sub3 {
+  grid-area: 4 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-4sub .item1-sub4 {
+  grid-area: 5 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+
+.container-4-work-4sub .item2 {
+  grid-area: 2 / 3 / span 1 / span 2;
+  animation-name: item-display;
+  animation-duration: 2s;
+  margin-top: 20px;
+}.container-4-work-4sub .item2-sub1 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-4sub .item2-sub2 {
+  grid-area: 1 / 3 / span 1 / span 2;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-4sub .item2-sub3 {
+  grid-area: 1 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+
+.container-4-work-4sub .item3 {
+  grid-area: 3 / 5 / span 2 / span 1;
+  animation-name: item-display;
+  animation-duration: 3s;
+  margin-top: 40px;
+}
+.container-4-work-4sub .item3-sub1 {
+  grid-area: 2 / 6 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+  margin-top: 50px;
+}
+.container-4-work-4sub .item3-sub2 {
+  grid-area: 3 / 6 / span 2 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+  margin-top: 55px;
+}
+.container-4-work-4sub .item3-sub3 {
+  grid-area: 5 / 6 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+
+.container-4-work-4sub .item4 {
+  grid-area: 5 / 3 / span 1 / span 2;
+  animation-name: item-display;
+  animation-duration: 4s;
+  margin-bottom: 20px;
+}
+.container-4-work-4sub .item4-sub1 {
+  grid-area: 6 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-4sub .item4-sub2 {
+  grid-area: 6 / 3 / span 1 / span 2;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-4sub .item4-sub3 {
+  grid-area: 6 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+
+.container-4-work-4sub .item5 {
+  grid-area: 2 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+  text-align: right;
+  margin-top: 50px;
+}
+.container-4-work-4sub .item6 {
+  grid-area: 2 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+  text-align: left;
+  margin-top: 50px;
+}
+.container-4-work-4sub .item7 {
+  grid-area: 5 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+  text-align: right;
+}
+
+.container-4-work-4sub .tag-team {
+  grid-area: 7 / 1 / span 1 / span 6;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-4sub .other-dpt {
+  grid-area: 8 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-4-work-4sub .dpt-list {
+  grid-area: 9 / 1 / span 1 / span 6;
+  text-align: left;
+}
+.container-4-work-4sub .line {
+  grid-area: 1 / 1 / span 9 / span 6;
+  text-align: center;
+}
+/* ========================================================= */
