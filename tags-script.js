@@ -111,6 +111,33 @@ $(function() {
   });
   // B-SalesのTags
 
+  // C-SalesのTags
+  $('#tag-c-sales-q-a').click(function(){
+    $('#c-sales-inside').fadeIn();
+    $('#c-sales-support').fadeIn();
+    $('#c-sales-field').fadeOut();
+
+    $('#tag-c-sales-q-a').addClass('clicked-color');
+    $('#tag-c-sales-negotiation').removeClass('clicked-color');
+  });
+  $('#tag-c-sales-negotiation').click(function(){
+    $('#c-sales-inside').fadeIn();
+    $('#c-sales-support').fadeOut();
+    $('#c-sales-field').fadeIn();
+
+    $('#tag-c-sales-negotiation').addClass('clicked-color');
+    $('#tag-c-sales-q-a').removeClass('clicked-color');
+  });
+  $('#tag-c-sales').click(function(){
+    $('#c-sales-inside').fadeIn();
+    $('#c-sales-support').fadeIn();
+    $('#c-sales-field').fadeIn();
+
+    $('#tag-c-sales-q-a').removeClass('clicked-color');
+    $('#tag-c-sales-negotiation').removeClass('clicked-color');
+  });
+  // C-SalesのTags
+
   // 法務のTags
   $('#tag-legal-hr').click(function(){
     legal_display_all();

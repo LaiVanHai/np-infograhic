@@ -103,7 +103,7 @@ $(function() {
   });
   // 人事総務部署のModal
 
-  //B-Sales部署のModal
+  // B-Sales部署のModal
   $('#b-salses-inside').click(function() {
     $('#b-inside-team').fadeIn();
   });
@@ -114,6 +114,18 @@ $(function() {
     $('#customer-success-team').fadeIn();
   });
   // B-Sales部署のModal
+
+  // C-Sales部署のModal
+  $('#c-sales-inside').click(function() {
+    $('#c-sales-inside-team').fadeIn();
+  });
+  $('#c-sales-field').click(function() {
+    $('#c-sales-field-team').fadeIn();
+  });
+  $('#c-sales-support').click(function() {
+    $('#c-sales-support-team').fadeIn();
+  });
+  // C-Sales部署のModal
 
   //B-CS部署のModal
   $('#b-cs-func-design').click(function() {
@@ -275,6 +287,21 @@ $(function() {
   });
   // B-CSのチームは繋がることを作成する
 
+  // C-Salesのチームは繋がることを作成する
+  $('.link-to-c-sales-inside').click(function() {
+    deleteDisplayWork();
+    $('#c-sales-inside-team').fadeIn();
+  });
+  $('.link-to-c-sales-field').click(function() {
+    deleteDisplayWork();
+    $('#c-sales-field-team').fadeIn();
+  });
+  $('.link-to-c-sales-support').click(function() {
+    deleteDisplayWork();
+    $('#c-sales-support-team').fadeIn();
+  });
+  // C-Salesのチームは繋がることを作成する
+
   // 部署の各チームの連携することは表す
   // $('#mkt-button').click(function() {
   //   $('#mkt-link-team').fadeIn();
@@ -325,6 +352,11 @@ $(function() {
     $('#b-cs-infra-management-team').fadeOut();
     $('#b-cs-service-growth-team').fadeOut();
 
+    //C-Sales部署のModal
+    $('#c-sales-support-team').fadeOut();
+    $('#c-sales-inside-team').fadeOut();
+    $('#c-sales-field-team').fadeOut();
+
     //　法務のModal
     $('#dpt-legal').fadeOut();
 
@@ -353,6 +385,9 @@ $(function() {
   var modal_b_cs_infra_management = document.getElementById('b-cs-infra-management-team');
   var modal_b_cs_service_growth = document.getElementById('b-cs-service-growth-team');
   var modal_dpt_legal = document.getElementById('dpt-legal');
+  var modal_c_sales_support_team = document.getElementById('c-sales-support-team');
+  var modal_c_sales_inside_team = document.getElementById('c-sales-inside-team');
+  var modal_c_sales_field_team = document.getElementById('c-sales-field-team');
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal_sd) {
@@ -414,6 +449,15 @@ $(function() {
     }
     if (event.target == modal_dpt_legal) {
       modal_dpt_legal.style.display = "none";
+    }
+    if (event.target == modal_c_sales_support_team) {
+      modal_c_sales_support_team.style.display = "none";
+    }
+    if (event.target == modal_c_sales_inside_team) {
+      modal_c_sales_inside_team.style.display = "none";
+    }
+    if (event.target == modal_c_sales_field_team) {
+      modal_c_sales_field_team.style.display = "none";
     }
   }
 });
