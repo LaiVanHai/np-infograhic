@@ -26,11 +26,23 @@
   }
   .modal {
     left: 25%;
-    overflow-x: auto;
-    overflow-y: auto;
+    /* width: 650px !important;
+    height: 600px !important; */
+  }
+  .modal-title {
+    margin-top: -19px;
+    z-index: 2;
+    position: fixed;
+    width: 650px;
+  }
+  .modal-content {
+    padding-bottom: 10px;
+    margin-top: 35px;
+    padding-top: 40px;
+    overflow-y: scroll;
+    overflow-x: scroll;
     width: 650px !important;
-    /* resize: horizontal; */
-    height: 600px !important;
+    height: 560px !important;
   }
   .mkt-img {
     width: 290px;
@@ -100,11 +112,24 @@
   }
   .modal {
     left: 25%;
-    overflow-y: auto;
-    overflow-x: auto;
+    /* width: 650px !important;
+    height: 600px !important; */
+    resize: horizontal;
+  }
+  .modal-content {
+    padding-bottom: 10px;
+    margin-top: 35px;
+    padding-top: 40px;
+    overflow-y: scroll;
+    overflow-x: scroll;
     width: 650px !important;
-    /* resize: horizontal; */
-    height: 600px !important;
+    height: 560px !important;
+  }
+  .modal-title {
+    margin-top: -19px;
+    z-index: 10;
+    position: fixed;
+    width: 650px;
   }
   .mkt-img {
     width: 250px;
@@ -175,11 +200,23 @@
   }
   .modal {
     left: 17%;
-    overflow-y: auto;
-    overflow-x: auto;
+    /* width: 650px !important;
+    height: 600px !important; */
+  }
+  .modal-content {
+    padding-bottom: 10px;
+    margin-top: 35px;
+    padding-top: 40px;
+    overflow-y: scroll;
+    overflow-x: scroll;
     width: 650px !important;
-    /* resize: horizontal; */
-    height: 600px !important;
+    height: 560px !important;
+  }
+  .modal-title {
+    margin-top: -19px;
+    z-index: 10;
+    position: fixed;
+    width: 650px;
   }
   .mkt-img {
     width: 290px;
@@ -248,11 +285,24 @@
   }
   .modal {
     left: 8%;
-    overflow-x: auto;
-    overflow-y: auto;
-    height: 850px !important;
+    /* height: 700px !important;
+    width: 600px !important; */
+  }
+  .modal-content {
+    padding-bottom: 10px;
+    margin-top: 35px;
+    padding-top: 40px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 660px !important;
     /* resize: horizontal; */
     width: 600px !important;
+  }
+  .modal-title {
+    margin-top: -19px;
+    z-index: 10;
+    position: fixed;
+    width: 600px;
   }
   .mkt-img {
     width: 250px;
@@ -322,13 +372,26 @@
   }
   .modal {
     left: 5%;
-    overflow-x: auto;
-    overflow-y: auto;
-    height: 700px !important;
+    /* height: 700px !important;
+    /* resize: horizontal; */
+    width: 650px !important; */
+  }
+  .modal-content {
+    padding-bottom: 10px;
+    margin-top: 35px;
+    padding-top: 40px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 660px !important;
     /* resize: horizontal; */
     width: 650px !important;
   }
-
+  .modal-title {
+    margin-top: -19px;
+    z-index: 10;
+    position: fixed;
+    width: 650px;
+  }
   .ba-img {
     width: 200px;
     height: 120px;
@@ -866,7 +929,7 @@ button {
   position: absolute;
   margin: 10px 0;
   background-color: #ffffffed;
-  padding: 20px 0 40px;
+  padding: 20px 0 10px;
   border-radius: 10px;
   width: auto;
   height: auto;
@@ -874,6 +937,7 @@ button {
   border: 3px solid #728699;
   z-index: 10;
 }
+
 .modal .tooltiptext {
   background-color: #f39f06;
 }
@@ -893,9 +957,16 @@ button {
   background-color: #ffecc9;
   color: #82530f;
   padding: 3px 0;
-  margin-top: -7px;
   font-weight: 600;
   border: 1px solid #f3a001;
+}
+
+.department-title {
+  margin-top: -7px;
+}
+
+i {
+  margin-top: 3px;
 }
 
 .department-title {
@@ -1038,10 +1109,10 @@ button {
 }
 
 .hr-training-item {
-  margin-left: 110px !important;
+  margin-left: 140px !important;
 }
 .hr-training-team {
-  margin-left: 170px !important;
+  margin-left: 220px !important;
 }
 
 .font-size-10 {

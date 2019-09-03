@@ -806,6 +806,7 @@
   animation-name: item-display-level2;
   animation-duration: 2s;
   margin-top: 15px;
+  padding-right: 15px;
 }
 .container-4-work-4sub .other-dpt {
   grid-area: 8 / 1 / span 1 / span 2;
