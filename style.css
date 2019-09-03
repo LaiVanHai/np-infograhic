@@ -28,8 +28,8 @@
     left: 25%;
     overflow-x: auto;
     overflow-y: auto;
-    /* width: 650px !important; */
-    resize: horizontal;
+    width: 650px !important;
+    /* resize: horizontal; */
     height: 600px !important;
   }
   .mkt-img {
@@ -102,8 +102,8 @@
     left: 25%;
     overflow-y: auto;
     overflow-x: auto;
-    /* width: 650px !important; */
-    resize: horizontal;
+    width: 650px !important;
+    /* resize: horizontal; */
     height: 600px !important;
   }
   .mkt-img {
@@ -177,8 +177,8 @@
     left: 17%;
     overflow-y: auto;
     overflow-x: auto;
-    /* width: 650px !important; */
-    resize: horizontal;
+    width: 650px !important;
+    /* resize: horizontal; */
     height: 600px !important;
   }
   .mkt-img {
@@ -251,8 +251,8 @@
     overflow-x: auto;
     overflow-y: auto;
     height: 850px !important;
-    resize: horizontal;
-    /* width: 600px !important; */
+    /* resize: horizontal; */
+    width: 600px !important;
   }
   .mkt-img {
     width: 250px;
@@ -325,8 +325,8 @@
     overflow-x: auto;
     overflow-y: auto;
     height: 700px !important;
-    resize: horizontal;
-    /* width: 650px !important; */
+    /* resize: horizontal; */
+    width: 650px !important;
   }
 
   .ba-img {
@@ -746,7 +746,7 @@ button {
 .work-item-level1 {
   width: 120px;
   height: 120px;
-  background: #ffffff;
+  background: #fbe1bb80;
   border-radius: 50%;
   position: relative;
   cursor: pointer;
@@ -822,13 +822,17 @@ button {
   }
 }
 
-.work-line, .work-line-lv2 {
+.work-line, .work-line-lv2, .work-line-lv3 {
   stroke: #a5a5a5;
   stroke-width: 4;
   animation-name: diamondStroke;
   stroke-dasharray: 1000;
   animation-iteration-count: 4;
   /* animation-play-state: running; */
+}
+
+.work-line-lv3 {
+  animation-duration: 6s;
 }
 
 .work-line-lv2 {
@@ -1013,7 +1017,7 @@ button {
 display: block;
 text-align: right;
 }
-  .tag span {
+  .tag span, a {
    color: #00abf2;
    cursor: pointer;
   }
@@ -1038,4 +1042,9 @@ button {
 }
 .hr-training-team {
   margin-left: 170px !important;
+}
+
+.font-size-10 {
+  font-size: 10px !important;
+  line-height: 10px !important;
 }

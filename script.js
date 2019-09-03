@@ -127,6 +127,13 @@ $(function() {
   });
   // B-CS部署のModal
 
+  // 法務のModal
+  $('.legal').click(function() {
+    $('#dpt-legal').fadeIn();
+  });
+  // 法務のModal
+
+
   // modalを閉じる
   $('.close-modal').click(function() {
     deleteDisplayWork();
@@ -318,6 +325,9 @@ $(function() {
     $('#b-cs-infra-management-team').fadeOut();
     $('#b-cs-service-growth-team').fadeOut();
 
+    //　法務のModal
+    $('#dpt-legal').fadeOut();
+
     // $('#mkt-link-team').fadeOut();
     // $('#c-sales-link-team').fadeOut();
   };
@@ -342,6 +352,7 @@ $(function() {
   var modal_b_cs_func_design = document.getElementById('b-cs-func-design-team');
   var modal_b_cs_infra_management = document.getElementById('b-cs-infra-management-team');
   var modal_b_cs_service_growth = document.getElementById('b-cs-service-growth-team');
+  var modal_dpt_legal = document.getElementById('dpt-legal');
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal_sd) {
@@ -400,6 +411,9 @@ $(function() {
     }
     if (event.target == modal_b_cs_service_growth) {
       modal_b_cs_service_growth.style.display = "none";
+    }
+    if (event.target == modal_dpt_legal) {
+      modal_dpt_legal.style.display = "none";
     }
   }
 });
