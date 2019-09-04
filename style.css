@@ -1119,3 +1119,8 @@ button {
   font-size: 10px !important;
   line-height: 10px !important;
 }
+
+.bcs-goal {
+  border: 3px solid #FF9800;
+  background-color: #fffbd9;
+}
