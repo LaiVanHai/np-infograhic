@@ -982,8 +982,8 @@ i {
 }
 
 .dpt-link-item {
-  margin-top: -5px;
-  margin-bottom: -10px;
+  /* margin-top: -5px;
+  margin-bottom: -10px; */
   display: inline-block;
   width: 80px;
   height: 80px;
@@ -1036,7 +1036,7 @@ i {
   cursor: pointer;
   border: 2px solid #03abf2;
   display: inline-block;
-  margin-top: -10px;
+  margin-top: -5px;
   margin-bottom: -10px;
   background-color: #caf1ff
 }
