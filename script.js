@@ -139,12 +139,83 @@ $(function() {
   });
   // B-CS部署のModal
 
+  //財経部署のModal
+  $('#finance').click(function() {
+    $('#finance-team').fadeIn();
+  });
+  $('#accounting').click(function() {
+    $('#accounting-team').fadeIn();
+  });
+  // 財経部署のModal
+
   // 法務のModal
   $('.legal').click(function() {
     $('#dpt-legal').fadeIn();
   });
   // 法務のModal
 
+  // Biz DevのModal
+  $('.biz-dev').click(function() {
+    $('#dpt-biz-dev').fadeIn();
+  });
+  // Biz DevのModal
+
+  //atone部署のModal
+  $('#atone-risk').click(function() {
+    $('#atone-risk-team').fadeIn();
+  });
+  $('#atone-customer-center').click(function() {
+    $('#atone-customer-center-team').fadeIn();
+  });
+  $('#atone-sales').click(function() {
+    $('#atone-sales-team').fadeIn();
+  });
+  $('#atone-b-mkt').click(function() {
+    $('#atone-b-mkt-team').fadeIn();
+  });
+  $('#atone-c-mkt').click(function() {
+    $('#atone-c-mkt-team').fadeIn();
+  });
+  $('#atone-real').click(function() {
+    $('#atone-real-team').fadeIn();
+  });
+  $('#atone-uxd').click(function() {
+    $('#atone-uxd-team').fadeIn();
+  });
+  $('#atone-ba').click(function() {
+    $('#atone-ba-team').fadeIn();
+  });
+  // atone部署のModal
+
+  //BA部署のModal
+  $('#ba-nova').click(function() {
+    $('#ba-nova-team').fadeIn();
+  });
+  $('#ba-security').click(function() {
+    $('#ba-security-team').fadeIn();
+  });
+  $('#ba-infra').click(function() {
+    $('#ba-infra-team').fadeIn();
+  });
+  $('#ba-smap').click(function() {
+    $('#ba-smap-team').fadeIn();
+  });
+  $('#ba-cpu').click(function() {
+    $('#ba-cpu-team').fadeIn();
+  });
+  $('#ba-camp').click(function() {
+    $('#ba-camp-team').fadeIn();
+  });
+  $('#ba-i3').click(function() {
+    $('#ba-i3-team').fadeIn();
+  });
+  $('#ba-wsd').click(function() {
+    $('#ba-wsd-team').fadeIn();
+  });
+  $('#ba-b2b').click(function() {
+    $('#ba-b2b-team').fadeIn();
+  });
+  //BA部署のModal
 
   // modalを閉じる
   $('.close-modal').click(function() {
@@ -360,6 +431,34 @@ $(function() {
     //　法務のModal
     $('#dpt-legal').fadeOut();
 
+    // atoneのModal
+    $('#atone-ba-team').fadeOut();
+    $('#atone-risk-team').fadeOut();
+    $('#atone-customer-center-team').fadeOut();
+    $('#atone-sales-team').fadeOut();
+    $('#atone-b-mkt-team').fadeOut();
+    $('#atone-c-mkt-team').fadeOut();
+    $('#atone-real-team').fadeOut();
+    $('#atone-uxd-team').fadeOut();
+
+    //　Biz DevのModal
+    $('#dpt-biz-dev').fadeOut();
+
+    // BAのModal
+    $('#ba-nova-team').fadeOut();
+    $('#ba-security-team').fadeOut();
+    $('#ba-infra-team').fadeOut();
+    $('#ba-smap-team').fadeOut();
+    $('#ba-cpu-team').fadeOut();
+    $('#ba-camp-team').fadeOut();
+    $('#ba-i3-team').fadeOut();
+    $('#ba-wsd-team').fadeOut();
+    $('#ba-b2b-team').fadeOut();
+
+    // 財経のModal
+    $('#finance-team').fadeOut();
+    $('#accounting-team').fadeOut();
+
     // $('#mkt-link-team').fadeOut();
     // $('#c-sales-link-team').fadeOut();
   };
@@ -388,6 +487,27 @@ $(function() {
   var modal_c_sales_support_team = document.getElementById('c-sales-support-team');
   var modal_c_sales_inside_team = document.getElementById('c-sales-inside-team');
   var modal_c_sales_field_team = document.getElementById('c-sales-field-team');
+  var modal_atone_ba_team = document.getElementById('atone-ba-team');
+  var modal_atone_risk_team = document.getElementById('atone-risk-team');
+  var modal_atone_customer_center_team = document.getElementById('atone-customer-center-team');
+  var modal_atone_sales_team = document.getElementById('atone-sales-team');
+  var modal_atone_b_mkt_team = document.getElementById('atone-b-mkt-team');
+  var modal_atone_c_mkt_team = document.getElementById('atone-c-mkt-team');
+  var modal_atone_real_team = document.getElementById('atone-real-team');
+  var modal_atone_uxd_team = document.getElementById('atone-uxd-team');
+  var modal_dpt_biz_dev = document.getElementById('dpt-biz-dev');
+  var modal_nova_ba = document.getElementById('ba-nova-team');
+  var modal_security_ba = document.getElementById('ba-security-team');
+  var modal_infra_ba = document.getElementById('ba-infra-team');
+  var modal_smap_ba = document.getElementById('ba-smap-team');
+  var modal_cpu_ba = document.getElementById('ba-cpu-team');
+  var modal_camp_ba = document.getElementById('ba-camp-team');
+  var modal_i3_ba = document.getElementById('ba-i3-team');
+  var modal_wsd_ba = document.getElementById('ba-wsd-team');
+  var modal_b2b_ba = document.getElementById('ba-b2b-team');
+  var modal_finance = document.getElementById('finance-team');
+  var modal_accounting = document.getElementById('accounting-team');
+
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal_sd) {
@@ -458,6 +578,66 @@ $(function() {
     }
     if (event.target == modal_c_sales_field_team) {
       modal_c_sales_field_team.style.display = "none";
+    }
+    if (event.target == modal_atone_risk_team) {
+      modal_atone_risk_team.style.display = "none";
+    }
+    if (event.target == modal_atone_customer_center_team) {
+      modal_atone_customer_center_team.style.display = "none";
+    }
+    if (event.target == modal_atone_b_mkt_team) {
+      modal_atone_b_mkt_team.style.display = "none";
+    }
+    if (event.target == modal_atone_c_mkt_team) {
+      modal_atone_c_mkt_team.style.display = "none";
+    }
+    if (event.target == modal_atone_real_team) {
+      modal_atone_real_team.style.display = "none";
+    }
+    if (event.target == modal_atone_uxd_team) {
+      modal_atone_uxd_team.style.display = "none";
+    }
+    if (event.target == modal_atone_sales_team) {
+      modal_atone_sales_team.style.display = "none";
+    }
+    if (event.target == modal_atone_ba_team) {
+      modal_atone_ba_team.style.display = "none";
+    }
+    if (event.target == modal_dpt_biz_dev) {
+      modal_dpt_biz_dev.style.display = "none";
+    }
+    if (event.target == modal_nova_ba) {
+      modal_nova_ba.style.display = "none";
+    }
+    if (event.target == modal_security_ba) {
+      modal_security_ba.style.display = "none";
+    }
+    if (event.target == modal_infra_ba) {
+      modal_infra_ba.style.display = "none";
+    }
+    if (event.target == modal_smap_ba) {
+      modal_smap_ba.style.display = "none";
+    }
+    if (event.target == modal_cpu_ba) {
+      modal_cpu_ba.style.display = "none";
+    }
+    if (event.target == modal_camp_ba) {
+      modal_camp_ba.style.display = "none";
+    }
+    if (event.target == modal_i3_ba) {
+      modal_i3_ba.style.display = "none";
+    }
+    if (event.target == modal_wsd_ba) {
+      modal_wsd_ba.style.display = "none";
+    }
+    if (event.target == modal_b2b_ba) {
+      modal_b2b_ba.style.display = "none";
+    }
+    if (event.target == modal_finance) {
+      modal_finance.style.display = "none";
+    }
+    if (event.target == modal_accounting) {
+      modal_accounting.style.display = "none";
     }
   }
 });
