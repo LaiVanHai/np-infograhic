@@ -373,6 +373,17 @@ $(function() {
   });
   // C-Salesのチームは繋がることを作成する
 
+  // 財経のチームは繋がることを作成する
+  $('.link-to-finance').click(function() {
+    deleteDisplayWork();
+    $('#finance-team').fadeIn();
+  });
+  $('.link-to-accounting').click(function() {
+    deleteDisplayWork();
+    $('#accounting-team').fadeIn();
+  });
+  // 財経のチームは繋がることを作成する
+
   // atoneのチームは繋がることを作成する
   $('.link-to-atone-ba').click(function() {
     deleteDisplayWork();

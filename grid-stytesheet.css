@@ -1128,3 +1128,144 @@
 }
 
 /* ========================================================= */
+
+/* ========================================================= */
+.container-4-work-4sub-finances {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-4-work-4sub-finances .team {
+  grid-area: 3 / 3 / span 2 / span 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.item1, .item2, .item3, .item4, .item1-sub1, .item1-sub2, .item1-sub3,
+  .item2-sub1, .item2-sub2, .item2-sub3, .item2-sub3-sub1,
+  .item3-sub1, .item3-sub2,
+  .item4-sub1, .item4-sub1-sub1, .item4-sub1-sub2
+  {
+    text-align: center;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+.container-4-work-4sub-finances .item1 {
+  grid-area: 2 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 1s;
+  margin-right: -30px;
+}
+.container-4-work-4sub-finances .item1-sub1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-4sub-finances .item1-sub2 {
+  grid-area: 2 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+  margin-top: 15px;
+}
+.container-4-work-4sub-finances .item1-sub3 {
+  grid-area: 3 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+
+.container-4-work-4sub-finances .item2 {
+  grid-area: 2 / 4 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 2s;
+  margin-left: -30px;
+}
+.container-4-work-4sub-finances .item2-sub1 {
+  grid-area: 1 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-4-work-4sub-finances .item2-sub2 {
+  grid-area: 2 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+  margin-top: 15px;
+}
+.container-4-work-4sub-finances .item2-sub3 {
+  grid-area: 3 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-4-work-4sub-finances .item2-sub3-sub1 {
+  grid-area: 4 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 4s;
+}
+
+.container-4-work-4sub-finances .item3 {
+  grid-area: 5 / 4 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 4s;
+  margin-left: -30px;
+}
+.container-4-work-4sub-finances .item3-sub1 {
+  grid-area: 5 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 4s;
+  margin-top: 15px;
+}
+.container-4-work-4sub-finances .item3-sub2 {
+  grid-area: 6 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 4s;
+}
+
+.container-4-work-4sub-finances .item4 {
+  grid-area: 5 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 5s;
+  margin-right: -30px;
+}
+.container-4-work-4sub-finances .item4-sub1 {
+  grid-area: 5 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 5s;
+  margin-top: 15px;
+}
+.container-4-work-4sub-finances .item4-sub1-sub1 {
+  grid-area: 6 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 5s;
+}
+.container-4-work-4sub-finances .item4-sub1-sub2 {
+  grid-area: 6 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 5s;
+  margin-left: -50px;
+}
+
+.container-4-work-4sub-finances .other-team {
+  grid-area: 8 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-4-work-4sub-finances .team-list {
+  grid-area: 9 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-4-work-4sub-finances .other-dpt {
+  grid-area: 10 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-4-work-4sub-finances .dpt-list {
+  grid-area: 11 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-4-work-4sub-finances .line {
+  grid-area: 1 / 1 / span 11 / span 5;
+  text-align: center;
+}
+/* ========================================================= */
