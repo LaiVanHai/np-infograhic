@@ -373,13 +373,40 @@ $(function() {
   });
   // C-Salesのチームは繋がることを作成する
 
-  // 部署の各チームの連携することは表す
-  // $('#mkt-button').click(function() {
-  //   $('#mkt-link-team').fadeIn();
-  // });
-  // $('#c-sales-button').click(function() {
-  //   $('#c-sales-link-team').fadeIn();
-  // });
+  // atoneのチームは繋がることを作成する
+  $('.link-to-atone-ba').click(function() {
+    deleteDisplayWork();
+    $('#atone-ba-team').fadeIn();
+  });
+  $('.link-to-atone-risk').click(function() {
+    deleteDisplayWork();
+    $('#atone-risk-team').fadeIn();
+  });
+  $('.link-to-atone-customer-center').click(function() {
+    deleteDisplayWork();
+    $('#atone-customer-center-team').fadeIn();
+  });
+  $('.link-to-atone-sales').click(function() {
+    deleteDisplayWork();
+    $('#atone-sales-team').fadeIn();
+  });
+  $('.link-to-atone-b-mkt').click(function() {
+    deleteDisplayWork();
+    $('#atone-b-mkt-team').fadeIn();
+  });
+  $('.link-to-atone-c-mkt').click(function() {
+    deleteDisplayWork();
+    $('#atone-c-mkt-team').fadeIn();
+  });
+  $('.link-to-atone-real').click(function() {
+    deleteDisplayWork();
+    $('#atone-real-team').fadeIn();
+  });
+  $('.link-to-atone-uxd').click(function() {
+    deleteDisplayWork();
+    $('#atone-uxd-team').fadeIn();
+  });
+  // atoneのチームは繋がることを作成する
 
   deleteDisplayTeam = function(){
     $('.department-c-sales').css('display','none');

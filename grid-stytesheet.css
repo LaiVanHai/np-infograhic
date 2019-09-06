@@ -1031,8 +1031,9 @@
 }
 
 .container-5-work-2sub .team {
-  grid-area: 3 / 3 / span 1 / span 4;
+  grid-area: 3 / 3 / span 2 / span 1;
   text-align: center;
+  padding-top: 30px;
 }
 
 .item1, .item2, .item2-sub1, .item2-sub2, .item2-sub3,
@@ -1055,16 +1056,15 @@
   }
 .container-5-work-2sub .item1 {
   grid-area: 3 / 1 / span 1 / span 2;
-  margin-left: -10px;
   animation-duration: 1s;
 }
 .container-5-work-2sub .item2 {
   grid-area: 2 / 3 / span 1 / span 1;
   animation-duration: 2s;
+  margin-top: 20px;
 }
 .container-5-work-2sub .item2-sub1 {
   grid-area: 1 / 2 / span 1 / span 1;
-  margin-left: 20px;
   animation-duration: 2s;
 }
 .container-5-work-2sub .item2-sub2 {
@@ -1076,7 +1076,7 @@
   animation-duration: 2s;
 }
 .container-5-work-2sub .item3 {
-  grid-area: 3 / 4 / span 1 / span 2;
+  grid-area: 3 / 4 / span 1 / span 1;
   animation-duration: 3s;
 }
 .container-5-work-2sub .item3-sub1{
@@ -1086,38 +1086,44 @@
 .container-5-work-2sub .item4 {
   grid-area: 4 / 4 / span 1 / span 1;
   animation-duration: 4s;
+  padding-top: 30px;
+  padding-right: 50px;
 }
 .container-5-work-2sub .item4-sub1{
   grid-area: 5 / 3 / span 1 / span 1;
   animation-duration: 3s;
+  padding-left: 60px;
 }
 .container-5-work-2sub .item4-sub2{
-  grid-area: 5 / 5 / span 1 / span 1;
+  grid-area: 5 / 4 / span 1 / span 2;
   animation-duration: 3s;
+  padding-left: 140px;
 }
 .container-5-work-2sub .item5 {
   grid-area: 4 / 2 / span 1 / span 1;
   animation-duration: 4s;
+  padding-top: 30px;
+  padding-left: 50px;
 }
 
 .container-5-work-2sub .other-team {
-  grid-area: 5 / 1 / span 1 / span 2;
+  grid-area: 6 / 1 / span 1 / span 2;
   text-align: left;
 }
 .container-5-work-2sub .team-list {
-  grid-area: 6 / 1 / span 1 / span 5;
+  grid-area: 7 / 1 / span 1 / span 5;
   text-align: left;
 }
 .container-5-work-2sub .other-dpt {
-  grid-area: 7 / 1 / span 1 / span 2;
+  grid-area: 8 / 1 / span 1 / span 2;
   text-align: left;
 }
 .container-5-work-2sub .dpt-list {
-  grid-area: 8 / 1 / span 1 / span 5;
+  grid-area: 9 / 1 / span 1 / span 5;
   text-align: left;
 }
 .container-5-work-2sub .line {
-  grid-area: 1 / 1 / span 8 / span 5;
+  grid-area: 1 / 1 / span 9 / span 5;
   text-align: center;
 }
 
