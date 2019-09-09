@@ -85,19 +85,31 @@ $(function() {
   $('#tag-b-sales-strategy-design').click(function(){
     $('#b-salses-inside').fadeIn();
     $('#b-salses-field').fadeIn();
-    $('#b-salses-customer-success').fadeOut();
+    $('#b-salses-customer-success').fadeIn();
 
     $('#tag-b-sales-strategy-design').addClass('clicked-color');
-    $('#tag-b-sales-stable-operation').removeClass('clicked-color');
+    $('#tag-b-sales-onboarding').removeClass('clicked-color');
+    $('#tag-b-sales-negotiation').removeClass('clicked-color');
     $('#tag-b-sales').removeClass('clicked-color');
   });
-  $('#tag-b-sales-stable-operation').click(function(){
+  $('#tag-b-sales-onboarding').click(function(){
     $('#b-salses-inside').fadeOut();
-    $('#b-salses-field').fadeIn();
+    $('#b-salses-field').fadeOut();
     $('#b-salses-customer-success').fadeIn();
 
     $('#tag-b-sales-strategy-design').removeClass('clicked-color');
-    $('#tag-b-sales-stable-operation').addClass('clicked-color');
+    $('#tag-b-sales-onboarding').addClass('clicked-color');
+    $('#tag-b-sales-negotiation').removeClass('clicked-color');
+    $('#tag-b-sales').removeClass('clicked-color');
+  });
+  $('#tag-b-sales-negotiation').click(function(){
+    $('#b-salses-inside').fadeIn();
+    $('#b-salses-field').fadeIn();
+    $('#b-salses-customer-success').fadeOut();
+
+    $('#tag-b-sales-strategy-design').removeClass('clicked-color');
+    $('#tag-b-sales-onboarding').removeClass('clicked-color');
+    $('#tag-b-sales-negotiation').addClass('clicked-color');
     $('#tag-b-sales').removeClass('clicked-color');
   });
   $('#tag-b-sales').click(function(){
