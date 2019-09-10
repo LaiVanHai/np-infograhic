@@ -419,6 +419,45 @@ $(function() {
   });
   // atoneのチームは繋がることを作成する
 
+  // BAのチームは繋がることを作成する
+  $('.link-to-ba-nova').click(function() {
+    deleteDisplayWork();
+    $('#ba-nova-team').fadeIn();
+  });
+  $('.link-to-ba-security').click(function() {
+    deleteDisplayWork();
+    $('#ba-security-team').fadeIn();
+  });
+  $('.link-to-ba-infra').click(function() {
+    deleteDisplayWork();
+    $('#ba-infra-team').fadeIn();
+  });
+  $('.link-to-ba-smap').click(function() {
+    deleteDisplayWork();
+    $('#ba-smap-team').fadeIn();
+  });
+  $('.link-to-ba-cpu').click(function() {
+    deleteDisplayWork();
+    $('#ba-cpu-team').fadeIn();
+  });
+  $('.link-to-ba-camp').click(function() {
+    deleteDisplayWork();
+    $('#ba-camp-team').fadeIn();
+  });
+  $('.link-to-ba-i3').click(function() {
+    deleteDisplayWork();
+    $('#ba-i3-team').fadeIn();
+  });
+  $('.link-to-ba-wsd').click(function() {
+    deleteDisplayWork();
+    $('#ba-wsd-team').fadeIn();
+  });
+  $('.link-to-ba-b2b').click(function() {
+    deleteDisplayWork();
+    $('#ba-b2b-team').fadeIn();
+  });
+  // BAのチームは繋がることを作成する
+
   deleteDisplayTeam = function(){
     $('.department-c-sales').css('display','none');
     $('.department-mkt').css('display','none');
