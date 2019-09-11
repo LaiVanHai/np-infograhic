@@ -1269,3 +1269,132 @@
   text-align: center;
 }
 /* ========================================================= */
+
+/* ========================================================= */
+.container-2-work-2-sub{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-2-work-2-sub .team {
+  grid-area: 3 / 2 / span 1 / span 1;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.item1, .item2,
+  .item1-sub1, .item1-sub2, .item1-sub3, .item1-sub4, .item1-sub5,
+  .item2-sub1, .item2-sub2, .item2-sub3, .item2-sub4, .item2-sub5 {
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.container-2-work-2-sub .item1 {
+  text-align: center;
+  grid-area: 2 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 1s;
+}
+
+.container-2-work-2-sub .item2 {
+  text-align: center;
+  grid-area: 4 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 2s;
+}
+
+.container-2-work-2-sub .item1-sub1 {
+  text-align: center;
+  margin-bottom: 20px;
+  grid-area: 1 / 1 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 2s;
+}
+.container-2-work-2-sub .item1-sub2 {
+  text-align: center;
+  margin-bottom: 20px;
+  grid-area: 1 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 2s;
+}
+.container-2-work-2-sub .item1-sub3 {
+  text-align: center;
+  grid-area: 1 / 3 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-2-work-2-sub .item1-sub4 {
+  text-align: right;
+  margin-top: 15px;
+  grid-area: 2 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-2-work-2-sub .item1-sub5 {
+  text-align: left;
+  margin-top: 15px;
+  grid-area: 2 / 3 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-2-work-2-sub .item2-sub1 {
+  text-align: center;
+  grid-area: 5 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-2-work-2-sub .item2-sub2 {
+  margin-top: 20px;
+  text-align: center;
+  grid-area: 5 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-2-work-2-sub .item2-sub3 {
+  text-align: center;
+  grid-area: 5 / 3 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-2-work-2-sub .item2-sub4 {
+  text-align: right;
+  margin-top: 15px;
+  grid-area: 4 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-2-work-2-sub .item2-sub5 {
+  text-align: left;
+  margin-top: 15px;
+  grid-area: 4 / 3 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+
+.container-2-work-2-sub .other-team {
+  grid-area: 6 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-2-work-2-sub .team-list {
+  grid-area: 7 / 1 / span 1 / span 3;
+  text-align: left;
+}
+.container-2-work-2-sub .other-dpt {
+  grid-area: 8 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-2-work-2-sub .dpt-list {
+  grid-area: 9 / 1 / span 1 / span 3;
+  text-align: left;
+}
+.container-2-work-2-sub .line {
+  grid-area: 1 / 1 / span 7 / span 3;
+  text-align: center;
+}
+
+/* ========================================================= */
