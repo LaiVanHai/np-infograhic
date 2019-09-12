@@ -148,6 +148,18 @@ $(function() {
   });
   // 財経部署のModal
 
+  //台湾オフィースのModal
+  $('#taiwan-ba').click(function() {
+    $('#taiwan-ba-team').fadeIn();
+  });
+  $('#taiwan-c-sales').click(function() {
+    $('#taiwan-c-sales-team').fadeIn();
+  });
+  $('#taiwan-c-cs').click(function() {
+    $('#taiwan-c-cs-team').fadeIn();
+  });
+  // 台湾オフィースのModal
+
   // 法務のModal
   $('.legal').click(function() {
     $('#dpt-legal').fadeIn();
@@ -384,6 +396,21 @@ $(function() {
   });
   // 財経のチームは繋がることを作成する
 
+  // 台湾のチームは繋がることを作成する
+  $('.link-to-taiwan-ba').click(function() {
+    deleteDisplayWork();
+    $('#taiwan-ba-team').fadeIn();
+  });
+  $('.link-to-taiwan-c-sales').click(function() {
+    deleteDisplayWork();
+    $('#taiwan-c-sales-team').fadeIn();
+  });
+  $('.link-to-taiwan-c-cs').click(function() {
+    deleteDisplayWork();
+    $('#taiwan-c-cs-team').fadeIn();
+  });
+  // 台湾のチームは繋がることを作成する
+
   // atoneのチームは繋がることを作成する
   $('.link-to-atone-ba').click(function() {
     deleteDisplayWork();
@@ -454,9 +481,18 @@ $(function() {
   });
   $('.link-to-ba-b2b').click(function() {
     deleteDisplayWork();
-    $('#ba-b2b-team').fadeIn();
+    $('#').fadeIn();
   });
   // BAのチームは繋がることを作成する
+
+  $('.work-item').click(function() {
+    var opacity_val = $('.modal-line').css("opacity");
+    if (opacity_val == 1) {
+      $('.modal-line').css({"opacity": 0});
+    } else {
+      $('.modal-line').css({"opacity": 1});
+    }
+  });
 
   deleteDisplayTeam = function(){
     $('.department-c-sales').css('display','none');
@@ -536,6 +572,11 @@ $(function() {
     $('#finance-team').fadeOut();
     $('#accounting-team').fadeOut();
 
+    // 台湾のModal
+    $('#taiwan-ba-team').fadeOut();
+    $('#taiwan-c-sales-team').fadeOut();
+    $('#taiwan-c-cs-team').fadeOut();
+
     // $('#mkt-link-team').fadeOut();
     // $('#c-sales-link-team').fadeOut();
   };
@@ -584,6 +625,9 @@ $(function() {
   var modal_b2b_ba = document.getElementById('ba-b2b-team');
   var modal_finance = document.getElementById('finance-team');
   var modal_accounting = document.getElementById('accounting-team');
+  var modal_taiwan_ba = document.getElementById('taiwan-ba-team');
+  var modal_taiwan_c_sales = document.getElementById('taiwan-c-sales-team');
+  var modal_taiwan_c_cs = document.getElementById('taiwan-c-cs-team');
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
@@ -715,6 +759,15 @@ $(function() {
     }
     if (event.target == modal_accounting) {
       modal_accounting.style.display = "none";
+    }
+    if (event.target == modal_taiwan_ba) {
+      modal_taiwan_ba.style.display = "none";
+    }
+    if (event.target == modal_taiwan_c_sales) {
+      modal_taiwan_c_sales.style.display = "none";
+    }
+    if (event.target == modal_taiwan_c_cs) {
+      modal_taiwan_c_cs.style.display = "none";
     }
   }
 });

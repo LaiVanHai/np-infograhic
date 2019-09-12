@@ -17,6 +17,7 @@
     .department-ba,
     .department-hr,
     .department-finances,
+    .department-taiwan,
     .department-b-cs {
     margin: 0 360px;
     margin-top: 30px;
@@ -79,7 +80,7 @@
     height: 25px;
   }
   .taiwan-img2 {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 }
 
@@ -102,6 +103,7 @@
     .department-ba,
     .department-hr,
     .department-finances,
+    .department-taiwan,
     .department-b-cs {
     margin: 0 250px;
     margin-top: 30px;
@@ -166,7 +168,7 @@
     height: 25px;
   }
   .taiwan-img2 {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }
 
@@ -189,6 +191,7 @@
     .department-ba,
     .department-hr,
     .department-finances,
+    .department-taiwan,
     .department-b-cs {
     margin: 0px 100px;
     margin-top: 30px;
@@ -253,7 +256,7 @@
     height: 25px;
   }
   .taiwan-img2 {
-    margin-left: 15px;
+    margin-left: 35px;
   }
 }
 @media all and (min-width: 501px) and (max-width: 900px) {
@@ -274,6 +277,7 @@
     .department-ba,
     .department-hr,
     .department-finances,
+    .department-taiwan,
     .department-b-cs {
     margin-top: 30px;
     text-align: center;
@@ -338,7 +342,7 @@
     height: 25px;
   }
   .taiwan-img2 {
-    padding-left: 10px;
+    padding-left: 30px;
   }
 }
 @media all and (max-width: 500px) {
@@ -360,6 +364,7 @@
     .department-ba,
     .department-hr,
     .department-finances,
+    .department-taiwan,
     .department-b-cs {
     margin-top: 30px;
     text-align: center;
@@ -721,7 +726,7 @@ a {
 }
 .dpt-info p {
   line-height: 15px;
-  margin-top: 110px;
+  margin-top: 112px;
   font-weight: bold;
   color: #1a61b3;
   z-index: 0;
@@ -739,7 +744,7 @@ a {
 
   /* Position the tooltip */
   position: absolute;
-  z-index: 5;
+  z-index: 15;
   left: 50%;
   margin-left: -78px;
   line-height: 13px;
@@ -808,9 +813,10 @@ button {
   background: #fbefbb80;
   border-radius: 50%;
   position: relative;
-  cursor: pointer;
+  cursor: initial;
   border: 3px solid #f2a000;
   display: inline-block;
+  z-index: 5;
 }
 .work-item-level1:hover .tooltiptext {
   visibility: visible;
@@ -846,6 +852,7 @@ button {
   margin-top: 87px;
   color: #7c4c03;
   font-size: 13px;
+  z-index: 11 !important;
 }
 
 .work-item-level2 {
@@ -854,9 +861,10 @@ button {
   background: #ffffff;
   border-radius: 50%;
   position: relative;
-  cursor: pointer;
+  cursor: initial;
   border: 3px solid #f2a000;
   display: inline-block;
+  z-index: 11 !important;
 }
 .lv2-image {
   position: absolute;
@@ -873,6 +881,7 @@ button {
   margin-top: 60px;
   color: #7c4c03;
   font-size: 12px;
+  z-index: 11 !important;
 }
 
 .work-item-level3 {
@@ -884,6 +893,7 @@ button {
   cursor: pointer;
   border: 3px solid #f2c900;
   display: inline-block;
+  z-index: 11 !important;
 }
 .lv3-image {
   position: absolute;
@@ -900,6 +910,7 @@ button {
   margin-top: 45px;
   color: #7c4c03;
   font-size: 10px;
+  z-index: 11 !important;
 }
 
 
