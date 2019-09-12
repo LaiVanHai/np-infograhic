@@ -721,7 +721,7 @@ a {
 }
 .dpt-info p {
   line-height: 15px;
-  margin-top: 110px;
+  margin-top: 112px;
   font-weight: bold;
   color: #1a61b3;
   z-index: 0;
@@ -808,7 +808,7 @@ button {
   background: #fbefbb80;
   border-radius: 50%;
   position: relative;
-  cursor: pointer;
+  cursor: initial;
   border: 3px solid #f2a000;
   display: inline-block;
 }
@@ -854,7 +854,7 @@ button {
   background: #ffffff;
   border-radius: 50%;
   position: relative;
-  cursor: pointer;
+  cursor: initial;
   border: 3px solid #f2a000;
   display: inline-block;
 }

@@ -454,9 +454,18 @@ $(function() {
   });
   $('.link-to-ba-b2b').click(function() {
     deleteDisplayWork();
-    $('#ba-b2b-team').fadeIn();
+    $('#').fadeIn();
   });
   // BAのチームは繋がることを作成する
+
+  $('.work-item').click(function() {
+    var opacity_val = $('.modal-line').css("opacity");
+    if (opacity_val == 1) {
+      $('.modal-line').css({"opacity": 0});
+    } else {
+      $('.modal-line').css({"opacity": 1});
+    }
+  });
 
   deleteDisplayTeam = function(){
     $('.department-c-sales').css('display','none');
