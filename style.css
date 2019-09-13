@@ -556,7 +556,7 @@ a {
   background-color: white;
 }
 .biz-dev p{
-  padding-top: 30px;
+  padding-top: 30px !important;
   display: inline-block;
 }
 
@@ -1039,7 +1039,7 @@ i {
 }
 .dpt-link-item .tooltiptext {
   width: auto;
-  margin-left: -35px;
+  margin-left: -30px;
 }
 .dpt-link-item .tooltiptext::after {
   content: "";
@@ -1048,7 +1048,7 @@ i {
   border-color: #f39f06 transparent transparent transparent;
   margin-bottom: 20px;
 }
-.dpt-link-item p {
+.dpt-link-item .dpt-link-title {
   position: absolute;
   margin-top: auto;
   background-color: #86D160;
@@ -1115,7 +1115,7 @@ i {
 }
 .team-link-item .tooltiptext {
   width: auto;
-  margin-left: -35px;
+  margin-left: -30px;
 }
 .team-link-item .tooltiptext::after {
   content: "";
@@ -1125,16 +1125,16 @@ i {
   margin-bottom: 20px;
 }
 
-.tag {
-display: block;
-text-align: right;
+.infograp-tag {
+  display: block;
+  text-align: right;
 }
-  .tag span, a {
-   color: #00abf2;
-   cursor: pointer;
-  }
-  .tag i {
-   color: #f702a9;
+.infograp-tag .link-tag {
+  color: #00abf2;
+  cursor: pointer;
+}
+.infograp-tag i {
+  color: #f702a9;
 }
 
 .clicked-color {
@@ -1162,7 +1162,7 @@ button {
 }
 
 .bcs-goal {
-  border: 3px solid #FF9800;
+  border: 3px solid #e2cb00;
   background-color: #fffbd9;
 }
 
@@ -1178,4 +1178,9 @@ button {
 
 i {
   color: #f701a9;
+}
+
+.dotted-line {
+  stroke-dasharray: 6;
+  stroke-linecap: round;
 }
