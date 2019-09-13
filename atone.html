@@ -13,9 +13,9 @@
   </head>
   <body>
     <!--　全社の部署を表示する -->
-    <!-- <div class="title">
-      <p>NPの部署</p>
-    </div> -->
+    <a href="np.html" target="_blank" class="title">
+      TEST
+    </a>
     <div class="container">
       <div class="service-image">
         <a href="https://www.netprotections.com/" target="_blank">
@@ -330,12 +330,12 @@
             </div>
             <div class="dpt-list">
               <a href="ba.html#ba" class="dpt-link-item link-to-ba">
-                <p>BA</p>
+                <p class="dpt-link-title">BA</p>
                 <span class="tooltiptext hight">関連度:高</span>
                 <img src="img/ba/department3.png">
               </a>
               <a href="taiwan.html#taiwan" class="dpt-link-item link-to-taiwan">
-                <p>台湾</p>
+                <p class="dpt-link-title">台湾</p>
                 <span class="tooltiptext low">関連度:低</span>
                 <img src="img/taiwan/department2.png">
               </a>
@@ -356,12 +356,39 @@
           </div>
         </div>
         <div class="modal-content">
-          <div class="container-2-work">
+          <div class="container-3-work-2-sub">
             <div class="line modal-line">
-              <svg height="450" width="300">
-                <line class="work-line" x1="150" y1="170" x2="150" y2="125"></line>
+              <svg height="750" width="600">
+                <defs>
+                  <marker id="arrow" class="arrow-animation" markerWidth="5" markerHeight="5" refX="0" refY="2" orient="auto" markerUnits="strokeWidth">
+                    <path d="M 0,0 L 0,4 L 4,2 z" fill="#f2a000" />
+                  </marker>
+                </defs>
+                <line class="work-line" x1="240" y1="480" x2="180" y2="530"></line>
                 <!-- item2 of line -->
-                <line class="work-line" x1="150" y1="320" x2="150" y2="365"></line>
+                <line class="work-line" x1="300" y1="360" x2="300" y2="300"></line>
+                <!-- item3 of line -->
+                <line class="work-line" x1="360" y1="480" x2="420" y2="530"></line>
+                <!-- item1-1 of line -->
+                <line class="work-line" x1="135" y1="635" x2="40" y2="650"></line>
+                <!-- item1-2 of line -->
+                <line class="work-line" x1="135" y1="635" x2="225" y2="650"></line>
+                <!-- item3-1 of line -->
+                <line class="work-line" x1="465" y1="635" x2="385" y2="650"></line>
+                <!-- item3-2 of line -->
+                <line class="work-line" x1="465" y1="635" x2="560" y2="650"></line>
+                <!-- goal1 of line -->
+                <line class="work-line" x1="110" y1="520" x2="245" y2="115" marker-end="url(#arrow)"></line>
+                <!-- goal2 of line -->
+                <line class="work-line" x1="300" y1="180" x2="300" y2="140" marker-end="url(#arrow)"></line>
+                <!-- goal3 of line -->
+                <line class="work-line" x1="490" y1="520" x2="355" y2="115" marker-end="url(#arrow)"></line>
+                <!-- item1-arrow of line -->
+                <line class="work-line dotted-line" x1="195" y1="580" x2="385" y2="580" marker-end="url(#arrow)"></line>
+                <!-- item2-arrow of line -->
+                <line class="work-line dotted-line" x1="250" y1="275" x2="155" y2="500" marker-end="url(#arrow)"></line>
+                <!-- item3-arrow of line -->
+                <line class="work-line dotted-line" x1="450" y1="515" x2="353" y2="295" marker-end="url(#arrow)"></line>
                 Sorry, your browser does not support inline SVG.
               </svg>
             </div>
@@ -369,7 +396,7 @@
               <div class="work-item">
                 <img src="img/atone/risk/team.png" class="dpt-image">
                 <div class="dpt-info">
-                  <p>リスク</p>
+                  <p>atone<br>リスク</p>
                 </div>
               </div>
             </div>
@@ -377,7 +404,7 @@
               <div class="work-item-level1">
                 <img src="img/atone/risk/work1.png" class="lv1-image">
                 <div class="lv1-info">
-                  <p>審査ロジック<br>改善</p>
+                  <p>企画・設計</p>
                 </div>
               </div>
             </div>
@@ -385,7 +412,55 @@
               <div class="work-item-level1">
                 <img src="img/atone/risk/work2.png" class="lv1-image">
                 <div class="lv1-info">
-                  <p>督促フロー<br>整理</p>
+                  <p>モニタリング</p>
+                </div>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="work-item-level1">
+                <img src="img/atone/risk/work3.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>改善・メン<br>テナンス</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub1">
+              <div class="work-item-level2">
+                <img src="img/atone/risk/work1-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>与信調査<br>ロジック</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub2">
+              <div class="work-item-level2">
+                <img src="img/atone/risk/work1-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>請求督促<br>フロー</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub1">
+              <div class="work-item-level2">
+                <img src="img/atone/risk/work2-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>未払い<br>分析</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub2">
+              <div class="work-item-level2">
+                <img src="img/atone/risk/work2-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>不正検知<br>予測</p>
+                </div>
+              </div>
+            </div>
+            <div class="goal">
+              <div class="work-item-level1 bcs-goal">
+                <img src="img/atone/risk/goal.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>未払い<br>削減</p>
                 </div>
               </div>
             </div>
@@ -393,16 +468,36 @@
               <p class="other-team-title">連携があるチーム:</p>
             </div>
             <div class="team-list">
-              <div class="team-link-item link-to-atone-sales">
-                <img src="img/atone/sales/team.png">
-                <p>atone<br>セールス</p>
-                <span class="tooltiptext medium">関連度:中</span>
+              <div class="team-link-item link-to-atone-customer-center">
+                <img src="img/atone/customer-center/team.png">
+                <p>カスタマー<br>センター</p>
+                <span class="tooltiptext hight">関連度:高</span>
               </div>
               <div class="team-link-item link-to-atone-ba">
                 <img src="img/atone/ba/team.png">
                 <p>atone<br>BA</p>
-                <span class="tooltiptext medium">関連度:中</span>
+                <span class="tooltiptext hight">関連度:高</span>
               </div>
+              <div class="team-link-item link-to-atone-sales">
+                <img src="img/atone/sales/team.png">
+                <p>atone<br>セールス</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+            </div>
+            <div class="other-dpt">
+              <p class="other-team-title">連携がある部署:</p>
+            </div>
+            <div class="dpt-list">
+              <a href="ba.html#ba" class="dpt-link-item link-to-ba">
+                <p class="dpt-link-title">BA</p>
+                <span class="tooltiptext medium">関連度:中</span>
+                <img src="img/ba/department3.png">
+              </a>
+              <a href="b-sales.html#b-sales" class="dpt-link-item link-to-b-sales">
+                <p class="dpt-link-title">B-Sales</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/b-sales/department.png">
+              </a>
             </div>
           </div>
         </div>
@@ -555,17 +650,17 @@
             </div>
             <div class="dpt-list">
               <a href="c-cs.html#c-cs" class="dpt-link-item link-to-c-cs">
-                <p>C-CS</p>
+                <p class="dpt-link-title">C-CS</p>
                 <span class="tooltiptext low">関連度:低</span>
                 <img src="img/c-cs/department.png">
               </a>
               <a href="b-cs.html#b-cs" class="dpt-link-item link-to-b-cs">
-                <p>B-CS</p>
+                <p class="dpt-link-title">B-CS</p>
                 <span class="tooltiptext low">関連度:低</span>
                 <img src="img/b-cs/department.png">
               </a>
               <a href="c-sales.html#c-sales" class="dpt-link-item link-to-c-sales">
-                <p>C-Sales</p>
+                <p class="dpt-link-title">C-Sales</p>
                 <span class="tooltiptext medium">関連度:中</span>
                 <img src="img/c-sales/department.png">
               </a>
@@ -586,7 +681,97 @@
           </div>
         </div>
         <div class="modal-content">
-          開発中
+          <div class="container-2-work-1-sub">
+            <div class="line modal-line">
+              <svg height="700" width="650">
+                <!-- item1-sub1 of line -->
+                <line class="work-line" x1="265" y1="170" x2="125" y2="95"></line>
+                <!-- item1-sub3 of line -->
+                <line class="work-line" x1="385" y1="170" x2="520" y2="95"></line>
+                <!-- item1 of line -->
+                <line class="work-line" x1="325" y1="265" x2="325" y2="230"></line>
+                <!-- item2 of line -->
+                <line class="work-line" x1="325" y1="415" x2="325" y2="455"></line>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+            </div>
+            <div class="team">
+              <div class="work-item">
+                <img src="img/b-sales/field/team.png" class="dpt-image">
+                <div class="dpt-info">
+                  <p><i class="fa fa-search tags"></i>フィールド<br>セールス</p>
+                  <span class="tooltiptext">Field Sales</span>
+                </div>
+              </div>
+            </div>
+            <div class="item1">
+              <div class="work-item-level1">
+                <img src="img/b-sales/field/work1.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>加盟店<br>開拓</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub1">
+              <div class="work-item-level2">
+                <img src="img/b-sales/field/work1-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>戦略、施策<br>を検討</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub3">
+              <div class="work-item-level2">
+                <img src="img/b-sales/field/work1-4.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>稼働まで<br>担当</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="work-item-level1">
+                <img src="img/b-sales/field/work3.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>加盟店<br>フォロー</p>
+                </div>
+              </div>
+            </div>
+            <div class="other-team">
+              <p class="other-team-title">連携があるチーム:</p>
+            </div>
+            <div class="team-list">
+              <div class="team-link-item link-to-atone-b-mkt">
+                <img src="img/atone/b-mkt/team.png">
+                <p>atone<br>Bマーケ</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+              <div class="team-link-item link-to-atone-ba">
+                <img src="img/atone/ba/team.png">
+                <p>atone<br>BA</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+              <div class="team-link-item link-to-atone-customer-center">
+                <img src="img/atone/customer-center/team.png">
+                <p>カスタマー<br>センター</p>
+                <span class="tooltiptext medium">関連度:中</span>
+              </div>
+              <div class="team-link-item link-to-atone-risk">
+                <img src="img/atone/risk/team.png">
+                <p>atone<br>リスク</p>
+                <span class="tooltiptext medium">関連度:中</span>
+              </div>
+            </div>
+            <div class="other-dpt">
+              <p class="other-team-title">連携がある部署:</p>
+            </div>
+            <div class="dpt-list">
+              <a href="marketing.html#mkt" class="dpt-link-item link-to-mkt">
+                <p class="dpt-link-title">Marketing</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/mkt/department1.png">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -682,7 +867,7 @@
             </div>
             <div class="dpt-list">
               <a href="marketing.html#mkt" class="dpt-link-item link-to-mkt">
-                <p>Marketing</p>
+                <p class="dpt-link-title">Marketing</p>
                 <span class="tooltiptext hight">関連度:高</span>
                 <img src="img/mkt/department1.png">
               </a>
