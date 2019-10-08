@@ -1,0 +1,19 @@
+<a href="#flag"  class="dpt-item" id="mkt-sd">
+  <img src="img/mkt/sd/team.png" class="dpt-image">
+  <div class="dpt-info">
+    <p><i class="fa fa-search tags"></i>SD</p>
+    <span class="tooltiptext">Strategy Design</span>
+  </div>
+</a>
+
+-> Line
+from: <p><i class="fa fa-search tags"></i>SD</p>
+to: <div class="dpt-title"><i class="fa fa-search tags"></i>SD</div>
+
+
+Modalのコンテンツも上記のような修正する
+
+from .lv1-info p {} to .lv1-info .lv1-title {}
+.other-dpt 削除
+
+.other-team-title add margin-bottom: 20px;

@@ -31,12 +31,12 @@
     /* width: 650px !important;
     height: 600px !important; */
   }
-  .modal-title {
+  /* .modal-title {
     margin-top: -19px;
     z-index: 2;
     position: fixed;
     width: 690px;
-  }
+  } */
   .modal-content {
     margin-top: 35px;
     padding: 60px 20px 10px 20px;
@@ -94,7 +94,7 @@
     margin: 10px 250px;
   }
   .title, .title-line {
-    margin: 10px 250px;
+    margin: 0 250px;
   }
   .department-mkt,
     .department-c-sales,
@@ -106,7 +106,7 @@
     .department-finances,
     .department-taiwan,
     .department-b-cs,
-    .department-team {
+    .department-team  {
     margin: 0 250px;
     margin-top: 30px;
     text-align: center;
@@ -127,12 +127,12 @@
     width: 650px !important;
     height: 560px !important;
   }
-  .modal-title {
+  /* .modal-title {
     margin-top: -19px;
     z-index: 10;
     position: fixed;
     width: 690px;
-  }
+  } */
   .mkt-img {
     width: 250px;
     height: 120px;
@@ -182,7 +182,7 @@
     grid-gap: 10px;
     margin: 10px 100px;
   }
-  .title, .title-line  {
+  .title, .title-line {
     margin: 0px 100px;
   }
   .department-mkt,
@@ -215,12 +215,12 @@
     width: 650px !important;
     height: 550px !important;
   }
-  .modal-title {
+  /* .modal-title {
     margin-top: -19px;
     z-index: 10;
     position: fixed;
     width: 690px;
-  }
+  } */
   .mkt-img {
     width: 290px;
     height: 120px;
@@ -302,12 +302,12 @@
     /* resize: horizontal; */
     width: 650px !important;
   }
-  .modal-title {
+  /* .modal-title {
     margin-top: -19px;
     z-index: 10;
     position: fixed;
     width: 690px;
-  }
+  } */
   .mkt-img {
     width: 250px;
     height: 120px;
@@ -391,12 +391,12 @@
     /* resize: horizontal; */
     width: 650px !important;
   }
-  .modal-title {
+  /* .modal-title {
     margin-top: -19px;
     z-index: 10;
     position: fixed;
     width: 650px;
-  }
+  } */
   .ba-img {
     width: 200px;
     height: 120px;
@@ -452,6 +452,7 @@
   margin: 0 auto;
   text-align: center;
 }
+
 @keyframes diamondStroke {
   0% {
     opacity: 0;
@@ -523,7 +524,6 @@ a {
 .box {
   border: 3px solid #00abf2;
   cursor: pointer;
-  line-height: 5px;
   position: relative;
 }
 .box p {
@@ -531,6 +531,7 @@ a {
   font-weight: bold;
   color: #00abf2;
   font-size: 25px;
+  margin-bottom: 10px;
 }
 .box:hover .tooltiptext {
   visibility: visible;
@@ -560,7 +561,7 @@ a {
   background-color: white;
 }
 .marketing p{
-  padding-top: 30px;
+  padding-top: 40px;
   display: inline-block;
 }
 
@@ -570,7 +571,7 @@ a {
   background-color: white;
 }
 .biz-dev p{
-  padding-top: 30px !important;
+  padding-top: 40px !important;
   display: inline-block;
 }
 
@@ -724,6 +725,10 @@ a {
   display: none;
 }
 
+.title p {
+  margin-top: 15px;
+}
+
 /* チームの表示 */
 
 .dpt-item {
@@ -749,7 +754,7 @@ a {
   border-radius: 50%;
   text-align: center;
 }
-.dpt-info p {
+.dpt-info .dpt-title {
   line-height: 15px;
   margin-top: 112px;
   font-weight: bold;
@@ -872,7 +877,7 @@ button {
   margin-top: 10px;
   transition: transform .2s;
 }
-.lv1-info p {
+.lv1-info .lv1-title {
   line-height: 16px;
   margin-top: 87px;
   color: #7c4c03;
@@ -1041,6 +1046,7 @@ i {
   border: 1px solid #4a86e8;
 }
 .other-team-title {
+  margin-bottom: 20px;
   color: #82530f;
   float: left;
   font-size: 14px;
@@ -1191,9 +1197,6 @@ button {
   background-color: #fffbd9;
 }
 
-.other-dpt {
-  margin-top: -15px;
-}
 .ba-infra-item {
   margin-left: 43px !important;
 }

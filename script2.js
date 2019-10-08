@@ -57,28 +57,16 @@ $(function() {
 
   //マーケ部署のModal
   $('#mkt-sd').click(function() {
-    deleteDisplayWork();
-    $('#team-work').find('p').text('SDチームの業務');
-    $('#team-work').fadeIn();
-    $('#sd-team-element').css("display", "grid");
+    $('#sd-team').fadeIn();
   });
   $('#mkt-dm').click(function() {
-    deleteDisplayWork();
-    $('#team-work').find('p').text('デジマチームの業務');
-    $('#team-work').fadeIn();
-    $('#dm-team-element').css("display", "grid");
+    $('#dm-team').fadeIn();
   });
   $('#mkt-design').click(function() {
-    deleteDisplayWork();
-    $('#team-work').find('p').text('デザインチームの業務');
-    $('#team-work').fadeIn();
-    $('#design-team-element').css("display", "grid");
+    $('#design-team').fadeIn();
   });
   $('#mkt-pr').click(function() {
-    deleteDisplayWork();
-    $('#team-work').find('p').text('PRチームの業務');
-    $('#team-work').fadeIn();
-    $('#pr-team-element').css("display", "grid");
+    $('#pr-team').fadeIn();
   });
   // マーケ部署のModal
 
@@ -129,22 +117,13 @@ $(function() {
 
   // C-Sales部署のModal
   $('#c-sales-inside').click(function() {
-    deleteDisplayWork();
-    $('#team-work').find('p').text('インサイドチームの業務');
-    $('#team-work').fadeIn();
-    $('#c-sales-inside-team-element').css("display", "grid");
+    $('#c-sales-inside-team').fadeIn();
   });
   $('#c-sales-field').click(function() {
-    deleteDisplayWork();
-    $('#team-work').find('p').text('フィルードチームの業務');
-    $('#team-work').fadeIn();
-    $('#c-sales-field-team-element').css("display", "grid");
+    $('#c-sales-field-team').fadeIn();
   });
   $('#c-sales-support').click(function() {
-    deleteDisplayWork();
-    $('#team-work').find('p').text('営業支援チームの業務');
-    $('#team-work').fadeIn();
-    $('#c-sales-support-team-element').css("display", "grid");
+    $('#c-sales-support-team').fadeIn();
   });
   // C-Sales部署のModal
 
@@ -303,27 +282,19 @@ $(function() {
   // マーケのチームは繋がることを作成する
   $('.link-to-dm').click(function() {
     deleteDisplayWork();
-    $('#team-work').find('p').text('デジマチームの業務');
-    $('#team-work').fadeIn();
-    $('#dm-team-element').css("display", "grid");
+    $('#dm-team').fadeIn();
   });
   $('.link-to-sd').click(function() {
     deleteDisplayWork();
-    $('#team-work').find('p').text('SDチームの業務');
-    $('#team-work').fadeIn();
-    $('#sd-team-element').css("display", "grid");
+    $('#sd-team').fadeIn();
   });
   $('.link-to-design').click(function() {
     deleteDisplayWork();
-    $('#team-work').find('p').text('デザインチームの業務');
-    $('#team-work').fadeIn();
-    $('#design-team-element').css("display", "grid");
+    $('#design-team').fadeIn();
   });
   $('.link-to-pr').click(function() {
     deleteDisplayWork();
-    $('#team-work').find('p').text('PRチームの業務');
-    $('#team-work').fadeIn();
-    $('#pr-team-element').css("display", "grid");
+    $('#pr-team').fadeIn();
   });
   // マーケのチームは繋がることを作成する
 
@@ -402,21 +373,15 @@ $(function() {
   // C-Salesのチームは繋がることを作成する
   $('.link-to-c-sales-inside').click(function() {
     deleteDisplayWork();
-    $('#team-work').find('p').text('インサイドチームの業務');
-    $('#team-work').fadeIn();
-    $('#c-sales-inside-team-element').css("display", "grid");
+    $('#c-sales-inside-team').fadeIn();
   });
   $('.link-to-c-sales-field').click(function() {
     deleteDisplayWork();
-    $('#team-work').find('p').text('フィルードチームの業務');
-    $('#team-work').fadeIn();
-    $('#c-sales-field-team-element').css("display", "grid");
+    $('#c-sales-field-team').fadeIn();
   });
   $('.link-to-c-sales-support').click(function() {
     deleteDisplayWork();
-    $('#team-work').find('p').text('営業支援チームの業務');
-    $('#team-work').fadeIn();
-    $('#c-sales-support-team-element').css("display", "grid");
+    $('#c-sales-support-team').fadeIn();
   });
   // C-Salesのチームは繋がることを作成する
 
@@ -547,10 +512,6 @@ $(function() {
     $('#dm-team').fadeOut();
     $('#pr-team').fadeOut();
     $('#design-team').fadeOut();
-    $('#sd-team-element').css("display", "none");
-    $('#dm-team-element').css("display", "none");
-    $('#pr-team-element').css("display", "none");
-    $('#design-team-element').css("display", "none");
 
     // CCS部署のModal
     $('#store-support-team').fadeOut();
@@ -579,9 +540,6 @@ $(function() {
     $('#c-sales-support-team').fadeOut();
     $('#c-sales-inside-team').fadeOut();
     $('#c-sales-field-team').fadeOut();
-    $('#c-sales-inside-team-element').css("display", "none");
-    $('#c-sales-support-team-element').css("display", "none");
-    $('#c-sales-field-team-element').css("display", "none");
 
     //　法務のModal
     $('#dpt-legal').fadeOut();
