@@ -57,16 +57,28 @@ $(function() {
 
   //マーケ部署のModal
   $('#mkt-sd').click(function() {
-    $('#sd-team').fadeIn();
+    deleteDisplayWork();
+    $('#team-work').find('p').text('SDチームの業務');
+    $('#team-work').fadeIn();
+    $('#sd-team-element').css("display", "grid");
   });
   $('#mkt-dm').click(function() {
-    $('#dm-team').fadeIn();
+    deleteDisplayWork();
+    $('#team-work').find('p').text('デジマチームの業務');
+    $('#team-work').fadeIn();
+    $('#dm-team-element').css("display", "grid");
   });
   $('#mkt-design').click(function() {
-    $('#design-team').fadeIn();
+    deleteDisplayWork();
+    $('#team-work').find('p').text('デザインチームの業務');
+    $('#team-work').fadeIn();
+    $('#design-team-element').css("display", "grid");
   });
   $('#mkt-pr').click(function() {
-    $('#pr-team').fadeIn();
+    deleteDisplayWork();
+    $('#team-work').find('p').text('PRチームの業務');
+    $('#team-work').fadeIn();
+    $('#pr-team-element').css("display", "grid");
   });
   // マーケ部署のModal
 
@@ -291,19 +303,27 @@ $(function() {
   // マーケのチームは繋がることを作成する
   $('.link-to-dm').click(function() {
     deleteDisplayWork();
-    $('#dm-team').fadeIn();
+    $('#team-work').find('p').text('デジマチームの業務');
+    $('#team-work').fadeIn();
+    $('#dm-team-element').css("display", "grid");
   });
   $('.link-to-sd').click(function() {
     deleteDisplayWork();
-    $('#sd-team').fadeIn();
+    $('#team-work').find('p').text('SDチームの業務');
+    $('#team-work').fadeIn();
+    $('#sd-team-element').css("display", "grid");
   });
   $('.link-to-design').click(function() {
     deleteDisplayWork();
-    $('#design-team').fadeIn();
+    $('#team-work').find('p').text('デザインチームの業務');
+    $('#team-work').fadeIn();
+    $('#design-team-element').css("display", "grid");
   });
   $('.link-to-pr').click(function() {
     deleteDisplayWork();
-    $('#pr-team').fadeIn();
+    $('#team-work').find('p').text('PRチームの業務');
+    $('#team-work').fadeIn();
+    $('#pr-team-element').css("display", "grid");
   });
   // マーケのチームは繋がることを作成する
 
@@ -527,6 +547,10 @@ $(function() {
     $('#dm-team').fadeOut();
     $('#pr-team').fadeOut();
     $('#design-team').fadeOut();
+    $('#sd-team-element').css("display", "none");
+    $('#dm-team-element').css("display", "none");
+    $('#pr-team-element').css("display", "none");
+    $('#design-team-element').css("display", "none");
 
     // CCS部署のModal
     $('#store-support-team').fadeOut();

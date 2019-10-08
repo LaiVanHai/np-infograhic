@@ -26,10 +26,6 @@
     display: block;
     width: auto;
   }
-  .department-team {
-    width: 650px !important;
-    text-align: center;
-  }
   .modal {
     left: 25%;
     /* width: 650px !important;
@@ -116,9 +112,6 @@
     text-align: center;
     display: block;
     width: auto;
-  }
-  .department-team {
-    width: 650px !important;
   }
   .modal {
     left: 25%;
@@ -214,9 +207,6 @@
     /* width: 650px !important;
     height: 600px !important; */
   }
-  .department-team {
-    width: 650px !important;
-  }
   .modal-content {
     margin-top: 35px;
     padding: 60px 20px 10px 20px;
@@ -298,11 +288,6 @@
     display: block;
     width: auto;
   }
-
-  .department-team {
-    width: 650px !important;
-  }
-
   .modal {
     left: 8%;
     /* height: 700px !important;
@@ -391,9 +376,6 @@
     display: block;
     width: auto;
   }
-  .department-team {
-    width: 650px !important;
-  }
   .modal {
     left: 5%;
     /* height: 700px !important;
@@ -462,10 +444,11 @@
 }
 
 .department-team {
+  width: 650px;
   color: white;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
   margin: 0 auto;
   text-align: center;
 }
@@ -1227,14 +1210,12 @@ i {
   stroke-linecap: round;
 }
 
-#c-sales-inside-team-element {
-  display: none;
-}
-
-#c-sales-field-team-element {
-  display: none;
-}
-
-#c-sales-support-team-element {
+#c-sales-inside-team-element,
+  #c-sales-field-team-element,
+  #c-sales-support-team-element,
+  #sd-team-element,
+  #dm-team-element,
+  #design-team-element,
+  #pr-team-element {
   display: none;
 }

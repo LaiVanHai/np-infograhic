@@ -6,7 +6,7 @@
     grid-gap: 10px;
     margin: 10px 360px;
   }
-  .title {
+  .title, .title-line {
     margin: 0px 360px;
   }
   .department-mkt,
@@ -18,7 +18,8 @@
     .department-hr,
     .department-finances,
     .department-taiwan,
-    .department-b-cs {
+    .department-b-cs,
+    .department-team {
     margin: 0 360px;
     margin-top: 30px;
     text-align: center;
@@ -92,7 +93,7 @@
     grid-gap: 10px;
     margin: 10px 250px;
   }
-  .title {
+  .title, .title-line {
     margin: 0 250px;
   }
   .department-mkt,
@@ -104,7 +105,8 @@
     .department-hr,
     .department-finances,
     .department-taiwan,
-    .department-b-cs {
+    .department-b-cs,
+    .department-team  {
     margin: 0 250px;
     margin-top: 30px;
     text-align: center;
@@ -180,7 +182,7 @@
     grid-gap: 10px;
     margin: 10px 100px;
   }
-  .title {
+  .title, .title-line {
     margin: 0px 100px;
   }
   .department-mkt,
@@ -192,7 +194,8 @@
     .department-hr,
     .department-finances,
     .department-taiwan,
-    .department-b-cs {
+    .department-b-cs,
+    .department-team {
     margin: 0px 100px;
     margin-top: 30px;
     text-align: center;
@@ -278,7 +281,8 @@
     .department-hr,
     .department-finances,
     .department-taiwan,
-    .department-b-cs {
+    .department-b-cs,
+    .department-team {
     margin-top: 30px;
     text-align: center;
     display: block;
@@ -365,7 +369,8 @@
     .department-hr,
     .department-finances,
     .department-taiwan,
-    .department-b-cs {
+    .department-b-cs,
+    .department-team {
     margin-top: 30px;
     text-align: center;
     display: block;
@@ -436,6 +441,16 @@
   .taiwan-img2 {
     padding-left: 5px;
   }
+}
+
+.department-team {
+  width: 650px;
+  color: white;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+  margin: 0 auto;
+  text-align: center;
 }
 
 @keyframes diamondStroke {
@@ -699,6 +714,17 @@ a {
   color: #f702a9;
 }
 
+.title-line {
+  font-weight: 700;
+  width: auto;
+  text-align: center;
+  border-bottom-style: double;
+  border-bottom-color: #45aff2;
+  color: #f536b9;
+  margin-bottom: 60px;
+  display: none;
+}
+
 .title p {
   margin-top: 15px;
 }
@@ -851,7 +877,7 @@ button {
   margin-top: 10px;
   transition: transform .2s;
 }
-.lv1-info p {
+.lv1-info .lv1-title {
   line-height: 16px;
   margin-top: 87px;
   color: #7c4c03;
@@ -1020,6 +1046,7 @@ i {
   border: 1px solid #4a86e8;
 }
 .other-team-title {
+  margin-bottom: 20px;
   color: #82530f;
   float: left;
   font-size: 14px;
@@ -1170,9 +1197,6 @@ button {
   background-color: #fffbd9;
 }
 
-.other-dpt {
-  margin-top: -15px;
-}
 .ba-infra-item {
   margin-left: 43px !important;
 }
@@ -1187,4 +1211,14 @@ i {
 .dotted-line {
   stroke-dasharray: 6;
   stroke-linecap: round;
+}
+
+#c-sales-inside-team-element,
+  #c-sales-field-team-element,
+  #c-sales-support-team-element,
+  #sd-team-element,
+  #dm-team-element,
+  #design-team-element,
+  #pr-team-element {
+  display: none;
 }
