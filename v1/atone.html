@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="grid-stytesheet.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="tags-script.js"></script>
+    <title>NPの業務インフォグラフィック</title>
+  </head>
+  <body>
+    <!--　全社の部署を表示する -->
+    <a href="np.html" target="_blank" class="title">
+      TEST
+    </a>
+    <div class="container">
+      <div class="service-image">
+        <a href="https://www.netprotections.com/" target="_blank">
+          <img src="img/service/atobarai.png" class="atobarai">
+        </a>
+        <a href="https://www.netprotections.com/air/" target="_blank">
+          <img src="img/service/atobarai-air.png" class="atobarai-air">
+        </a>
+        <a href="https://atone.be/" target="_blank">
+          <img src="img/service/atone.png" class="srv-atone">
+        </a>
+        <a href="https://np-kakebarai.com/" target="_blank">
+          <img src="img/service/kakebarai.png" class="kakebarai">
+        </a>
+        <a href="https://aftee.tw/" target="_blank">
+          <img src="img/service/aftee.png" class="aftee">
+        </a>
+      </div>
+      <div class="line">
+        <svg height="710" width="710">
+          <line class="line-customer" x2="20" y2="30" x1="20" y1="700"></line>
+          <!-- item2 of line -->
+          <line class="line-customer" x2="150" y2="30" x1="150" y1="700"></line>
+          <!-- item3 of line -->
+          <line class="line-customer" x2="330" y2="30" x1="330" y1="700"></line>
+          <!-- item4 of line -->
+          <line class="line-customer" x2="520" y2="30" x1="520" y1="700"></line>
+          <!-- item5 of line -->
+          <line class="line-customer" x2="700" y2="30" x1="700" y1="700"></line>
+          Sorry, your browser does not support inline SVG.
+        </svg>
+      </div>
+      <a href="marketing.html#mkt" class="box marketing">
+        <img src="img/mkt/department1.png" class="mkt-img img-left">
+        <p>Marketing</p>
+        <span class="tooltiptext">事業と組織を紹介する</span>
+        <img src="img/mkt/department2.png" class="mkt-img img-right">
+      </a>
+
+      <a href="biz-dev.html" class="box biz-dev">
+        <img src="img/biz-dev/department1.png" class="mkt-img img-left">
+        <p>Biz Dev</p>
+        <span class="tooltiptext">アライアンスを開拓する</span>
+        <img src="img/biz-dev/department2.png" class="mkt-img img-right">
+      </a>
+
+      <a href="c-sales.html#c-sales" class="box c-sales">
+        <p>C-Sales</p>
+        <span class="tooltiptext">サービスを売る</span>
+        <img src="img/c-sales/department.png" class="sales-img">
+      </a>
+      <a href="c-cs.html#c-cs" class="box c-cs">
+        <p>C-CS</p>
+        <span class="tooltiptext">サービスを運用する</span>
+        <img src="img/c-cs/department.png" class="sales-img">
+      </a>
+
+      <a href="atone.html#atone" class="box atone">
+        <p>atone</p>
+        <img src="img/atone/department.png" class="atone-img">
+      </a>
+
+      <a href="b-sales.html#b-sales" class="box b-sales">
+        <p>B-Sales</p>
+        <span class="tooltiptext">NP掛け払いを届ける</span>
+        <img src="img/b-sales/department.png" class="bsales-img">
+      </a>
+      <a href="b-cs.html#b-cs" class="box b-cs">
+        <p>B-CS</p>
+        <span class="tooltiptext">サービスを運用する・改善する</span>
+        <img src="img/b-cs/department.png" class="b-cs-img">
+      </a>
+
+      <a href="taiwan.html#taiwan" class="box taiwan">
+        <p>台湾</p>
+        <span class="tooltiptext">海外事業</span>
+        <img src="img/taiwan/department.png" class="taiwan-img">
+        <img src="img/taiwan/department2.png" class="taiwan-img2">
+      </a>
+
+      <a href="ba.html#ba" class="box ba">
+        <img src="img/ba/department3.png" class="ba-img img-left">
+        <p>BA</p>
+        <span class="tooltiptext">サービスを開発する</span>
+        <img src="img/ba/department1.png" class="ba-img img-right">
+      </a>
+
+      <a href="human-resources.html#hr" class="box human-resourses">
+        <p>人事総務</p>
+        <span class="tooltiptext">組織を作る</span>
+        <img src="img/human-resourses/department.png" class="human-resourses-img">
+      </a>
+      <a href="finances.html#finances" class="box finances">
+        <p>財経</p>
+        <span class="tooltiptext">縁の下の力持ち</span>
+        <img src="img/finances/department.png" class="human-resourses-img">
+      </a>
+      <a href="legal.html" class="box legal">
+        <p>法務</p>
+        <span class="tooltiptext">バックオフィース</span>
+        <img src="img/legal/department.png" class="human-resourses-img">
+      </a>
+    </div>
+
+    <!-- 各部署のチーム -->
+    <div class="title" id="team-name">
+      <p>atoneのチーム</p>
+    </div>
+
+    <!--　atoneチーム -->
+    <div class="department-atone" id="atone">
+      <div class="dpt-item" id="atone-ba">
+        <img src="img/atone/ba/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>atone<br>BA</p>
+        </div>
+      </div>
+      <div class="dpt-item" id="atone-risk">
+        <img src="img/atone/risk/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>リスク</p>
+        </div>
+      </div>
+      <div class="dpt-item" id="atone-customer-center">
+        <img src="img/atone/customer-center/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>カスタマー<br>センター</p>
+        </div>
+      </div>
+      <div class="dpt-item" id="atone-sales">
+        <img src="img/atone/sales/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>atone<br>セールス</p>
+        </div>
+      </div>
+      <div class="dpt-item" id="atone-b-mkt">
+        <img src="img/atone/b-mkt/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>atone<br>Bマーケ</p>
+        </div>
+      </div>
+      <div class="dpt-item" id="atone-c-mkt">
+        <img src="img/atone/c-mkt/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>atone<br>Cマーケ</p>
+        </div>
+      </div>
+      <div class="dpt-item" id="atone-real">
+        <img src="img/atone/real/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>リアル</p>
+        </div>
+      </div>
+      <div class="dpt-item" id="atone-uxd">
+        <img src="img/atone/uxd/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>UXD</p>
+        </div>
+      </div>
+    </div>
+    <!-- atoneチーム -->
+
+    <!-- Start Modal atoneのBAチーム -->
+    <div class="work-modal-wrapper" id="atone-ba-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">atone-BAチームの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          <div class="container-4-work-1sub">
+            <div class="line modal-line">
+              <svg height="700" width="650">
+                <!-- item1-1 of line -->
+                <line class="work-line-lv2" x1="330" y1="150" x2="55" y2="95"></line>
+                <!-- item1-2 of line -->
+                <line class="work-line-lv2" x1="330" y1="150" x2="190" y2="95"></line>
+                <!-- item1-3 of line -->
+                <line class="work-line-lv2" x1="330" y1="150" x2="330" y2="95"></line>
+                <!-- item1-4 of line -->
+                <line class="work-line-lv2" x1="330" y1="150" x2="470" y2="95"></line>
+                <!-- item1-5 of line -->
+                <line class="work-line-lv2" x1="330" y1="150" x2="600" y2="95"></line>
+                <!-- item1 of line -->
+                <line class="work-line" x1="330" y1="330" x2="330" y2="270"></line>
+                <!-- item2 of line -->
+                <line class="work-line" x1="330" y1="480" x2="470" y2="535"></line>
+                <!-- item3 of line -->
+                <line class="work-line" x1="330" y1="480" x2="330" y2="535"></line>
+                <!-- item4 of line -->
+                <line class="work-line" x1="330" y1="480" x2="175" y2="535"></line>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+            </div>
+            <div class="team">
+              <div class="work-item">
+                <img src="img/atone/ba/team.png" class="dpt-image">
+                <div class="dpt-info">
+                  <p>atone<br>BA</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1">
+              <div class="work-item-level1">
+                <img src="img/atone/ba/work1.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>システム</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub1">
+              <div class="work-item-level2">
+                <img src="img/atone/ba/work1-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>設計</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub2">
+              <div class="work-item-level2">
+                <img src="img/atone/ba/work1-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>開発</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub3">
+              <div class="work-item-level2">
+                <img src="img/atone/ba/work1-3.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>運用</p>
+                  <span class="tooltiptext">その他媒体毎での効率化・改善</span>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub4">
+              <div class="work-item-level2">
+                <img src="img/atone/ba/work1-4.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>保守管理</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub5">
+              <div class="work-item-level2">
+                <img src="img/atone/ba/work1-5.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>改善</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="work-item-level1">
+                <img src="img/atone/ba/work2.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>プロジェクト<br>推進</p>
+                </div>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="work-item-level1">
+                <img src="img/atone/ba/work3.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p><i class="fa fa-search tags"></i>組織運営</p>
+                  <span class="tooltiptext">体制構築、採用、育成</span>
+                </div>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="work-item-level1">
+                <img src="img/atone/ba/work4.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p><i class="fa fa-search tags"></i>システム<br>連携調整</p>
+                  <span class="tooltiptext">加盟店/アライアンス先とのシステム連携調整</span>
+                </div>
+              </div>
+            </div>
+            <div class="other-team">
+              <p class="other-team-title">連携があるチーム:</p>
+            </div>
+            <div class="team-list">
+              <div class="team-link-item link-to-atone-customer-center">
+                <img src="img/atone/customer-center/team.png">
+                <p>カスタマー<br>センター</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+              <div class="team-link-item link-to-atone-risk">
+                <img src="img/atone/risk/team.png">
+                <p>atone<br>リスク</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+              <div class="team-link-item link-to-atone-real">
+                <img src="img/atone/real/team.png">
+                <p>atone<br>リアル</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+              <div class="team-link-item link-to-atone-sales">
+                <img src="img/atone/sales/team.png">
+                <p>atone<br>Sales</p>
+                <span class="tooltiptext medium">関連度:中</span>
+              </div>
+              <div class="team-link-item link-to-atone-c-mkt">
+                <img src="img/atone/c-mkt/team.png">
+                <p>atone<br>Cマーケ</p>
+                <span class="tooltiptext medium">関連度:中</span>
+              </div>
+            </div>
+            <div class="other-dpt">
+              <p class="other-team-title">連携がある部署:</p>
+            </div>
+            <div class="dpt-list">
+              <a href="ba.html#ba" class="dpt-link-item link-to-ba">
+                <p class="dpt-link-title">BA</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/ba/department3.png">
+              </a>
+              <a href="taiwan.html#taiwan" class="dpt-link-item link-to-taiwan">
+                <p class="dpt-link-title">台湾</p>
+                <span class="tooltiptext low">関連度:低</span>
+                <img src="img/taiwan/department2.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal atoneのBAチーム -->
+
+    <!-- Start Modal atoneのリスクチーム -->
+    <div class="work-modal-wrapper" id="atone-risk-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">リスクチームの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          <div class="container-3-work-2-sub">
+            <div class="line modal-line">
+              <svg height="750" width="600">
+                <defs>
+                  <marker id="arrow" class="arrow-animation" markerWidth="5" markerHeight="5" refX="0" refY="2" orient="auto" markerUnits="strokeWidth">
+                    <path d="M 0,0 L 0,4 L 4,2 z" fill="#f2a000" />
+                  </marker>
+                </defs>
+                <line class="work-line" x1="240" y1="480" x2="180" y2="530"></line>
+                <!-- item2 of line -->
+                <line class="work-line" x1="300" y1="360" x2="300" y2="300"></line>
+                <!-- item3 of line -->
+                <line class="work-line" x1="360" y1="480" x2="420" y2="530"></line>
+                <!-- item1-1 of line -->
+                <line class="work-line" x1="135" y1="635" x2="40" y2="650"></line>
+                <!-- item1-2 of line -->
+                <line class="work-line" x1="135" y1="635" x2="225" y2="650"></line>
+                <!-- item3-1 of line -->
+                <line class="work-line" x1="465" y1="635" x2="385" y2="650"></line>
+                <!-- item3-2 of line -->
+                <line class="work-line" x1="465" y1="635" x2="560" y2="650"></line>
+                <!-- goal1 of line -->
+                <line class="work-line" x1="110" y1="520" x2="245" y2="115" marker-end="url(#arrow)"></line>
+                <!-- goal2 of line -->
+                <line class="work-line" x1="300" y1="180" x2="300" y2="140" marker-end="url(#arrow)"></line>
+                <!-- goal3 of line -->
+                <line class="work-line" x1="490" y1="520" x2="355" y2="115" marker-end="url(#arrow)"></line>
+                <!-- item1-arrow of line -->
+                <line class="work-line dotted-line" x1="195" y1="580" x2="385" y2="580" marker-end="url(#arrow)"></line>
+                <!-- item2-arrow of line -->
+                <line class="work-line dotted-line" x1="250" y1="275" x2="155" y2="500" marker-end="url(#arrow)"></line>
+                <!-- item3-arrow of line -->
+                <line class="work-line dotted-line" x1="450" y1="515" x2="353" y2="295" marker-end="url(#arrow)"></line>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+            </div>
+            <div class="team">
+              <div class="work-item">
+                <img src="img/atone/risk/team.png" class="dpt-image">
+                <div class="dpt-info">
+                  <p>atone<br>リスク</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1">
+              <div class="work-item-level1">
+                <img src="img/atone/risk/work1.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>企画・設計</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="work-item-level1">
+                <img src="img/atone/risk/work2.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>モニタリング</p>
+                </div>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="work-item-level1">
+                <img src="img/atone/risk/work3.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>改善・メン<br>テナンス</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub1">
+              <div class="work-item-level2">
+                <img src="img/atone/risk/work1-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>与信調査<br>ロジック</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub2">
+              <div class="work-item-level2">
+                <img src="img/atone/risk/work1-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>請求督促<br>フロー</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub1">
+              <div class="work-item-level2">
+                <img src="img/atone/risk/work2-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>未払い<br>分析</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub2">
+              <div class="work-item-level2">
+                <img src="img/atone/risk/work2-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>不正検知<br>予測</p>
+                </div>
+              </div>
+            </div>
+            <div class="goal">
+              <div class="work-item-level1 bcs-goal">
+                <img src="img/atone/risk/goal.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>未払い<br>削減</p>
+                </div>
+              </div>
+            </div>
+            <div class="other-team">
+              <p class="other-team-title">連携があるチーム:</p>
+            </div>
+            <div class="team-list">
+              <div class="team-link-item link-to-atone-customer-center">
+                <img src="img/atone/customer-center/team.png">
+                <p>カスタマー<br>センター</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+              <div class="team-link-item link-to-atone-ba">
+                <img src="img/atone/ba/team.png">
+                <p>atone<br>BA</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+              <div class="team-link-item link-to-atone-sales">
+                <img src="img/atone/sales/team.png">
+                <p>atone<br>セールス</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+            </div>
+            <div class="other-dpt">
+              <p class="other-team-title">連携がある部署:</p>
+            </div>
+            <div class="dpt-list">
+              <a href="ba.html#ba" class="dpt-link-item link-to-ba">
+                <p class="dpt-link-title">BA</p>
+                <span class="tooltiptext medium">関連度:中</span>
+                <img src="img/ba/department3.png">
+              </a>
+              <a href="b-sales.html#b-sales" class="dpt-link-item link-to-b-sales">
+                <p class="dpt-link-title">B-Sales</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/b-sales/department.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal atoneのリスクチーム -->
+
+    <!-- Start Modal atoneのカスタマーセンターチーム -->
+    <div class="work-modal-wrapper" id="atone-customer-center-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">カスタマーセンターチームの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          <div class="container-5-work-2sub">
+            <div class="line modal-line">
+              <svg height="700" width="550">
+                <line class="work-line" x1="175" y1="380" x2="120" y2="320"></line>
+                <!-- item2 of line -->
+                <line class="work-line" x1="250" y1="300" x2="250" y2="250"></line>
+                <!-- item3 of line -->
+                <line class="work-line" x1="320" y1="380" x2="367" y2="320"></line>
+                <!-- item4 of line -->
+                <line class="work-line" x1="250" y1="449" x2="342" y2="490"></line>
+                <!-- item5 of line -->
+                <line class="work-line" x1="250" y1="449" x2="153" y2="490"></line>
+                <!-- item2-sub1 of line -->
+                <line class="work-line-lv2" x1="250" y1="130" x2="75" y2="94"></line>
+                <!-- item2-sub2 of line -->
+                <line class="work-line-lv2" x1="250" y1="130" x2="250" y2="94"></line>
+                <!-- item2-sub3 of line -->
+                <line class="work-line-lv2" x1="250" y1="130" x2="425" y2="94"></line>
+                <!-- item4-sub1 of line -->
+                <line class="work-line-lv3" x1="400" y1="555" x2="280" y2="570"></line>
+                <!-- item4-sub2 of line -->
+                <line class="work-line-lv3" x1="400" y1="555"  x2="530" y2="570"></line>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+            </div>
+            <div class="team">
+              <div class="work-item">
+                <img src="img/atone/customer-center/team.png" class="dpt-image">
+                <div class="dpt-info">
+                  <p><i class="fa fa-search tags"></i>カスタマー<br>センター</p>
+                  <span class="tooltiptext">Customer Center</span>
+                </div>
+              </div>
+            </div>
+            <div class="item1">
+              <div class="work-item-level1">
+                <img src="img/atone/customer-center/work1.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>サービス<br>改善</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="work-item-level1">
+                <img src="img/atone/customer-center/work2.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>現場のマネ<br>ジメント</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub1">
+              <div class="work-item-level2">
+                <img src="img/atone/customer-center/work2-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>現状安定<br>運用</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub2">
+              <div class="work-item-level2">
+                <img src="img/atone/customer-center/work2-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>採用</p>
+                  <span class="tooltiptext">オペレーター採用</span>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub3">
+              <div class="work-item-level2">
+                <img src="img/atone/customer-center/work2-3.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>エスカレ<br>対応</p>
+                </div>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="work-item-level1">
+                <img src="img/atone/customer-center/work3.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>入出金<br>管理</p>
+                </div>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="work-item-level1">
+                <img src="img/atone/customer-center/work4.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>問合わせ<br>対応</p>
+                </div>
+              </div>
+            </div>
+            <div class="item4-sub1">
+              <div class="work-item-level2">
+                <img src="img/atone/customer-center/work4-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>加盟店<br>対応</p>
+                </div>
+              </div>
+            </div>
+            <div class="item4-sub2">
+              <div class="work-item-level2">
+                <img src="img/atone/customer-center/work4-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>購入者<br>対応</p>
+                </div>
+              </div>
+            </div>
+            <div class="item5">
+              <div class="work-item-level1">
+                <img src="img/atone/customer-center/work5.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>対応ポリシー<br>策定 </p>
+                </div>
+              </div>
+            </div>
+            <div class="other-team">
+              <p class="other-team-title">連携があるチーム:</p>
+            </div>
+            <div class="team-list">
+              <div class="team-link-item link-to-atone-ba">
+                <img src="img/atone/ba/team.png">
+                <p>atone-BA</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+              <div class="team-link-item link-to-atone-risk">
+                <img src="img/atone/risk/team.png">
+                <p>リスク</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+            </div>
+            <div class="other-dpt">
+              <p class="other-team-title">連携がある部署:</p>
+            </div>
+            <div class="dpt-list">
+              <a href="c-cs.html#c-cs" class="dpt-link-item link-to-c-cs">
+                <p class="dpt-link-title">C-CS</p>
+                <span class="tooltiptext low">関連度:低</span>
+                <img src="img/c-cs/department.png">
+              </a>
+              <a href="b-cs.html#b-cs" class="dpt-link-item link-to-b-cs">
+                <p class="dpt-link-title">B-CS</p>
+                <span class="tooltiptext low">関連度:低</span>
+                <img src="img/b-cs/department.png">
+              </a>
+              <a href="c-sales.html#c-sales" class="dpt-link-item link-to-c-sales">
+                <p class="dpt-link-title">C-Sales</p>
+                <span class="tooltiptext medium">関連度:中</span>
+                <img src="img/c-sales/department.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal atoneのカスタマーセンターチーム -->
+
+    <!-- Start Modal atoneのSalesチーム -->
+    <div class="work-modal-wrapper" id="atone-sales-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">atoneセールスチームの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          <div class="container-2-work-1-sub">
+            <div class="line modal-line">
+              <svg height="700" width="650">
+                <!-- item1-sub1 of line -->
+                <line class="work-line" x1="265" y1="170" x2="125" y2="95"></line>
+                <!-- item1-sub3 of line -->
+                <line class="work-line" x1="385" y1="170" x2="520" y2="95"></line>
+                <!-- item1 of line -->
+                <line class="work-line" x1="325" y1="265" x2="325" y2="230"></line>
+                <!-- item2 of line -->
+                <line class="work-line" x1="325" y1="415" x2="325" y2="455"></line>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+            </div>
+            <div class="team">
+              <div class="work-item">
+                <img src="img/b-sales/field/team.png" class="dpt-image">
+                <div class="dpt-info">
+                  <p><i class="fa fa-search tags"></i>フィールド<br>セールス</p>
+                  <span class="tooltiptext">Field Sales</span>
+                </div>
+              </div>
+            </div>
+            <div class="item1">
+              <div class="work-item-level1">
+                <img src="img/b-sales/field/work1.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>加盟店<br>開拓</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub1">
+              <div class="work-item-level2">
+                <img src="img/b-sales/field/work1-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>戦略、施策<br>を検討</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub3">
+              <div class="work-item-level2">
+                <img src="img/b-sales/field/work1-4.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>稼働まで<br>担当</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="work-item-level1">
+                <img src="img/b-sales/field/work3.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>加盟店<br>フォロー</p>
+                </div>
+              </div>
+            </div>
+            <div class="other-team">
+              <p class="other-team-title">連携があるチーム:</p>
+            </div>
+            <div class="team-list">
+              <div class="team-link-item link-to-atone-b-mkt">
+                <img src="img/atone/b-mkt/team.png">
+                <p>atone<br>Bマーケ</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+              <div class="team-link-item link-to-atone-ba">
+                <img src="img/atone/ba/team.png">
+                <p>atone<br>BA</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+              <div class="team-link-item link-to-atone-customer-center">
+                <img src="img/atone/customer-center/team.png">
+                <p>カスタマー<br>センター</p>
+                <span class="tooltiptext medium">関連度:中</span>
+              </div>
+              <div class="team-link-item link-to-atone-risk">
+                <img src="img/atone/risk/team.png">
+                <p>atone<br>リスク</p>
+                <span class="tooltiptext medium">関連度:中</span>
+              </div>
+            </div>
+            <div class="other-dpt">
+              <p class="other-team-title">連携がある部署:</p>
+            </div>
+            <div class="dpt-list">
+              <a href="marketing.html#mkt" class="dpt-link-item link-to-mkt">
+                <p class="dpt-link-title">Marketing</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/mkt/department1.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal atoneのSalesチーム -->
+
+    <!-- Start Modal atoneのBマーケチーム -->
+    <div class="work-modal-wrapper" id="atone-b-mkt-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">atone-Bマーケチームの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          <div class="container-5-work">
+            <div class="line modal-line">
+              <svg height="450" width="650">
+                <line class="work-line" x1="255" y1="290" x2="155" y2="240"></line>
+                <!-- item2 of line -->
+                <line class="work-line" x1="330" y1="230" x2="330" y2="125"></line>
+                <!-- item3 of line -->
+                <line class="work-line" x1="400" y1="290" x2="490" y2="240"></line>
+                <!-- item4 of line -->
+                <line class="work-line" x1="360" y1="350" x2="420" y2="420"></line>
+                <!-- item5 of line -->
+                <line class="work-line" x1="290" y1="345" x2="233" y2="420"></line>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+            </div>
+            <div class="team">
+              <div class="work-item">
+                <img src="img/atone/b-mkt/team.png" class="dpt-image">
+                <div class="dpt-info">
+                  <p>atone<br>Bマーケ</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1">
+              <div class="work-item-level1">
+                <img src="img/atone/b-mkt/work1.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p><i class="fa fa-search tags"></i>リード創出</p>
+                  <span class="tooltiptext">SEO、オンライン広告、展示会、等</span>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="work-item-level1">
+                <img src="img/atone/b-mkt/work2.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>ターゲット<br>選定</p>
+                </div>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="work-item-level1">
+                <img src="img/atone/b-mkt/work3.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>リードナー<br>チャリング</p>
+                </div>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="work-item-level1">
+                <img src="img/atone/b-mkt/work4.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p><i class="fa fa-search tags"></i>コンテンツ<br>作成</p>
+                  <span class="tooltiptext">事例、インタビュー動画</span>
+                </div>
+              </div>
+            </div>
+            <div class="item5">
+              <div class="work-item-level1">
+                <img src="img/atone/b-mkt/work5.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>NPサイト<br>改善</p>
+                </div>
+              </div>
+            </div>
+            <div class="other-team">
+              <p class="other-team-title">連携があるチーム:</p>
+            </div>
+            <div class="team-list">
+              <div class="team-link-item link-to-atone-sales">
+                <img src="img/atone/sales/team.png">
+                <p>atone<br>セールス</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+            </div>
+            <div class="other-dpt">
+              <p class="other-team-title">連携がある部署:</p>
+            </div>
+            <div class="dpt-list">
+              <a href="marketing.html#mkt" class="dpt-link-item link-to-mkt">
+                <p class="dpt-link-title">Marketing</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/mkt/department1.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal atoneのBマーケチーム -->
+
+    <!-- Start Modal atoneのCマーケチーム -->
+    <div class="work-modal-wrapper" id="atone-c-mkt-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">atone-Cマーケチームの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          <div class="container-4-work">
+            <div class="line modal-line">
+              <svg height="450" width="400">
+                <line class="work-line" x1="140" y1="170" x2="20" y2="122"></line>
+                <!-- item2 of line -->
+                <line class="work-line" x1="260" y1="170" x2="380" y2="122"></line>
+                <!-- item3 of line -->
+                <line class="work-line" x1="260" y1="260" x2="380" y2="307"></line>
+                <!-- item4 of line -->
+                <line class="work-line" x1="140" y1="260" x2="20" y2="307"></line>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+            </div>
+            <div class="team">
+              <div class="work-item">
+                <img src="img/atone/c-mkt/team.png" class="dpt-image">
+                <div class="dpt-info">
+                  <p>atone<br>Cマーケ</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1">
+              <div class="work-item-level1">
+                <img src="img/atone/c-mkt/work1.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p><i class="fa fa-search tags"></i>キャンペーン<br>実施</p>
+                  <span class="tooltiptext">加盟店とのキャンペーンの実施</span>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="work-item-level1">
+                <img src="img/atone/c-mkt/work2.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p><i class="fa fa-search tags"></i>実店舗<br>決済</p>
+                  <span class="tooltiptext">販促kitの作成</span>
+                </div>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="work-item-level1">
+                <img src="img/atone/c-mkt/work3.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p><i class="fa fa-search tags"></i>atone会員化<br>施策</p>
+                  <span class="tooltiptext">NP会員のatone会員化施策</span>
+                </div>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="work-item-level1">
+                <img src="img/atone/c-mkt/work4.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p><i class="fa fa-search tags"></i>NPポイント<br>クラブ運営</p>
+                  <span class="tooltiptext">アンケート調査</span>
+                </div>
+              </div>
+            </div>
+            <div class="other-team">
+              <p class="other-team-title">連携があるチーム:</p>
+            </div>
+            <div class="team-list">
+              <div class="team-link-item link-to-atone-customer-center">
+                <img src="img/atone/customer-center/team.png">
+                <p>カスタマー<br>センター</p>
+                <span class="tooltiptext medium">関連度:中</span>
+              </div>
+              <div class="team-link-item link-to-atone-sales">
+                <img src="img/atone/sales/team.png">
+                <p>atone<br>セールス</p>
+                <span class="tooltiptext medium">関連度:中</span>
+              </div>
+              <div class="team-link-item link-to-atone-ba">
+                <img src="img/atone/ba/team.png">
+                <p>atone<br>BA</p>
+                <span class="tooltiptext medium">関連度:中</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal atoneのCマーケチーム -->
+
+    <!-- Start Modal atoneのリアルチーム -->
+    <div class="work-modal-wrapper" id="atone-real-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">リアルチームの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          開発中
+        </div>
+      </div>
+    </div>
+    <!-- End Modal atoneのリアルチーム -->
+
+    <!-- Start Modal atoneのUXDチーム -->
+    <div class="work-modal-wrapper" id="atone-uxd-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">UXDチームの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          開発中
+        </div>
+      </div>
+    </div>
+    <!-- End Modal atoneのUXDチーム -->
+  </body>
+</html>

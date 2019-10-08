@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="grid-stytesheet.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="tags-script.js"></script>
+    <title>NPの業務インフォグラフィック</title>
+  </head>
+  <body>
+    <!--　全社の部署を表示する -->
+    <!-- <div class="title">
+      <p>NPの部署</p>
+    </div> -->
+    <a href="np.html" target="_blank" class="title">
+      TEST
+    </a>
+    <div class="container">
+      <div class="service-image">
+        <a href="https://www.netprotections.com/" target="_blank">
+          <img src="img/service/atobarai.png" class="atobarai">
+        </a>
+        <a href="https://www.netprotections.com/air/" target="_blank">
+          <img src="img/service/atobarai-air.png" class="atobarai-air">
+        </a>
+        <a href="https://atone.be/" target="_blank">
+          <img src="img/service/atone.png" class="srv-atone">
+        </a>
+        <a href="https://np-kakebarai.com/" target="_blank">
+          <img src="img/service/kakebarai.png" class="kakebarai">
+        </a>
+        <a href="https://aftee.tw/" target="_blank">
+          <img src="img/service/aftee.png" class="aftee">
+        </a>
+      </div>
+      <div class="line">
+        <svg height="710" width="710">
+          <line class="line-customer" x2="20" y2="30" x1="20" y1="700"></line>
+          <!-- item2 of line -->
+          <line class="line-customer" x2="150" y2="30" x1="150" y1="700"></line>
+          <!-- item3 of line -->
+          <line class="line-customer" x2="330" y2="30" x1="330" y1="700"></line>
+          <!-- item4 of line -->
+          <line class="line-customer" x2="520" y2="30" x1="520" y1="700"></line>
+          <!-- item5 of line -->
+          <line class="line-customer" x2="700" y2="30" x1="700" y1="700"></line>
+          Sorry, your browser does not support inline SVG.
+        </svg>
+      </div>
+      <a href="marketing.html#mkt" class="box marketing">
+        <img src="img/mkt/department1.png" class="mkt-img img-left">
+        <p>Marketing</p>
+        <span class="tooltiptext">事業と組織を紹介する</span>
+        <img src="img/mkt/department2.png" class="mkt-img img-right">
+      </a>
+
+      <a href="biz-dev.html" class="box biz-dev">
+        <img src="img/biz-dev/department1.png" class="mkt-img img-left">
+        <p>Biz Dev</p>
+        <span class="tooltiptext">アライアンスを開拓する</span>
+        <img src="img/biz-dev/department2.png" class="mkt-img img-right">
+      </a>
+
+      <a href="c-sales.html#c-sales" class="box c-sales">
+        <p>C-Sales</p>
+        <span class="tooltiptext">サービスを売る</span>
+        <img src="img/c-sales/department.png" class="sales-img">
+      </a>
+      <a href="c-cs.html#c-cs" class="box c-cs">
+        <p>C-CS</p>
+        <span class="tooltiptext">サービスを運用する</span>
+        <img src="img/c-cs/department.png" class="sales-img">
+      </a>
+
+      <a href="atone.html#atone" class="box atone">
+        <p>atone</p>
+        <img src="img/atone/department.png" class="atone-img">
+      </a>
+
+      <a href="b-sales.html#b-sales" class="box b-sales">
+        <p>B-Sales</p>
+        <span class="tooltiptext">NP掛け払いを届ける</span>
+        <img src="img/b-sales/department.png" class="bsales-img">
+      </a>
+      <a href="b-cs.html#b-cs" class="box b-cs">
+        <p>B-CS</p>
+        <span class="tooltiptext">サービスを運用する・改善する</span>
+        <img src="img/b-cs/department.png" class="b-cs-img">
+      </a>
+
+      <a href="taiwan.html#taiwan" class="box taiwan">
+        <p>台湾</p>
+        <span class="tooltiptext">海外事業</span>
+        <img src="img/taiwan/department.png" class="taiwan-img">
+        <img src="img/taiwan/department2.png" class="taiwan-img2">
+      </a>
+
+      <a href="ba.html#ba" class="box ba">
+        <img src="img/ba/department3.png" class="ba-img img-left">
+        <p>BA</p>
+        <span class="tooltiptext">サービスを開発する</span>
+        <img src="img/ba/department1.png" class="ba-img img-right">
+      </a>
+
+      <a href="human-resources.html#hr" class="box human-resourses">
+        <p>人事総務</p>
+        <span class="tooltiptext">組織を作る</span>
+        <img src="img/human-resourses/department.png" class="human-resourses-img">
+      </a>
+      <a href="finances.html#finances" class="box finances">
+        <p>財経</p>
+        <span class="tooltiptext">縁の下の力持ち</span>
+        <img src="img/finances/department.png" class="human-resourses-img">
+      </a>
+      <a href="legal.html" class="box legal">
+        <p>法務</p>
+        <span class="tooltiptext">バックオフィース</span>
+        <img src="img/legal/department.png" class="human-resourses-img">
+      </a>
+    </div>
+
+    <!-- 各部署のチーム -->
+    <div class="title" id="team-name">
+      <p>財経部署のチーム</p>
+    </div>
+
+    <!-- 財経のチーム -->
+    <div class="department-finances" id="finances">
+      <div class="dpt-item" id="finance">
+        <img src="img/finances/finance/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>財務</p>
+        </div>
+      </div>
+      <div class="dpt-item" id="accounting">
+        <img src="img/finances/accounting/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>経理</p>
+        </div>
+      </div>
+    </div>
+    <!-- 財経のチーム -->
+
+    <!-- Start Modal 財務チーム -->
+    <div class="work-modal-wrapper" id="finance-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">財務チームの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          <div class="container-2-work-2-sub">
+            <div class="line modal-line">
+              <svg height="800" width="550">
+                <!-- item1 of line -->
+                <line class="work-line" x1="277" y1="285" x2="277" y2="250"></line>
+                <!-- item2 of line -->
+                <line class="work-line" x1="277" y1="440" x2="277" y2="475"></line>
+                <!-- item1-sub2 of line -->
+                <line class="work-line-lv2" x1="277" y1="130" x2="277" y2="95"></line>
+                <!-- item1-sub4 of line -->
+                <line class="work-line-lv2" x1="215" y1="190" x2="145" y2="190"></line>
+                <!-- item1-sub5 of line -->
+                <line class="work-line-lv2" x1="335" y1="190" x2="405" y2="190"></line>
+                <!-- item2-sub2 of line -->
+                <line class="work-line-lv2" x1="277" y1="595" x2="277" y2="630"></line>
+                <!-- item2-sub4 of line -->
+                <line class="work-line-lv2" x1="215" y1="535" x2="140" y2="535"></line>
+                <!-- item2-sub5-sub1 of line -->
+                <line class="work-line-lv2" x1="335" y1="535" x2="405" y2="535"></line>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+            </div>
+            <div class="team">
+              <div class="work-item">
+                <img src="img/finances/finance/team.png" class="dpt-image">
+                <div class="dpt-info">
+                  <p>財務</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1">
+              <div class="work-item-level1">
+                <img src="img/finances/finance/work1.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>中長期の業務</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub2">
+              <div class="work-item-level2">
+                <img src="img/finances/finance/work1-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>戦略立案</p>
+                  <span class="tooltiptext">
+                    会社の現在の財務状況から、<br>経営戦略に合った行動を財務の視点から立案する
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub4">
+              <div class="work-item-level2">
+                <img src="img/finances/finance/work1-4.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>予算管理</p>
+                  <span class="tooltiptext">
+                    経営を円滑に回す役割を担っている
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub5">
+              <div class="work-item-level2">
+                <img src="img/finances/finance/work1-5.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>資金調達</p>
+                  <span class="tooltiptext">
+                    返済期限を守りながらも、事業推進のための資金を滞りなく調達する（銀行対応）
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="work-item-level1">
+                <img src="img/finances/finance/work2.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>日次の業務</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub2">
+              <div class="work-item-level2">
+                <img src="img/finances/finance/work2-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>立替払</p>
+                  <span class="tooltiptext">
+                    決済代行会社として、加盟店様へ、決められた期日に資金の立替払を行う
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub4">
+              <div class="work-item-level2">
+                <img src="img/finances/finance/work2-4.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>経費の振込</p>
+                  <span class="tooltiptext">
+                    従業員や取引先への経費の振込
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub5">
+              <div class="work-item-level2">
+                <img src="img/finances/finance/work2-5.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>イレギュ<br>ラー対応</p>
+                  <span class="tooltiptext">
+                    ご入金の返還、重複入金、別口座への支払等への対応等
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="other-team">
+              <p class="other-team-title">連携があるチーム:</p>
+            </div>
+            <div class="team-list">
+              <div class="team-link-item link-to-accounting">
+                <img src="img/finances/accounting/team.png">
+                <p>経理</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+            </div>
+            <div class="other-dpt">
+              <p class="other-team-title">連携がある部署:</p>
+            </div>
+            <div class="dpt-list">
+              <a href="c-cs.html#c-cs" class="dpt-link-item link-to-c-cs">
+                <p class="dpt-link-title">C-CS</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/c-cs/department.png">
+              </a>
+              <a href="b-cs.html#b-cs" class="dpt-link-item link-to-b-cs">
+                <p class="dpt-link-title">B-CS</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/b-cs/department.png">
+              </a>
+              <a href="atone.html#atone" class="dpt-link-item link-to-atone">
+                <p class="dpt-link-title">atone</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/atone/department.png">
+              </a>
+              <a href="biz-dev.html" class="dpt-link-item link-to-biz-dev">
+                <p class="dpt-link-title">Biz Dev</p>
+                <span class="tooltiptext medium">関連度:中</span>
+                <img src="img/biz-dev/department2.png" class="mkt-img img-right">
+              </a>
+              <a href="ba.html#ba" class="dpt-link-item link-to-ba">
+                <p class="dpt-link-title">BA</p>
+                <span class="tooltiptext medium">関連度:中</span>
+                <img src="img/ba/department3.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal 財務チーム -->
+
+    <!-- Start Modal 経理チーム -->
+    <div class="work-modal-wrapper" id="accounting-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">経理チームの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          <div class="container-4-work-4sub-finances">
+            <div class="line modal-line">
+              <svg height="800" width="550">
+                <!-- item1 of line -->
+                <line class="work-line" x1="277" y1="267" x2="140" y2="230"></line>
+                <!-- item2 of line -->
+                <line class="work-line" x1="277" y1="267" x2="410" y2="230"></line>
+                <!-- item3 of line -->
+                <line class="work-line" x1="277" y1="417" x2="410" y2="440"></line>
+                <!-- item4 of line -->
+                <line class="work-line" x1="277" y1="417" x2="140" y2="440"></line>
+                <!-- item1-sub1 of line -->
+                <line class="work-line-lv2" x1="85" y1="165" x2="61" y2="50"></line>
+                <!-- item1-sub2 of line -->
+                <line class="work-line-lv2" x1="85" y1="165" x2="63" y2="165"></line>
+                <!-- item1-sub3 of line -->
+                <line class="work-line-lv2" x1="85" y1="165" x2="61" y2="290"></line>
+                <!-- item2-sub1 of line -->
+                <line class="work-line-lv2" x1="465" y1="170" x2="490" y2="50"></line>
+                <!-- item2-sub2 of line -->
+                <line class="work-line-lv2" x1="465" y1="170" x2="490" y2="170"></line>
+                <!-- item2-sub3 of line -->
+                <line class="work-line-lv2" x1="465" y1="170" x2="490" y2="290"></line>
+                <!-- item2-sub3-sub1 of line -->
+                <line class="work-line-lv3" x1="535" y1="335" x2="535" y2="355"></line>
+                <!-- item3-sub1 of line -->
+                <line class="work-line-lv2" x1="465" y1="500" x2="490" y2="500"></line>
+                <!-- item3-sub2 of line -->
+                <line class="work-line-lv2" x1="465" y1="500" x2="490" y2="630"></line>
+                <!-- item4-sub1 of line -->
+                <line class="work-line-lv2" x1="85" y1="500" x2="60" y2="500"></line>
+                <!-- item4-sub1-sub1 of line -->
+                <line class="work-line-lv3" x1="15" y1="545" x2="15" y2="580"></line>
+                <!-- item4-sub1-sub2 of line -->
+                <line class="work-line-lv3" x1="15" y1="545" x2="100" y2="576"></line>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+            </div>
+            <div class="team">
+              <div class="work-item">
+                <img src="img/finances/accounting/team.png" class="dpt-image">
+                <div class="dpt-info">
+                  <p>経理</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1">
+              <div class="work-item-level1">
+                <img src="img/finances/accounting/work1.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>日常の業務</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub1">
+              <div class="work-item-level2">
+                <img src="img/finances/accounting/work1-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>振り込む</p>
+                  <span class="tooltiptext">請求書計上して振込む</span>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub2">
+              <div class="work-item-level2">
+                <img src="img/finances/accounting/work1-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>返金作業</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub3">
+              <div class="work-item-level2">
+                <img src="img/finances/accounting/work1-3.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>経費精算</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="work-item-level1">
+                <img src="img/finances/accounting/work2.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>毎月の業務</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub1">
+              <div class="work-item-level2">
+                <img src="img/finances/accounting/work2-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>数字記録</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub2">
+              <div class="work-item-level2">
+                <img src="img/finances/accounting/work2-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>月末振込む</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub3">
+              <div class="work-item-level2">
+                <img src="img/finances/accounting/work2-3.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>月次の決算</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub3-sub1">
+              <div class="work-item-level3">
+                <img src="img/finances/accounting/work2-3-1.png" class="lv3-image">
+                <div class="lv3-info">
+                  <p><i class="fa fa-search tags"></i>報告書<br>計上</p>
+                  <span class="tooltiptext">回付された報告書を会計システムに計上する</span>
+                </div>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="work-item-level1">
+                <img src="img/finances/accounting/work3.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>四半期の<br>業務</p>
+                </div>
+              </div>
+            </div>
+            <div class="item3-sub1">
+              <div class="work-item-level2">
+                <img src="img/finances/accounting/work3-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>税金精算</p>
+                </div>
+              </div>
+            </div>
+            <div class="item3-sub2">
+              <div class="work-item-level2">
+                <img src="img/finances/accounting/work3-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>四半期の<br>決算</p>
+                </div>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="work-item-level1">
+                <img src="img/finances/accounting/work4.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>年一回の<br>業務</p>
+                </div>
+              </div>
+            </div>
+            <div class="item4-sub1">
+              <div class="work-item-level2">
+                <img src="img/finances/accounting/work4-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>年一回の<br>決算</p>
+                </div>
+              </div>
+            </div>
+            <div class="item4-sub1-sub1">
+              <div class="work-item-level3">
+                <img src="img/finances/accounting/work4-1-1.png" class="lv3-image">
+                <div class="lv3-info">
+                  <p>税金申告</p>
+                </div>
+              </div>
+            </div>
+            <div class="item4-sub1-sub2">
+              <div class="work-item-level3">
+                <img src="img/finances/accounting/work4-1-2.png" class="lv3-image">
+                <div class="lv3-info">
+                  <p><i class="fa fa-search tags"></i>監査対応</p>
+                  <span class="tooltiptext">監査法人からの監査</span>
+                </div>
+              </div>
+            </div>
+            <div class="other-team">
+              <p class="other-team-title">連携があるチーム:</p>
+            </div>
+            <div class="team-list">
+              <div class="team-link-item link-to-finance">
+                <img src="img/finances/finance/team.png">
+                <p>財務</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+            </div>
+            <div class="other-dpt">
+              <p class="other-team-title">連携がある部署:</p>
+            </div>
+            <div class="dpt-list">
+              <a href="ba.html#ba" class="dpt-link-item link-to-ba">
+                <p class="dpt-link-title">BA</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/ba/department3.png">
+              </a>
+              <a href="c-cs.html#c-cs" class="dpt-link-item link-to-c-cs">
+                <p class="dpt-link-title">C-CS</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/c-cs/department.png">
+              </a>
+              <a href="b-cs.html#b-cs" class="dpt-link-item link-to-b-cs">
+                <p class="dpt-link-title">B-CS</p>
+                <span class="tooltiptext hight">関連度:高</span>
+                <img src="img/b-cs/department.png">
+              </a>
+              <a href="biz-dev.html" class="dpt-link-item link-to-biz-dev">
+                <p class="dpt-link-title">Biz Dev</p>
+                <span class="tooltiptext medium">関連度:中</span>
+                <img src="img/biz-dev/department2.png" class="mkt-img img-right">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal 経理チーム -->
+
+  </body>
+</html>

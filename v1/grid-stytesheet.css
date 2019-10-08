@@ -1,0 +1,1505 @@
+.container-5-work {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+@keyframes item-display {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes item-display-level2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.container-5-work .team {
+  grid-area: 5 / 5 / span 2 / span 2;
+  text-align: center;
+}
+.item1, .item2, .item3, .item4, .item5 {
+  text-align: center;
+  animation-name: item-display;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.container-5-work .item1 {
+  grid-area: 4 / 2 / span 2 / span 2;
+  animation-duration: 1s;
+}
+.container-5-work .item2 {
+  grid-area: 1 / 5 / span 2 / span 2;
+  animation-duration: 2s;
+}
+.container-5-work .item3 {
+  grid-area: 4 / 8 / span 2 / span 2;
+  animation-duration: 3s;
+}
+.container-5-work .item4 {
+  grid-area: 9 / 7 / span 2 / span 2;
+  animation-duration: 4s;
+}
+.container-5-work .item5 {
+  grid-area: 9 / 3 / span 2 / span 2;
+  animation-duration: 5s;
+}
+.container-5-work .other-team {
+  grid-area: 11 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-5-work .team-list {
+  grid-area: 12 / 1 / span 1 / span 10;
+  text-align: left;
+}
+.container-5-work .other-dpt {
+  grid-area: 13 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-5-work .dpt-list {
+  grid-area: 14 / 1 / span 1 / span 10;
+  text-align: left;
+}
+.container-5-work .line {
+  grid-area: 1 / 1 / span 10 / span 10;
+  text-align: center;
+}
+
+/* ========================================================= */
+.container-4-work-2sub {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-4-work-2sub .team {
+  grid-area: 4 / 2 / span 1 / span 4;
+  text-align: center;
+}
+
+.item1, .item1-sub1, .item1-sub2, .item1-sub3,
+  .item2, .item3, .item3-sub1, .item3-sub2, .item4 {
+    text-align: center;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+
+.item1, .item2, .item3, .item4 {
+  animation-name: item-display;
+}
+
+.item1-sub2, .item1-sub2, .item1-sub3,
+  .item3-sub1, .item3-sub2 {
+    animation-name: item-display-level2;
+  }
+.container-4-work-2sub .item1 {
+  grid-area: 3 / 2 / span 1 / span 1;
+  margin-left: -10px;
+  animation-duration: 1s;
+}
+.container-4-work-2sub .item1-sub1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+  margin-left: 20px;
+  animation-duration: 2s;
+}
+.container-4-work-2sub .item1-sub2 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  animation-duration: 2s;
+}
+.container-4-work-2sub .item1-sub3 {
+  grid-area: 1 / 3 / span 1 / span 1;
+  animation-duration: 2s;
+}
+
+.container-4-work-2sub .item2 {
+  grid-area: 3 / 5 / span 1 / span 1;
+  animation-duration: 2s;
+}
+.container-4-work-2sub .item3 {
+  grid-area: 4 / 6 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-4-work-2sub .item3-sub1{
+  grid-area: 5 / 5 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-4-work-2sub .item3-sub2{
+  grid-area: 5 / 7 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-4-work-2sub .item4 {
+  grid-area: 4 / 1 / span 1 / span 1;
+  margin-left: 5px;
+  animation-duration: 4s;
+}
+
+.container-4-work-2sub .other-team {
+  grid-area: 6 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-4-work-2sub .team-list {
+  grid-area: 7 / 1 / span 1 / span 10;
+  text-align: left;
+}
+.container-4-work-2sub .other-dpt {
+  grid-area: 8 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-4-work-2sub .dpt-list {
+  grid-area: 9 / 1 / span 1 / span 10;
+  text-align: left;
+}
+.container-4-work-2sub .line {
+  grid-area: 1 / 1 / span 10 / span 10;
+  text-align: center;
+}
+
+/* ========================================================= */
+.container-3-work{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-3-work .team {
+  grid-area: 4 / 3 / span 1 / span 1;
+  text-align: center;
+}
+
+.item1, .item2, .item3 {
+  text-align: center;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: item-display;
+}
+
+.container-3-work .item1 {
+  grid-area: 1 / 3 / span 1 / span 1;
+  margin-bottom: 30px;
+  animation-duration: 1s;
+}
+
+.container-3-work .item2 {
+  grid-area: 6 / 4 / span 1 / span 1;
+  animation-duration: 2s;
+}
+
+.container-3-work .item3 {
+  grid-area: 6 / 2 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-3-work .other-team {
+  grid-area: 7 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-3-work .team-list {
+  grid-area: 8 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-3-work .other-dpt {
+  grid-area: 9 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-3-work .dpt-list {
+  grid-area: 10 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-3-work .line {
+  grid-area: 1 / 1 / span 10 / span 5;
+  text-align: center;
+}
+
+/* ========================================================= */
+.container-2-work{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-2-work .team {
+  grid-area: 2 / 2 / span 1 / span 1;
+  text-align: center;
+  margin: 30px 70px;
+}
+
+.item1, .item2 {
+  text-align: center;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.container-2-work .item1 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 1s;
+}
+
+.container-2-work .item2 {
+  grid-area: 3 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 2s;
+}
+
+.container-2-work .other-team {
+  grid-area: 4 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-2-work .team-list {
+  grid-area: 5 / 1 / span 1 / span 3;
+  text-align: left;
+}
+.container-2-work .other-dpt {
+  grid-area: 6 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-2-work .dpt-list {
+  grid-area: 7 / 1 / span 1 / span 3;
+  text-align: left;
+}
+.container-2-work .line {
+  grid-area: 1 / 1 / span 7 / span 3;
+  text-align: center;
+}
+
+/* ========================================================= */
+.container-4-work {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-4-work .team {
+  grid-area: 2 / 2 / span 1 / span 1;
+  text-align: center;
+}
+
+.item1, .item2, .item3, .item4 {
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.container-4-work .item1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+  text-align: center;
+  margin-left: 50px;
+  animation-name: item-display;
+  animation-duration: 1s;
+}
+.container-4-work .item2 {
+  grid-area: 1 / 3 / span 1 / span 1;
+  text-align: center;
+  margin-right: 50px;
+  animation-name: item-display;
+  animation-duration: 2s;
+}
+.container-4-work .item3 {
+  grid-area: 3 / 3 / span 1 / span 1;
+  text-align: center;
+  margin-right: 50px;
+  animation-name: item-display;
+  animation-duration: 3s;
+}
+.container-4-work .item4 {
+  grid-area: 3 / 1 / span 1 / span 1;
+  text-align: center;
+  margin-left: 50px;
+  animation-name: item-display;
+  animation-duration: 4s;
+}
+
+.container-4-work .other-team {
+  grid-area: 4 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-4-work .team-list {
+  grid-area: 5 / 1 / span 1 / span 3;
+  text-align: left;
+}
+.container-4-work .other-dpt {
+  grid-area: 6 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-4-work .dpt-list {
+  grid-area: 7 / 1 / span 1 / span 3;
+  text-align: left;
+}
+.container-4-work .line {
+  grid-area: 1 / 1 / span 7 / span 3;
+  text-align: center;
+}
+
+/* ========================================================= */
+.container-2-work-1-sub{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-2-work-1-sub .team {
+  grid-area: 3 / 2 / span 1 / span 1;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.item1, .item1-sub1, .item1-sub2, .item1-sub3, .item2 {
+  text-align: center;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.container-2-work-1-sub .item1 {
+  grid-area: 2 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 1s;
+}
+
+.container-2-work-1-sub .item1-sub1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+  margin-right: -80px;
+}
+.container-2-work-1-sub .item1-sub2 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-2-work-1-sub .item1-sub3 {
+  grid-area: 1 / 3 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+  margin-left: -80px;
+}
+
+.container-2-work-1-sub .item2 {
+  grid-area: 4 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 2s;
+}
+
+.container-2-work-1-sub .other-team {
+  grid-area: 5 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-2-work-1-sub .team-list {
+  grid-area: 6 / 1 / span 1 / span 3;
+  text-align: left;
+}
+.container-2-work-1-sub .other-dpt {
+  grid-area: 7 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-2-work-1-sub .dpt-list {
+  grid-area: 8 / 1 / span 1 / span 3;
+  text-align: left;
+}
+.container-2-work-1-sub .line {
+  grid-area: 1 / 1 / span 8 / span 3;
+  text-align: center;
+}
+
+/* ========================================================= */
+.container-4-work-1sub {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-4-work-1sub .team {
+  grid-area: 3 / 3 / span 1 / span 1;
+  text-align: center;
+}
+
+.item1, .item1-sub1, .item1-sub2, .item1-sub3,
+  .item1-sub4, .item1-sub5, .item2, .item3, .item4 {
+    text-align: center;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+.container-4-work-1sub .item1 {
+  grid-area: 2 / 3 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 1s;
+}
+.container-4-work-1sub .item1-sub1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-1sub .item1-sub2 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  margin-left: 25px;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-1sub .item1-sub3 {
+  grid-area: 1 / 3 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-1sub .item1-sub4 {
+  grid-area: 1 / 4 / span 1 / span 1;
+  margin-left: -25px;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-1sub .item1-sub5 {
+  grid-area: 1 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+
+.container-4-work-1sub .item2 {
+  grid-area: 4 / 4 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 2s;
+}
+.container-4-work-1sub .item3 {
+  grid-area: 4 / 3 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 3s;
+}
+.container-4-work-1sub .item4 {
+  grid-area: 4 / 2 / span 1 / span 1;
+  margin-left: 5px;
+  animation-name: item-display;
+  animation-duration: 4s;
+}
+
+.container-4-work-1sub .other-team {
+  grid-area: 5 / 1 / span 1 / span 2;
+  text-align: left;
+  margin-top: -40px;
+}
+.container-4-work-1sub .team-list {
+  grid-area: 6 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-4-work-1sub .other-dpt {
+  grid-area: 7 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-4-work-1sub .dpt-list {
+  grid-area: 8 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-4-work-1sub .line {
+  grid-area: 1 / 1 / span 4 / span 5;
+  text-align: center;
+}
+/* ========================================================= */
+
+/* ========================================================= */
+.container-3-work-3sub {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-3-work-3sub .team {
+  grid-area: 3 / 3 / span 2 / span 2;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.item1, .item1-sub1, .item1-sub2, .item1-sub3, .item1-sub4,
+  .item2, .item2-sub1, .item2-sub2, .item2-sub3, .item2-sub4,
+  .item3, .item3-sub1, .item3-sub2, .item3-sub3, .item3-sub4 {
+    text-align: center;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+
+.item1, .item2, .item3 {
+  animation-name: item-display;
+  animation-name: item-display;
+  animation-name: item-display;
+}
+
+.item1-sub1, .item1-sub2, .item1-sub3, .item1-sub4,
+  .item2-sub1, .item2-sub2, .item2-sub3, .item2-sub4,
+  .item3-sub1, .item3-sub2, .item3-sub3, .item3-sub4 {
+    animation-name: item-display-level2;
+  }
+.container-3-work-3sub .item1 {
+  grid-area: 2 / 3 / span 1 / span 2;
+  animation-duration: 1s;
+  margin-top: 10px;
+}
+.container-3-work-3sub .item1-sub1 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  animation-duration: 2s;
+}
+.container-3-work-3sub .item1-sub2 {
+  grid-area: 1 / 3 / span 1 / span 1;
+  animation-duration: 2s;
+  margin-left: -20px;
+  margin-right: 2px;
+}
+.container-3-work-3sub .item1-sub3 {
+  grid-area: 1 / 4 / span 1 / span 1;
+  animation-duration: 2s;
+  margin-left: 2px;
+}
+.container-3-work-3sub .item1-sub4 {
+  grid-area: 1 / 5 / span 1 / span 1;
+  animation-duration: 2s;
+  margin-left: -35px;
+}
+
+.container-3-work-3sub .item2 {
+  grid-area: 4 / 2 / span 2 / span 1;
+  animation-duration: 2s;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.container-3-work-3sub .item2-sub1 {
+  grid-area: 3 / 1 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-3-work-3sub .item2-sub2 {
+  grid-area: 4 / 1 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-3-work-3sub .item2-sub3 {
+  grid-area: 5 / 1 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-3-work-3sub .item2-sub4 {
+  grid-area: 6 / 1 / span 1 / span 1;
+  animation-duration: 3s;
+}
+
+.container-3-work-3sub .item3 {
+  grid-area: 4 / 5 / span 2 / span 1;
+  animation-duration: 3s;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.container-3-work-3sub .item3-sub1 {
+  grid-area: 3 / 6 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-3-work-3sub .item3-sub2 {
+  grid-area: 4 / 6 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-3-work-3sub .item3-sub3 {
+  grid-area: 5 / 6 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-3-work-3sub .item3-sub4 {
+  grid-area: 6 / 6 / span 1 / span 1;
+  animation-duration: 3s;
+}
+
+.container-3-work-3sub .other-team {
+  grid-area: 7 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-3-work-3sub .team-list {
+  grid-area: 8 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-3-work-3sub .other-dpt {
+  grid-area: 9 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-3-work-3sub .dpt-list {
+  grid-area: 10 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-3-work-3sub .line {
+  grid-area: 1 / 1 / span 10 / span 6;
+  text-align: center;
+}
+/* ========================================================= */
+
+/* ========================================================= */
+.container-4-work-4sub {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-4-work-4sub .team {
+  grid-area: 3 / 3 / span 2 / span 2;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.item1, .item2, .item3, .item4, .item1-sub1, .item1-sub2, .item1-sub3,
+  .item1-sub4, .item2-sub1, .item2-sub2, .item2-sub3,
+  .item3-sub1, .item3-sub2, .item3-sub3,
+  .item4-sub1, .item4-sub2, .item4-sub3,
+  .item5, .item6, .item7
+  {
+    text-align: center;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+.container-4-work-4sub .item1 {
+  grid-area: 3 / 2 / span 2 / span 1;
+  animation-name: item-display;
+  animation-duration: 1s;
+  margin-top: 40px;
+}
+.container-4-work-4sub .item1-sub1 {
+  grid-area: 2 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+  margin-top: 50px;
+}
+.container-4-work-4sub .item1-sub2 {
+  grid-area: 3 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-4sub .item1-sub3 {
+  grid-area: 4 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-4sub .item1-sub4 {
+  grid-area: 5 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+
+.container-4-work-4sub .item2 {
+  grid-area: 2 / 3 / span 1 / span 2;
+  animation-name: item-display;
+  animation-duration: 2s;
+  margin-top: 20px;
+}.container-4-work-4sub .item2-sub1 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-4-work-4sub .item2-sub2 {
+  grid-area: 1 / 3 / span 1 / span 2;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-4-work-4sub .item2-sub3 {
+  grid-area: 1 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+
+.container-4-work-4sub .item3 {
+  grid-area: 3 / 5 / span 2 / span 1;
+  animation-name: item-display;
+  animation-duration: 3s;
+  margin-top: 40px;
+}
+.container-4-work-4sub .item3-sub1 {
+  grid-area: 2 / 6 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 4s;
+  margin-top: 50px;
+}
+.container-4-work-4sub .item3-sub2 {
+  grid-area: 3 / 6 / span 2 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 4s;
+  margin-top: 55px;
+}
+.container-4-work-4sub .item3-sub3 {
+  grid-area: 5 / 6 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 4s;
+}
+
+.container-4-work-4sub .item4 {
+  grid-area: 5 / 3 / span 1 / span 2;
+  animation-name: item-display;
+  animation-duration: 4s;
+  margin-bottom: 20px;
+}
+.container-4-work-4sub .item4-sub1 {
+  grid-area: 6 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 5s;
+}
+.container-4-work-4sub .item4-sub2 {
+  grid-area: 6 / 3 / span 1 / span 2;
+  animation-name: item-display-level2;
+  animation-duration: 5s;
+}
+.container-4-work-4sub .item4-sub3 {
+  grid-area: 6 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 5s;
+}
+
+.container-4-work-4sub .item5 {
+  grid-area: 2 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 5s;
+  text-align: right;
+  margin-top: 50px;
+}
+.container-4-work-4sub .item6 {
+  grid-area: 2 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 6s;
+  text-align: left;
+  margin-top: 50px;
+}
+.container-4-work-4sub .item7 {
+  grid-area: 5 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 7s;
+  text-align: right;
+}
+
+.container-4-work-4sub .tag-team {
+  grid-area: 7 / 1 / span 1 / span 6;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+  margin-top: 15px;
+  padding-right: 15px;
+}
+.container-4-work-4sub .other-dpt {
+  grid-area: 8 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-4-work-4sub .dpt-list {
+  grid-area: 9 / 1 / span 1 / span 6;
+  text-align: left;
+}
+.container-4-work-4sub .line {
+  grid-area: 1 / 1 / span 9 / span 6;
+  text-align: center;
+}
+/* ========================================================= */
+
+/* ========================================================= */
+.container-3-work-3sub-pr {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-3-work-3sub-pr .team {
+  grid-area: 4 / 1 / span 1 / span 1;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.item1, .item1-sub1, .item1-sub2, .item1-sub3,
+  .item2, .item2-sub1, .item2-sub2,
+  .item3, .item3-sub1, .item3-sub2, .item3-sub3 {
+    text-align: center;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+
+.item1, .item2, .item3 {
+  animation-name: item-display;
+  animation-name: item-display;
+  animation-name: item-display;
+}
+
+.item1-sub1, .item1-sub2, .item1-sub3,
+  .item2-sub1, .item2-sub2,
+  .item3-sub1, .item3-sub2, .item3-sub3 {
+    animation-name: item-display-level2;
+  }
+.container-3-work-3sub-pr .item1 {
+  grid-area: 2 / 2 / span 1 / span 1;
+  animation-duration: 1s;
+  margin-left: 40px;
+  margin-bottom: -30px;
+  padding-top: 30px;
+}
+.container-3-work-3sub-pr .item1-sub1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+  animation-duration: 2s;
+  margin-right: -50px;
+}
+.container-3-work-3sub-pr .item1-sub2 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  animation-duration: 2s;
+  margin-left: 40px;
+}
+.container-3-work-3sub-pr .item1-sub3 {
+  grid-area: 1 / 3 / span 1 / span 1;
+  animation-duration: 2s;
+  margin-left: 50px;
+}
+.container-3-work-3sub-pr .item2 {
+  grid-area: 4 / 2 / span 1 / span 1;
+  animation-duration: 2s;
+  margin-left: 40px;
+  margin-top: 45px;
+}
+.container-3-work-3sub-pr .item2-sub1 {
+  grid-area: 3 / 3 / span 1 / span 1;
+  animation-duration: 3s;
+  margin-bottom: -40px;
+  margin-left: 50px;
+}
+.container-3-work-3sub-pr .item2-sub2 {
+  grid-area: 5 / 3 / span 1 / span 1;
+  animation-duration: 3s;
+  margin-top: -40px;
+  margin-left: 50px;
+}
+.container-3-work-3sub-pr .item3 {
+  grid-area: 6 / 2 / span 1 / span 1;
+  animation-duration: 3s;
+  margin-left: 40px;
+  margin-top: -30px;
+  padding-bottom: 30px;
+}
+.container-3-work-3sub-pr .item3-sub1 {
+  grid-area: 7 / 1 / span 1 / span 1;
+  animation-duration: 3s;
+  margin-right: -50px;
+}
+.container-3-work-3sub-pr .item3-sub2 {
+  grid-area: 7 / 2 / span 1 / span 1;
+  animation-duration: 3s;
+  margin-left: 40px;
+}
+.container-3-work-3sub-pr .item3-sub3 {
+  grid-area: 7 / 3 / span 1 / span 1;
+  animation-duration: 3s;
+  margin-left: 50px;
+}
+.container-3-work-3sub-pr .other-team {
+  grid-area: 8 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-3-work-3sub-pr .team-list {
+  grid-area: 9 / 1 / span 1 / span 4;
+  text-align: left;
+}
+.container-3-work-3sub-pr .other-dpt {
+  grid-area: 10 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-3-work-3sub-pr .dpt-list {
+  grid-area: 11 / 1 / span 1 / span 4;
+  text-align: left;
+}
+.container-3-work-3sub-pr .line {
+  grid-area: 1 / 1 / span 11 / span 4;
+  text-align: center;
+}
+/* ========================================================= */
+
+/* ========================================================= */
+.container-3-work-3sub-service-growth {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-3-work-3sub-service-growth .team {
+  grid-area: 4 / 3 / span 1 / span 1;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container-3-work-3sub-service-growth .goal {
+  grid-area: 1 / 3 / span 1 / span 1;
+  text-align: center;
+  animation-duration: 3s;
+}
+.item1, .item1-sub1, .item2,
+  .item3, .item3-sub1, .goal {
+    text-align: center;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+
+.item1, .item2, .item3 {
+  animation-name: item-display;
+  animation-name: item-display;
+  animation-name: item-display;
+}
+
+.item1-sub1, .item3-sub1, .goal {
+  animation-name: item-display-level2;
+}
+.container-3-work-3sub-service-growth .item1 {
+  grid-area: 3 / 1 / span 1 / span 1;
+  animation-duration: 1s;
+}
+.container-3-work-3sub-service-growth .item1-sub1 {
+  grid-area: 2 / 2 / span 1 / span 1;
+  animation-duration: 2s;
+}
+.container-3-work-3sub-service-growth .item2 {
+  grid-area: 3 / 3 / span 1 / span 1;
+  animation-duration: 2s;
+}
+.container-3-work-3sub-service-growth .item3 {
+  grid-area: 3 / 5 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-3-work-3sub-service-growth .item3-sub1 {
+  grid-area: 2 / 4 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-3-work-3sub-service-growth .other-team {
+  grid-area: 5 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-3-work-3sub-service-growth .team-list {
+  grid-area: 6 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-3-work-3sub-service-growth .other-dpt {
+  grid-area: 7 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-3-work-3sub-service-growth .dpt-list {
+  grid-area: 8 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-3-work-3sub-service-growth .line {
+  grid-area: 1 / 1 / span 8 / span 5;
+  text-align: center;
+}
+/* ========================================================= */
+
+/* ========================================================= */
+.container-5-work-2sub {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-5-work-2sub .team {
+  grid-area: 3 / 3 / span 2 / span 1;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.item1, .item2, .item2-sub1, .item2-sub2, .item2-sub3,
+ .item3, .item4, .item4-sub1, .item4-sub2, .item5 {
+    text-align: center;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+
+.item1, .item2, .item3, .item4, .item5 {
+  animation-name: item-display;
+}
+
+.item2-sub1, .item2-sub2, .item2-sub3,
+  .item4-sub1, .item4-sub2 {
+    animation-name: item-display-level2;
+  }
+.container-5-work-2sub .item1 {
+  grid-area: 3 / 1 / span 1 / span 2;
+  animation-duration: 1s;
+}
+.container-5-work-2sub .item2 {
+  grid-area: 2 / 3 / span 1 / span 1;
+  animation-duration: 2s;
+  margin-top: 20px;
+}
+.container-5-work-2sub .item2-sub1 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  animation-duration: 2s;
+}
+.container-5-work-2sub .item2-sub2 {
+  grid-area: 1 / 3 / span 1 / span 1;
+  animation-duration: 2s;
+}
+.container-5-work-2sub .item2-sub3 {
+  grid-area: 1 / 4 / span 1 / span 1;
+  animation-duration: 2s;
+}
+.container-5-work-2sub .item3 {
+  grid-area: 3 / 4 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-5-work-2sub .item3-sub1{
+  grid-area: 5 / 5 / span 1 / span 1;
+  animation-duration: 3s;
+}
+.container-5-work-2sub .item4 {
+  grid-area: 4 / 4 / span 1 / span 1;
+  animation-duration: 4s;
+  padding-top: 30px;
+  padding-right: 50px;
+}
+.container-5-work-2sub .item4-sub1{
+  grid-area: 5 / 3 / span 1 / span 1;
+  animation-duration: 3s;
+  padding-left: 60px;
+}
+.container-5-work-2sub .item4-sub2{
+  grid-area: 5 / 4 / span 1 / span 2;
+  animation-duration: 3s;
+  padding-left: 140px;
+}
+.container-5-work-2sub .item5 {
+  grid-area: 4 / 2 / span 1 / span 1;
+  animation-duration: 4s;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.container-5-work-2sub .other-team {
+  grid-area: 6 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-5-work-2sub .team-list {
+  grid-area: 7 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-5-work-2sub .other-dpt {
+  grid-area: 8 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-5-work-2sub .dpt-list {
+  grid-area: 9 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-5-work-2sub .line {
+  grid-area: 1 / 1 / span 9 / span 5;
+  text-align: center;
+}
+
+/* ========================================================= */
+
+/* ========================================================= */
+.container-4-work-4sub-finances {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-4-work-4sub-finances .team {
+  grid-area: 3 / 3 / span 2 / span 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.item1, .item2, .item3, .item4, .item1-sub1, .item1-sub2, .item1-sub3,
+  .item2-sub1, .item2-sub2, .item2-sub3, .item2-sub3-sub1,
+  .item3-sub1, .item3-sub2,
+  .item4-sub1, .item4-sub1-sub1, .item4-sub1-sub2
+  {
+    text-align: center;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+.container-4-work-4sub-finances .item1 {
+  grid-area: 2 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 1s;
+  margin-right: -30px;
+}
+.container-4-work-4sub-finances .item1-sub1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-4-work-4sub-finances .item1-sub2 {
+  grid-area: 2 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+  margin-top: 15px;
+}
+.container-4-work-4sub-finances .item1-sub3 {
+  grid-area: 3 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+
+.container-4-work-4sub-finances .item2 {
+  grid-area: 2 / 4 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 2s;
+  margin-left: -30px;
+}
+.container-4-work-4sub-finances .item2-sub1 {
+  grid-area: 1 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-4-work-4sub-finances .item2-sub2 {
+  grid-area: 2 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+  margin-top: 15px;
+}
+.container-4-work-4sub-finances .item2-sub3 {
+  grid-area: 3 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-4-work-4sub-finances .item2-sub3-sub1 {
+  grid-area: 4 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 4s;
+}
+
+.container-4-work-4sub-finances .item3 {
+  grid-area: 5 / 4 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 4s;
+  margin-left: -30px;
+}
+.container-4-work-4sub-finances .item3-sub1 {
+  grid-area: 5 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 4s;
+  margin-top: 15px;
+}
+.container-4-work-4sub-finances .item3-sub2 {
+  grid-area: 6 / 5 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 4s;
+}
+
+.container-4-work-4sub-finances .item4 {
+  grid-area: 5 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 5s;
+  margin-right: -30px;
+}
+.container-4-work-4sub-finances .item4-sub1 {
+  grid-area: 5 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 5s;
+  margin-top: 15px;
+}
+.container-4-work-4sub-finances .item4-sub1-sub1 {
+  grid-area: 6 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 5s;
+}
+.container-4-work-4sub-finances .item4-sub1-sub2 {
+  grid-area: 6 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 5s;
+  margin-left: -50px;
+}
+
+.container-4-work-4sub-finances .other-team {
+  grid-area: 8 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-4-work-4sub-finances .team-list {
+  grid-area: 9 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-4-work-4sub-finances .other-dpt {
+  grid-area: 10 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-4-work-4sub-finances .dpt-list {
+  grid-area: 11 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-4-work-4sub-finances .line {
+  grid-area: 1 / 1 / span 11 / span 5;
+  text-align: center;
+}
+/* ========================================================= */
+
+/* ========================================================= */
+.container-2-work-2-sub{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-2-work-2-sub .team {
+  grid-area: 3 / 2 / span 1 / span 1;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.item1, .item2,
+  .item1-sub1, .item1-sub2, .item1-sub3, .item1-sub4, .item1-sub5,
+  .item2-sub1, .item2-sub2, .item2-sub3, .item2-sub4, .item2-sub5 {
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.container-2-work-2-sub .item1 {
+  text-align: center;
+  grid-area: 2 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 1s;
+}
+
+.container-2-work-2-sub .item2 {
+  text-align: center;
+  grid-area: 4 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 2s;
+}
+
+.container-2-work-2-sub .item1-sub1 {
+  text-align: right;
+  margin-bottom: 20px;
+  grid-area: 1 / 1 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 2s;
+}
+.container-2-work-2-sub .item1-sub2 {
+  text-align: center;
+  margin-bottom: 20px;
+  grid-area: 1 / 2 / span 1 / span 1;
+  animation-name: item-display;
+  animation-duration: 2s;
+}
+.container-2-work-2-sub .item1-sub3 {
+  text-align: left;
+  grid-area: 1 / 3 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-2-work-2-sub .item1-sub4 {
+  text-align: right;
+  margin-top: 15px;
+  grid-area: 2 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-2-work-2-sub .item1-sub5 {
+  text-align: left;
+  margin-top: 15px;
+  grid-area: 2 / 3 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 2s;
+}
+.container-2-work-2-sub .item2-sub1 {
+  text-align: right;
+  margin-top: 15px;
+  grid-area: 5 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-2-work-2-sub .item2-sub2 {
+  margin-top: 20px;
+  text-align: center;
+  grid-area: 5 / 2 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-2-work-2-sub .item2-sub3 {
+  text-align: left;
+  margin-top: 15px;
+  grid-area: 5 / 3 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-2-work-2-sub .item2-sub4 {
+  text-align: right;
+  margin-top: 15px;
+  grid-area: 4 / 1 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+.container-2-work-2-sub .item2-sub5 {
+  text-align: left;
+  margin-top: 15px;
+  grid-area: 4 / 3 / span 1 / span 1;
+  animation-name: item-display-level2;
+  animation-duration: 3s;
+}
+
+.container-2-work-2-sub .other-team {
+  grid-area: 6 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-2-work-2-sub .team-list {
+  grid-area: 7 / 1 / span 1 / span 3;
+  text-align: left;
+}
+.container-2-work-2-sub .other-dpt {
+  grid-area: 8 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-2-work-2-sub .dpt-list {
+  grid-area: 9 / 1 / span 1 / span 3;
+  text-align: left;
+}
+.container-2-work-2-sub .line {
+  grid-area: 1 / 1 / span 7 / span 3;
+  text-align: center;
+}
+
+/* ========================================================= */
+.container-3-work-2-sub {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 10px;
+}
+
+.container-3-work-2-sub .team {
+  grid-area: 3 / 3 / span 1 / span 1;
+  text-align: center;
+  margin-bottom: -10px;
+  margin-top: 40px;
+}
+
+.item1, .item1-sub1, .item1-sub2,
+  .item2, .item3, .item2-sub1, .item2-sub2 {
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+
+.item1, .item2, .item3 {
+  text-align: center;
+  animation-name: item-display;
+  animation-name: item-display;
+  animation-name: item-display;
+}
+
+.item1-sub1, .item1-sub2,
+  .item2-sub1, .item2-sub2 {
+  animation-name: item-display-level2;
+}
+
+.container-3-work-2-sub .goal {
+  grid-area: 1 / 3 / span 1 / span 1;
+  text-align: center;
+  animation-duration: 3s;
+  margin-bottom: 40px;
+}
+.container-3-work-2-sub .item1 {
+  grid-area: 4 / 2 / span 1 / span 1;
+  animation-duration: 1s;
+}
+.container-3-work-2-sub .item1-sub1 {
+  grid-area: 5 / 1 / span 1 / span 1;
+  animation-duration: 2s;
+  text-align: center;
+  margin-right: -40px;
+}
+.container-3-work-2-sub .item1-sub2 {
+  grid-area: 5 / 3 / span 1 / span 1;
+  animation-duration: 2s;
+  text-align: left;
+  margin-left: -40px;
+}
+
+.container-3-work-2-sub .item3 {
+  grid-area: 2 / 3 / span 1 / span 1;
+  animation-duration: 2s;
+  text-align: center;
+}
+
+.container-3-work-2-sub .item2 {
+  grid-area: 4 / 4 / span 2 / span 1;
+  animation-duration: 3s;
+}
+.container-3-work-2-sub .item2-sub1 {
+  grid-area: 5 / 3 / span 1 / span 1;
+  animation-duration: 3s;
+  text-align: right;
+  margin-right: -40px;
+}
+.container-3-work-2-sub .item2-sub2 {
+  grid-area: 5 / 5 / span 1 / span 1;
+  animation-duration: 3s;
+  text-align: center;
+  margin-left: -40px;
+}
+
+.container-3-work-2-sub .other-team {
+  grid-area: 6 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-3-work-2-sub .team-list {
+  grid-area: 7 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-3-work-2-sub .other-dpt {
+  grid-area: 8 / 1 / span 1 / span 2;
+  text-align: left;
+}
+.container-3-work-2-sub .dpt-list {
+  grid-area: 9 / 1 / span 1 / span 5;
+  text-align: left;
+}
+.container-3-work-2-sub .line {
+  grid-area: 1 / 1 / span 9 / span 5;
+  text-align: center;
+}
+/* ========================================================= */

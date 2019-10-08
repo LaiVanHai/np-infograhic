@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="grid-stytesheet.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="tags-script.js"></script>
+    <title>NPの業務インフォグラフィック</title>
+  </head>
+  <body>
+    <!--　全社の部署を表示する -->
+    <!-- <div class="title">
+      <p>NPの部署</p>
+    </div> -->
+    <a href="np.html" target="_blank" class="title">
+      TEST
+    </a>
+    <div class="container">
+      <div class="service-image">
+        <a href="https://www.netprotections.com/" target="_blank">
+          <img src="img/service/atobarai.png" class="atobarai">
+        </a>
+        <a href="https://www.netprotections.com/air/" target="_blank">
+          <img src="img/service/atobarai-air.png" class="atobarai-air">
+        </a>
+        <a href="https://atone.be/" target="_blank">
+          <img src="img/service/atone.png" class="srv-atone">
+        </a>
+        <a href="https://np-kakebarai.com/" target="_blank">
+          <img src="img/service/kakebarai.png" class="kakebarai">
+        </a>
+        <a href="https://aftee.tw/" target="_blank">
+          <img src="img/service/aftee.png" class="aftee">
+        </a>
+      </div>
+      <div class="line">
+        <svg height="710" width="710">
+          <line class="line-customer" x2="20" y2="30" x1="20" y1="700"></line>
+          <!-- item2 of line -->
+          <line class="line-customer" x2="150" y2="30" x1="150" y1="700"></line>
+          <!-- item3 of line -->
+          <line class="line-customer" x2="330" y2="30" x1="330" y1="700"></line>
+          <!-- item4 of line -->
+          <line class="line-customer" x2="520" y2="30" x1="520" y1="700"></line>
+          <!-- item5 of line -->
+          <line class="line-customer" x2="700" y2="30" x1="700" y1="700"></line>
+          Sorry, your browser does not support inline SVG.
+        </svg>
+      </div>
+      <a href="marketing.html#mkt" class="box marketing">
+        <img src="img/mkt/department1.png" class="mkt-img img-left">
+        <p>Marketing</p>
+        <span class="tooltiptext">事業と組織を紹介する</span>
+        <img src="img/mkt/department2.png" class="mkt-img img-right">
+      </a>
+
+      <a href="biz-dev.html" class="box biz-dev">
+        <img src="img/biz-dev/department1.png" class="mkt-img img-left">
+        <p>Biz Dev</p>
+        <span class="tooltiptext">アライアンスを開拓する</span>
+        <img src="img/biz-dev/department2.png" class="mkt-img img-right">
+      </a>
+
+      <a href="c-sales.html#c-sales" class="box c-sales">
+        <p>C-Sales</p>
+        <span class="tooltiptext">サービスを売る</span>
+        <img src="img/c-sales/department.png" class="sales-img">
+      </a>
+      <a href="c-cs.html#c-cs" class="box c-cs">
+        <p>C-CS</p>
+        <span class="tooltiptext">サービスを運用する</span>
+        <img src="img/c-cs/department.png" class="sales-img">
+      </a>
+
+      <a href="atone.html#atone" class="box atone">
+        <p>atone</p>
+        <img src="img/atone/department.png" class="atone-img">
+      </a>
+
+      <a href="b-sales.html#b-sales" class="box b-sales">
+        <p>B-Sales</p>
+        <span class="tooltiptext">NP掛け払いを届ける</span>
+        <img src="img/b-sales/department.png" class="bsales-img">
+      </a>
+      <a href="b-cs.html#b-cs" class="box b-cs">
+        <p>B-CS</p>
+        <span class="tooltiptext">サービスを運用する・改善する</span>
+        <img src="img/b-cs/department.png" class="b-cs-img">
+      </a>
+
+      <a href="taiwan.html#taiwan" class="box taiwan">
+        <p>台湾</p>
+        <span class="tooltiptext">海外事業</span>
+        <img src="img/taiwan/department.png" class="taiwan-img">
+        <img src="img/taiwan/department2.png" class="taiwan-img2">
+      </a>
+
+      <a href="ba.html#ba" class="box ba">
+        <img src="img/ba/department3.png" class="ba-img img-left">
+        <p>BA</p>
+        <span class="tooltiptext">サービスを開発する</span>
+        <img src="img/ba/department1.png" class="ba-img img-right">
+      </a>
+
+      <a href="human-resources.html#hr" class="box human-resourses">
+        <p>人事総務</p>
+        <span class="tooltiptext">組織を作る</span>
+        <img src="img/human-resourses/department.png" class="human-resourses-img">
+      </a>
+      <a href="finances.html#finances" class="box finances">
+        <p>財経</p>
+        <span class="tooltiptext">縁の下の力持ち</span>
+        <img src="img/finances/department.png" class="human-resourses-img">
+      </a>
+      <a href="legal.html" class="box legal">
+        <p>法務</p>
+        <span class="tooltiptext">バックオフィース</span>
+        <img src="img/legal/department.png" class="human-resourses-img">
+      </a>
+    </div>
+
+    <!-- 各部署のチーム -->
+    <div class="title" id="team-name">
+      <p>台湾のチーム</p>
+    </div>
+
+
+    <!--　taiwanチーム -->
+    <div class="department-taiwan" id="taiwan">
+      <div class="dpt-item" id="taiwan-ba">
+        <img src="img/taiwan/ba/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>台湾<br>BA</p>
+        </div>
+      </div>
+      <div class="dpt-item" id="taiwan-c-sales">
+        <img src="img/taiwan/c-sales/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>台湾<br>C-Sales</p>
+        </div>
+      </div>
+      <div class="dpt-item" id="taiwan-c-cs">
+        <img src="img/taiwan/c-cs/team.png" class="dpt-image">
+        <div class="dpt-info">
+          <p>台湾<br>C-CS</p>
+        </div>
+      </div>
+    </div>
+    <!-- taiwanチーム -->
+
+    <!-- Start Modal C-Salesチーム -->
+    <div class="work-modal-wrapper" id="taiwan-c-sales-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">台湾C-Salesの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          <div class="container-2-work-2-sub">
+            <div class="line modal-line">
+              <svg height="800" width="550">
+                <!-- item1 of line -->
+                <line class="work-line" x1="277" y1="285" x2="277" y2="250"></line>
+                <!-- item2 of line -->
+                <line class="work-line" x1="277" y1="440" x2="277" y2="475"></line>
+                <!-- item1-sub1 of line -->
+                <line class="work-line-lv3" x1="277" y1="130" x2="100" y2="95"></line>
+                <!-- item1-sub2 of line -->
+                <line class="work-line-lv3" x1="277" y1="130" x2="277" y2="95"></line>
+                <!-- item1-sub3 of line -->
+                <line class="work-line-lv3" x1="277" y1="130" x2="450" y2="95"></line>
+                <!-- item1-sub4 of line -->
+                <line class="work-line-lv3" x1="215" y1="190" x2="145" y2="190"></line>
+                <!-- item1-sub5 of line -->
+                <line class="work-line-lv3" x1="335" y1="190" x2="405" y2="190"></line>
+                <!-- item2-sub1 of line -->
+                <line class="work-line-lv3" x1="277" y1="595" x2="100" y2="625"></line>
+                <!-- item2-sub2 of line -->
+                <!-- <line class="work-line-lv3" x1="277" y1="595" x2="277" y2="630"></line> -->
+                <!-- item2-sub3 of line -->
+                <line class="work-line-lv3" x1="277" y1="595" x2="450" y2="625"></line>
+                <!-- item2-sub4 of line -->
+                <line class="work-line-lv3" x1="215" y1="535" x2="140" y2="535"></line>
+                <!-- item2-sub5-sub1 of line -->
+                <line class="work-line-lv3" x1="335" y1="535" x2="405" y2="535"></line>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+            </div>
+            <div class="team">
+              <div class="work-item">
+                <img src="img/taiwan/c-sales/team.png" class="dpt-image">
+                <div class="dpt-info">
+                  <p>台湾<br>C-Sales</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1">
+              <div class="work-item-level1">
+                <img src="img/taiwan/c-sales/work1.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>台湾現地</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub1">
+              <div class="work-item-level2">
+                <img src="img/taiwan/c-sales/work1-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>市場調査</p>
+                  <span class="tooltiptext">
+                    台湾政府や業界の動向調査<br>競合・類似サービスの調査
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub2">
+              <div class="work-item-level2">
+                <img src="img/taiwan/c-sales/work1-2.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>新規顧客<br>創出</p>
+                  <span class="tooltiptext">
+                    業界団体への加入・食事会出席、メールや電話はSNS等
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub3">
+              <div class="work-item-level2">
+                <img src="img/taiwan/c-sales/work1-3.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>企業との<br>商談</p>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub4">
+              <div class="work-item-level2">
+                <img src="img/taiwan/c-sales/work1-4.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>営業連携</p>
+                  <span class="tooltiptext">
+                    システム会社・決済代行会社・広告代理店などとの協業・営業連携
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1-sub5">
+              <div class="work-item-level2">
+                <img src="img/taiwan/c-sales/work1-5.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p class="font-size-10"><i class="fa fa-search tags"></i>資料請求案件<br>の対応</p>
+                  <span class="tooltiptext">
+                    資料請求案件の管理、アプローチリストの案件のクロージング
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="work-item-level1">
+                <img src="img/taiwan/c-sales/work2.png" class="lv1-image">
+                <div class="lv1-info">
+                  <p>日系</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub1">
+              <div class="work-item-level2">
+                <img src="img/taiwan/c-sales/work2-5.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p>案件対応</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub3">
+              <div class="work-item-level2">
+                <img src="img/taiwan/c-sales/work2-5.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>アライアン<br>ス対応</p>
+                  <span class="tooltiptext">
+                    システム会社・広告代理店等とのシステム連携
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub4">
+              <div class="work-item-level2">
+                <img src="img/taiwan/c-sales/work2-1.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>セミナー</p>
+                  <span class="tooltiptext">
+                    日系企業向けセミナーの企画・開催
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item2-sub5">
+              <div class="work-item-level2">
+                <img src="img/taiwan/c-sales/work2-4.png" class="lv2-image">
+                <div class="lv2-info">
+                  <p><i class="fa fa-search tags"></i>事例取得</p>
+                  <span class="tooltiptext">
+                    AFTEE導入実績の定量データ収集・インタビューの実施
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="other-team">
+              <p class="other-team-title">連携があるチーム:</p>
+            </div>
+            <div class="team-list">
+              <div class="team-link-item link-to-taiwan-ba">
+                <img src="img/taiwan/ba/team.png">
+                <p>台湾<br>BA</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+              <div class="team-link-item link-to-taiwan-c-cs">
+                <img src="img/taiwan/c-cs/team.png">
+                <p>台湾<br>C-CS</p>
+                <span class="tooltiptext hight">関連度:高</span>
+              </div>
+            </div>
+            <div class="other-dpt">
+              <p class="other-team-title">連携がある部署:</p>
+            </div>
+            <div class="dpt-list">
+              <a href="c-sales.html#c-sales" class="dpt-link-item link-to-c-sales">
+                <p class="dpt-link-title">C-Sales</p>
+                <span class="tooltiptext medium">関連度:中</span>
+                <img src="img/c-sales/department.png">
+              </a>
+              <a href="marketing.html#mkt" class="dpt-link-item link-to-mkt">
+                <p class="dpt-link-title">Marketing</p>
+                <span class="tooltiptext medium">関連度:中</span>
+                <img src="img/mkt/department1.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal C-Salesチーム -->
+
+    <!-- Start Modal C-CSチーム -->
+    <div class="work-modal-wrapper" id="taiwan-c-cs-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">台湾C-CSの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          開発中
+        </div>
+      </div>
+    </div>
+    <!-- End Modal C-CSチーム -->
+
+    <!-- Start Modal BAチーム -->
+    <div class="work-modal-wrapper" id="taiwan-ba-team">
+      <div class="modal">
+        <div class="modal-title">
+          <p class="work-title">台湾BAの業務</p>
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-content">
+          開発中
+        </div>
+      </div>
+    </div>
+    <!-- End Modal BAチーム -->
+  </body>
+</html>
