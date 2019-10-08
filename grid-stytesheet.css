@@ -229,6 +229,10 @@
   grid-area: 10 / 1 / span 1 / span 5;
   text-align: left;
 }
+.container-3-work .back-button {
+  grid-area: 11 / 1 / span 1 / span 5;
+  text-align: left;
+}
 .container-3-work .line {
   grid-area: 1 / 1 / span 10 / span 5;
   text-align: center;
@@ -353,6 +357,10 @@
 }
 .container-4-work .dpt-list {
   grid-area: 7 / 1 / span 1 / span 3;
+  text-align: left;
+}
+.container-4-work .back-buton {
+  grid-area: 8 / 1 / span 1 / span 3;
   text-align: left;
 }
 .container-4-work .line {

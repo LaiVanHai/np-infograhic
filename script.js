@@ -117,13 +117,22 @@ $(function() {
 
   // C-Sales部署のModal
   $('#c-sales-inside').click(function() {
-    $('#c-sales-inside-team').fadeIn();
+    deleteDisplayWork();
+    $('#team-work').find('p').text('インサイドチームの業務');
+    $('#team-work').fadeIn();
+    $('#c-sales-inside-team-element').css("display", "grid");
   });
   $('#c-sales-field').click(function() {
-    $('#c-sales-field-team').fadeIn();
+    deleteDisplayWork();
+    $('#team-work').find('p').text('フィルードチームの業務');
+    $('#team-work').fadeIn();
+    $('#c-sales-field-team-element').css("display", "grid");
   });
   $('#c-sales-support').click(function() {
-    $('#c-sales-support-team').fadeIn();
+    deleteDisplayWork();
+    $('#team-work').find('p').text('営業支援チームの業務');
+    $('#team-work').fadeIn();
+    $('#c-sales-support-team-element').css("display", "grid");
   });
   // C-Sales部署のModal
 
@@ -373,15 +382,21 @@ $(function() {
   // C-Salesのチームは繋がることを作成する
   $('.link-to-c-sales-inside').click(function() {
     deleteDisplayWork();
-    $('#c-sales-inside-team').fadeIn();
+    $('#team-work').find('p').text('インサイドチームの業務');
+    $('#team-work').fadeIn();
+    $('#c-sales-inside-team-element').css("display", "grid");
   });
   $('.link-to-c-sales-field').click(function() {
     deleteDisplayWork();
-    $('#c-sales-field-team').fadeIn();
+    $('#team-work').find('p').text('フィルードチームの業務');
+    $('#team-work').fadeIn();
+    $('#c-sales-field-team-element').css("display", "grid");
   });
   $('.link-to-c-sales-support').click(function() {
     deleteDisplayWork();
-    $('#c-sales-support-team').fadeIn();
+    $('#team-work').find('p').text('営業支援チームの業務');
+    $('#team-work').fadeIn();
+    $('#c-sales-support-team-element').css("display", "grid");
   });
   // C-Salesのチームは繋がることを作成する
 
@@ -540,6 +555,9 @@ $(function() {
     $('#c-sales-support-team').fadeOut();
     $('#c-sales-inside-team').fadeOut();
     $('#c-sales-field-team').fadeOut();
+    $('#c-sales-inside-team-element').css("display", "none");
+    $('#c-sales-support-team-element').css("display", "none");
+    $('#c-sales-field-team-element').css("display", "none");
 
     //　法務のModal
     $('#dpt-legal').fadeOut();

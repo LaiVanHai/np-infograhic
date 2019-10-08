@@ -6,7 +6,7 @@
     grid-gap: 10px;
     margin: 10px 360px;
   }
-  .title {
+  .title, .title-line {
     margin: 0px 360px;
   }
   .department-mkt,
@@ -18,12 +18,17 @@
     .department-hr,
     .department-finances,
     .department-taiwan,
-    .department-b-cs {
+    .department-b-cs,
+    .department-team {
     margin: 0 360px;
     margin-top: 30px;
     text-align: center;
     display: block;
     width: auto;
+  }
+  .department-team {
+    width: 650px !important;
+    text-align: center;
   }
   .modal {
     left: 25%;
@@ -92,8 +97,8 @@
     grid-gap: 10px;
     margin: 10px 250px;
   }
-  .title {
-    margin: 0 250px;
+  .title, .title-line {
+    margin: 10px 250px;
   }
   .department-mkt,
     .department-c-sales,
@@ -104,12 +109,16 @@
     .department-hr,
     .department-finances,
     .department-taiwan,
-    .department-b-cs {
+    .department-b-cs,
+    .department-team {
     margin: 0 250px;
     margin-top: 30px;
     text-align: center;
     display: block;
     width: auto;
+  }
+  .department-team {
+    width: 650px !important;
   }
   .modal {
     left: 25%;
@@ -180,7 +189,7 @@
     grid-gap: 10px;
     margin: 10px 100px;
   }
-  .title {
+  .title, .title-line  {
     margin: 0px 100px;
   }
   .department-mkt,
@@ -192,7 +201,8 @@
     .department-hr,
     .department-finances,
     .department-taiwan,
-    .department-b-cs {
+    .department-b-cs,
+    .department-team {
     margin: 0px 100px;
     margin-top: 30px;
     text-align: center;
@@ -203,6 +213,9 @@
     left: 17%;
     /* width: 650px !important;
     height: 600px !important; */
+  }
+  .department-team {
+    width: 650px !important;
   }
   .modal-content {
     margin-top: 35px;
@@ -278,12 +291,18 @@
     .department-hr,
     .department-finances,
     .department-taiwan,
-    .department-b-cs {
+    .department-b-cs,
+    .department-team {
     margin-top: 30px;
     text-align: center;
     display: block;
     width: auto;
   }
+
+  .department-team {
+    width: 650px !important;
+  }
+
   .modal {
     left: 8%;
     /* height: 700px !important;
@@ -365,11 +384,15 @@
     .department-hr,
     .department-finances,
     .department-taiwan,
-    .department-b-cs {
+    .department-b-cs,
+    .department-team {
     margin-top: 30px;
     text-align: center;
     display: block;
     width: auto;
+  }
+  .department-team {
+    width: 650px !important;
   }
   .modal {
     left: 5%;
@@ -438,6 +461,14 @@
   }
 }
 
+.department-team {
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 auto;
+  text-align: center;
+}
 @keyframes diamondStroke {
   0% {
     opacity: 0;
@@ -697,6 +728,17 @@ a {
   font-size: 20px;
   line-height: 10px;
   color: #f702a9;
+}
+
+.title-line {
+  font-weight: 700;
+  width: auto;
+  text-align: center;
+  border-bottom-style: double;
+  border-bottom-color: #45aff2;
+  color: #f536b9;
+  margin-bottom: 60px;
+  display: none;
 }
 
 /* チームの表示 */
@@ -1183,4 +1225,16 @@ i {
 .dotted-line {
   stroke-dasharray: 6;
   stroke-linecap: round;
+}
+
+#c-sales-inside-team-element {
+  display: none;
+}
+
+#c-sales-field-team-element {
+  display: none;
+}
+
+#c-sales-support-team-element {
+  display: none;
 }
